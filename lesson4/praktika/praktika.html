@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Практика з тегами html</title>
+</head>
+
+<body>
+	<!--Форма вводу та відправки даних сторінки-->
+	<form action="#" method="post" enctype="multipart/form-data">
+		<div>
+			<p>Імя</p>
+			<!--Тег вводу ім'я юзера-->
+			<input placeholder="Name" tabindex="1" type="text" name="username">
+		</div>
+		<div>
+			<p>Пароль</p>
+			<!--Тег вводу паролю юзера-->
+			<input placeholder="Password" tabindex="2" type="password" name="userpass">
+		</div>
+		<div>
+			<p>Телефон</p>
+			<!--Тег вводу телефону юзера-->
+			<input placeholder="+380" tabindex="3" type="tel" name="usertel" value="+380">
+		</div>
+		<div>
+			<p>Пол</p>
+			<!--Елемент форми для вводу даних з перемикачем-->
+			<p><input tabindex="4" checked type="radio" name="gender" value="male">Чоловік</p>
+			<p><input tabindex="4" type="radio" name="gender" value="female">Жінка</p>
+		</div>
+		<div>
+			<p>Власність</p>
+			<!--Елемент форми для вводу даних з прапорцем-->
+			<p><input checked tabindex="5" type="checkbox" name="money">Велосипед</p>
+			<p><input tabindex="6" type="checkbox" name="money2">Автомобіль</p>
+			<p><input disabled tabindex="7" type="checkbox" name="money3">Квартира</p>
+		</div>
+		<div>
+			<p>Додаткова інформація</p>
+			<!--Поле для вводу тексту в формі-->
+			<textarea tabindex="8" name="Info"></textarea>
+		</div>
+		<div>
+			<p>Прикріпити фото</p>
+			<!--Елемент форми з полем для відправки файлу-->
+			<input tabindex="9" type="file">
+		</div>
+		<div>
+			<p>Улюблений колір</p>
+			<!--Елемент управління з опціями вибору-->
+			<select tabindex="10" name="color">
+				<!--Опції вибору елементу управління-->
+				<option value="Green">Зелений</option>
+				<option selected value="Red">Червоний</option>
+				<option value="Blue">Синій</option>
+			</select>
+		</div>
+		<div>
+			<p>Дії</p>
+			<!--Кнопка форми зі значенням відправити-->
+			<button tabindex="11" type="submit">Відправити</button>
+			<!--Кнопка форми зі значенням видалити-->
+			<button tabindex="12" type="reset">Видалити</button>
+		</div>
+	</form>
+</body>
+
+</html>
