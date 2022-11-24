@@ -1,0 +1,62 @@
+/*Звертання до тегу div за його іменем*/
+div{
+	display: block;
+}
+/*Звертання до групи тегів span за їх селектором класу*/
+.bigred{
+	/*Властивість розміру шрифту для групи тегів span*/
+	font-size: 20px;
+	/*Властивість кольору для групи тегів span*/
+	color: red;
+}
+/*Звертання до тегу span за селектором класу*/
+span.biggreen{
+	color: green;
+	font-size: 25px;
+}
+/*Звертання до селектору класу*/
+.biggreen{
+	font-size: 20px;
+	color: red;
+}
+/*Звертання до тегу div за селектором класу тегу div*/
+.bigyellow {
+	color: yellow;
+	font-size: 30px;
+}
+/*Звертання до тегу span за його селектором класу*/
+.bigyellow span{
+	color: black;
+	font-size: 15px;
+}
+/*Звертання до тегу div за його селектором класу*/
+.colordiv {
+	font-weight: 700;
+	line-height: 50px;
+}
+/*Звертання до тегу span за його селектором класу*/
+.colordiv p{
+	font-size: 60px;
+}
+/*Звертання до тегу p за його селектором класу*/
+.colortext {
+	font-size: 25px;
+}
+/*Звертання до тегу span за його селектором класу*/
+.bluespan {
+	color: blue;
+	font-size: 26px;
+}
+/*Звертання до тегу span за його селектором класу*/
+.redspan {
+	color: red;
+	font-size: 27px;
+}
+/*Звертання до тегу span за його селектором класу*/
+.brownspan {
+	color: brown;
+	font-size: 28px;
+}
+
+
+
