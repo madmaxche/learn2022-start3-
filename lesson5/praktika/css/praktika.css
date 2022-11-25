@@ -1,0 +1,62 @@
+/*Властивості класу divcolor тегу div*/
+.divcolor {
+	font-size: 25px;			/*Розмір шрифту класу divcolor*/
+	line-height: 25px;		/*Висота рядка класу divcolor*/
+}
+/*Властивості класу pcolor тегу p*/
+.pcolor {
+	color: burlywood;		/*Колір тексту класу pcolor*/
+}
+/*Властивості класу spancolor тегу span*/
+.spancolor {
+	color: aquamarine;		/*Колір тексту класу pcolor*/
+}
+/*Властивості тегів div*/
+div{
+	margin: 15px 15px 15px 15px;	 /*Зовнішній відступ тегів div*/
+}
+/*Властивості тегів p*/
+p{
+	border: 1px solid black;  	/*Границі та межі тегів p*/
+}
+/*Властивості тегів span*/
+span{
+	background-color: black;		/*Колір фону тегів span*/
+}
+/*Властивості тегiв p які вміщений в клас divcolor*/
+.divcolor p{
+	border: 10px solid red;		/*Границі та межі тегів p класу divcolor*/
+}	
+/*Властивості тегiв span які вміщений в клас pcolor*/
+.pcolor span{
+	background-color: red;			/*Колір фону тегів span класу divcolor*/
+}
+/*Властивості тегiв div з класом divcolor*/
+div.divcolor{
+	font-size: 50px;		/*Розмір шрифту тегів div з класом divcolor*/
+	line-height: 50px;	/*Висота рядка тегів div з класом divcolor*/
+}
+/*Властивості тегiв з класом pcolor*/
+p.pcolor{
+	color: brown;	/*Колір тексту тегів з класом pcolor*/
+}
+/*Властивості тегiв span з класом spancolor*/
+span.spancolor{
+	color: blueviolet;	/*Колір тексту тегів span  з класом spancolor*/
+}
+/*Властивості тегiв p з класом pcolor які вміщенні в тег div*/
+div.pcolor{
+	font-size: 35px;	/*Розмір шрифту тегу p з класом pcolor які вміщенні в тег div*/
+}
+/*Властивості тегiв span з класом spancolor які вміщенні в тег div*/
+div.spancolor{
+	color: yellow;  /*Колір тексту тегів span класу spancolor які вміщенні в тег div*/
+}
+/*Властивості тегiв span з класом spancolor які вміщені в тег p*/
+p.spancolor{
+	background-color: yellowgreen;/*Колір фону тегів span класу spancolor*/
+}
+
+span.spancolor p{
+	color: white;
+}
