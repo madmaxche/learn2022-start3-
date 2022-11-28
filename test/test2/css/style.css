@@ -1,0 +1,93 @@
+/*Задання властивостей всім елементам тегу body*/
+body{
+	background: url(../img/mykolachuk.jpg); /*Задання властивості фонового зображення*/
+}
+/*Задання властивостей голові сторінки за селектором класу headerblock*/
+.headerblock {
+	background-color: black;	/*Задання властивості фонового кольору*/
+	border: 15px  solid firebrick ;	/*Задання властивості додавання межі-краю*/
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	/*Задання сімейства шрифтів*/
+	background-image: url(../img/logoblack.png);	/*Задання властивості фонового зображення*/
+	background-size: 400px 400px;	/*Задання розміру фонового зображення*/
+	background-repeat: no-repeat;	/*Задання властивості здатності фонового зображення НЕ ПОВТОРЮВАТИСЬ*/
+   background-position: right center; /*Задання властивості фонового зображення для його позиціювання*/
+	justify-content: center;		/*Задання властивостей контенту для його позиціювання по центру*/
+	max-height: 450px;		/*Задання максимально висоти блоку*/
+	min-width: 1450px;		/*Задання мінімальної ширини блоку*/
+}
+h1{
+	color: white;		/*Задання кольору*/
+	text-align: center;		/*Задання властивостей тексту для його позиціювання по центру*/
+	text-transform: uppercase;		/*Задання властивостей трансформування тексту ВСІ ЛІТЕРИ ВЕЛИКІ*/
+}
+.mainblock h2{
+	color: white;		/*Задання кольору*/
+	text-align: center;		/*Задання властивостей тексту для його позиціювання по центру*/
+	text-transform: uppercase;		/*Задання властивостей трансформування тексту ВСІ ЛІТЕРИ ВЕЛИКІ*/
+}
+.mainblock p{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 30px;		/*Розмір шрифту*/
+	color: bisque;		/*Задання кольору*/
+}
+.mainblock li{
+	font-style: italic;		/*Задання властивостей стилю тексту */
+	color: beige;		/*Задання кольору*/
+	font-size: 25px;			/*Розмір шрифту*/
+	text-align: center;		/*Задання властивостей тексту для його позиціювання по центру*/
+	background-image: url(../img/logoblack.png);		/*Задання властивості фонового зображення*/
+	background-size: 25px 25px;		/*Задання розмірів фонового зображення*/
+	background-repeat: no-repeat;		/*Задання властивості фонового зображення БЕЗ ПОВТОРЕНЬ*/
+   background-position: left center;		/*Задання властивості фонового зображення для його позиціювання*/
+}
+.headerblock__item {
+	text-align: left;		/*Задання властивостей тексту для його позиціювання зліва*/
+	margin: 0px 0px 25px 25px;		/*Зовнішні відступи елементів голови сторінки*/
+}
+.headerblock__form {
+	color: white;		/*Задання кольору*/
+}
+.headerform__item {
+	padding: 0px 0px 25px 55px;		/*Внутрішні відступи елементів форми голови сторінки*/
+}
+
+
+.loginbutton{
+	font-size: 20px;			/*Розмір шрифту*/
+	background-color: black;		/*Задання властивості фонового кольору*/
+	color: white;		/*Задання кольору*/
+}
+
+.loginbutton:hover{
+	background-color: white;		/*Задання властивості фонового кольору*/
+	color: black;		/*Задання кольору*/
+	border: 3px solid darkred;		/*Задання властивості межі-краю*/
+}
+
+
+.mainblock {
+	margin: 50px 20px 50px 20px;		/*Зовнішні відступи елементів голови сторінки*/
+	background-color: black;		/*Задання властивості фонового кольору*/
+	border: 15px dotted darkred;		/*Задання властивості межі-краю*/
+}
+
+
+.footerblock {
+	background-color: black;		/*Задання властивості фонового кольору*/
+	border: 15px  solid firebrick ;		/*Задання властивості межі-краю*/
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;		/*Задання властивостей зміни сімейства шрифтів*/
+}
+.footerblock__item {
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.footerblock__image {
+	display: flex;
+	justify-content: space-around;
+}
+.footerblock__send {
+	padding: 5px 50px 10px 50px;		/*Внутрішні відступи елементів посилань*/
+	text-align: center;		/*Задання властивостей тексту для його позиціювання по центру*/
+	text-transform: capitalize;		/*Задання властивостей трансформації тексту ВСІ ЛІТЕРИ КАПСОМ/
+	color: darkred;   /*Задання кольору*/
+}
