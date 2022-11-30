@@ -1,0 +1,89 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic";
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-style: 25px;
+}
+
+.headerblock {
+	padding-right: 20px;
+	background-color: #303f9f;
+}
+.headerblockimage{
+		height: 50px;
+		margin: 25px 15px 25px 0;
+
+}
+.headlogo {
+	display: block;
+	align-items: flex-end;
+}
+.mainblock {
+	margin: 15px 200px ;
+	text-align: center;
+}
+
+.mainblock__h {
+	font-size: 35px;
+	font-weight: 700;
+	padding: 25px 0px;
+}
+.mainblock__text {
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+	
+}
+.mainblock__image {
+	width: 887px;
+	height: 457px;
+	align-items: center;
+	padding: 30px 0px;
+}
+.mainblock__alert {
+	padding: 15px 50px;
+}
+.alert {
+	font-weight: 700;
+}
+.mainblock__input {
+	text-align: left;
+	padding-top: 15px;
+}
+.input__h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.input__text {
+	font-size: 25px;
+	text-align: left;
+}
+.input{
+	height: 35px;
+	border: 2px solid gray;
+	font-size: large;
+	margin-top: 15px;
+}
+.input__button {
+	width: 100px;
+	height: 30px;
+	background-color: #fff;
+	border: 5px solid #303f9f;
+}
+.input__button:hover{
+	background-color: #303f9f;
+}
+.footerblock {
+	background-color: #303f9f;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.buttonspan:hover{
+	color: #fff;
+}
+
+.footerblock__text {
+	color: #fff;
+	padding: 25px;
+}
