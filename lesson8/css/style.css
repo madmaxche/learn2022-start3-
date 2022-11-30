@@ -1,12 +1,29 @@
+/*Властивості тегу за селектором класу example-block*/
 .example-block {
+	outline: 15px solid red;		/*Зовнішні кордони блоки*/
+	border: 10px solid #000;		/*Внутрішні кордони блоку*/
+	border-left: none;				/*Задання властивостей видимості однієї з сторін кордонів блоку*/
 
-	font-size: 30px;
-	margin: 0px 0px 0px 0px;
+	box-shadow: 15px 15px 20px 20px #000,inset 5px 5px 10px 10px #000;		/*Тінь елементу кордону як ззовні так і всередині*/
+
+	visibility: visible;				/*Призначений для відображення чи приховання елементу*/
+
+	border-radius: 20px 0px 20px 0px;		/*Налаштування радіусу округлення кутів кордонів блоку*/
+
+	font-size: 50px;		/*Розмір шрифту*/
+	margin: 0px 0px 30px 0px;		/*Ззовнішні відступи блоку*/
 }
+/*Властивості тегу за селектором класу exampl-a*/
+.exampl-a{
+	opacity: 0;			/*Оприділяє рівень прозорості елементу*/
+}
+/*Властивості тегу за селектором класу example-string*/
 .example-string {
-	font-size: 20px;
+	font-size: 50px;		/*Розмір шрифту*/
 }
+/*Властивості тегу за селектором класу example-image*/
 .example-image {
-	width: 150px;
-	height: 150px;
+	width: 150px;		/*Ширина елементу*/
+	height: 150px;		/*Висота елементу*/
+	border: 10px solid #000;		/*Внутрішні кордони елементу*/
 }
