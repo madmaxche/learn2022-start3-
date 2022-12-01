@@ -1,0 +1,107 @@
+body{
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+	background-color: rgb(232, 232, 232);
+}
+.container {
+	min-width: 1440px ;
+	min-height: 1700px ;
+	margin: 106px 108px 137px 142px;
+	background: url(../img/group-1.png) 0 0 no-repeat;
+}
+.mainblock h1{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 14px;
+   line-height: 2.86;
+	color: rgba(39, 61, 70, 0.6);
+	opacity: 0.6;
+	letter-spacing: 2.8px;
+}
+.mainblock h2{
+	text-align: center;
+	font-size: 36px;
+   line-height: 1.39;
+   text-align: center;
+   color: rgb(39, 61, 70);
+	padding: 28px 0px 0px 0px;
+}
+
+.lightman {
+	display: inline-block;
+	border: 10px solid #fff;
+	
+}
+.mainblock__text {
+	margin: 87px 262px 0px 192px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.67;
+	text-align: left;
+	color: rgba(39, 61, 70, 0.8);
+	max-width: 736px;
+}
+
+.list__item {
+	padding: 62px 0px 0px 188px;
+	font-family: Arial;
+   font-size: 20px;
+   line-height: 1.8;
+   text-align: left;
+}
+.list__item li{
+	background: url('../img/check-icon.png') left center no-repeat;
+	padding: 0px 0px 0px 34px;
+}
+.list__item li:nth-child(1){
+	color: rgb(39, 61, 70);
+}
+.list__item li:nth-child(2){
+	color: #80b7b3;
+	font-style: italic;
+}
+.list__item li:nth-child(3){
+	font-weight: 700;
+}
+.list__item li:nth-child(4){
+	color: rgba(39, 61, 70, 0.3);
+	text-decoration: line-through;
+}
+.buttonblock{
+	padding: 59px 0px 0px 200px;
+}
+.button__item {
+	display: inline-block;
+	background-color: #80b7b3;
+	border-radius: 50px;
+	width: 199px;
+	height: 44px;
+
+}
+.button__item span{
+	text-transform: uppercase;
+	font-family: Arial;
+   font-size: 14px;
+   line-height: 2.86;
+   letter-spacing: 2.8px;
+   color: rgb(255, 255, 255);
+	background: url('../img/shape-2.png') right 0 no-repeat;
+	padding: 0px 34px 0px 30px;
+	
+}
+
+.lightmanblock{
+	max-width: 831px;
+	max-height: 551px;
+	margin: 97px 212px 0px 157px;
+}
+.h2block{
+	margin: 0px 264px 0px 205px;
+	max-width: 721px;
+	max-height: 75px;
+}
+.h1block{
+	max-width: 67px;
+	max-height: 10px;
+	margin: 52px 594px 0px 529px;
+}
