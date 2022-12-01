@@ -1,0 +1,11 @@
+
+body{
+	padding: 30px;
+}
+.block{
+	background: url('../image/tEcoPwTQa33bo5Z6_hbP4XLHC2i4yfxIDEHNgSRFZGHsTfoVOKylcOPPWOp_5Uy4t7RAg-Sod1FmYIV4DNwv86h9.jpg');
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+}
