@@ -1,11 +1,59 @@
-
+/*Задання властивостей для всіг тегів всерединні тегу body*/
 body{
-	padding: 30px;
+	padding: 30px;		/*Внутрішні відступи*/
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+/*Задання властивостей за селектором класу block*/
 .block{
-	background: url('../image/tEcoPwTQa33bo5Z6_hbP4XLHC2i4yfxIDEHNgSRFZGHsTfoVOKylcOPPWOp_5Uy4t7RAg-Sod1FmYIV4DNwv86h9.jpg');
+	/*Задання кольору заднього фону*/
+	/*background: rgba(24, 180, 34, 1);*/
 
-	height: 300px;
-	border-radius: 15px;
-	box-shadow: 0 0 10px #000;
+	/*Задання властивості створення фонового зображення*/
+	/*background: url('../image/like.png');*/
+
+	/*Встановлення зображення для елементу  або задає градієнту заливку*/
+	/* Old browsers */
+	/*background: rgb(236,232,157);*/
+	/* FF3.6-15 */
+	/*background: -moz-linear-gradient(top, rgba(236,232,157,1) 0%, rgba(94,83,115,1) 50%, rgba(24,181,164,1) 100%);*/
+	/* Chrome10-25,Safari5.1-6 */
+	/*background: -webkit-linear-gradient(top, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);*/
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*background: linear-gradient(to bottom, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);*/
+
+	/*Оприділяє, як буде повторюватись фонове зображення*/
+	/*background: url('../image/like.png') no-repeat;*/
+
+	/*Задає початкове положення фонового зображення, де перше значення оприділить пололеження по горизонталі, друге по вертикалі*/
+	/*background: url('../image/like.png') 100px 50px no-repeat;*/
+	/*Окремий запис властивості для задання місцеположення фонового зображення*/
+	/*background-position: 0 0;*/
+
+	/*Встановлення, чи буде прокручуватися фонове зображення разом зі змістом елементу*/
+	/*background: url('../image/cover.jpg') center no-repeat fixed;*/
+	/*Окремий запис для властивості встановлення, чи буде прокручуватися фонове зображення разом зі змістом елементу*/
+	/*background-attachment: fixed;*/
+
+	/*Маштабування фонового зображення згідно заданим розмірам. В числах, де перше значення оприділяє ширину, друге висоту*/
+	/*background: url('../image/like.png')0 0 /auto 100% no-repeat;*/
+	/*Окремий запис для властивості маштабування фонового зображення згідно заданим розмірам. В числах, де перше значення оприділяє ширину, друге висоту*/
+	/*background-size: auto 100%;*/
+
+	/*Властивість background дозволяє задати декілька фонових зображень одному блоку, при тому що свої налаштування позиціювання*/
+	background: url('../image/like.png')50% no-repeat, url('../image/like.png')0 0 no-repeat, url('../image/cover.jpg')50%/cover no-repeat;
+
+	height: 300px;		/*Висота блоку*/
+	border-radius: 15px;		/*Радіус округлення кутів блоку*/
+	box-shadow: 0 0 10px #000;		/*Додавання тіні блоку*/
+}
+/*Задання властивостей за селектором класу list*/
+.list{
+	margin: 0px 0px 50px 0px;		/*Зовнішній відступ*/
+}
+/*Задання властивостей за селектором класу list для елементу вмістимому в тегу класу list*/
+.list li{
+	font-size: 24px;		/*Розмір шрифту*/
+	margin: 0px 0px 15px 0px;		/*Зовнішній відступ*/
+	background: url('../image/like.png') left no-repeat;		/*Фонове зображення*/
+	padding: 0px 0px 0px 190px;		/*Внутрішній відступ*/
 }
