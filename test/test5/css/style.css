@@ -1,119 +1,130 @@
+/*Задання властивостей для всіх елементів тегу body*/
 body{
-	background: #e8e8e8 url('../image/ellipse-1-copy.png') 50% 130px no-repeat;
+	background: #e8e8e8 url('../image/ellipse-1-copy.png') 50% 130px no-repeat;		/*Задання фону та фонового зображення*/
 }
+/*Задання властивостей за селектором класу*/
 .content {
-	padding: 106px 0px 0px 137px;
-	max-width: 841px;
-	margin: 0px auto;
+	padding: 106px 0px 0px 137px;		/*Внутрішній відступ*/
+	max-width: 841px;		/*Максимальна ширина*/
+	margin: 0px auto;		/*Зовнішній відступ*/
 }
-
+/*Задання властивостей за селектором класу*/
 .content-top__category {
-	font-family: Arial;
-	font-size: 14px;
-	line-height: 2.86;
-	letter-spacing: 2.8px;
-	text-align: center;
-	color: rgba(39, 61, 70, 0.6);
-	text-transform: uppercase;
+	font-family: Arial;		/*Вибір сімейству шрифта*/
+	font-size: 14px;		/*Розмір шрифту*/
+	line-height: 2.86;		/*Висота рядка*/
+	letter-spacing: 2.8px;		/*Простір між буквами*/
+	text-align: center;		/*Позиціювання тексту відносно його блоку*/
+	color: rgba(39, 61, 70, 0.6);		/*Колір елементу*/
+	text-transform: uppercase;		/*Трансформування тексту*/
 }
+/*Задання властивостей за селектором класу*/
 .content-top__title {
-   font-family: TimesNewRomanPSMT;
-   font-size: 36px;
-	line-height: 1.39;
-   text-align: center;
-   color: rgb(39, 61, 70);
-	padding: 28px 0px 0px 0px;
+   font-family: TimesNewRomanPSMT;		/*Вибір сімейству шрифта*/
+   font-size: 36px;		/*Розмір шрифту*/
+	line-height: 1.39;		/*Висота рядка*/
+   text-align: center;		/*Позиціювання тексту відносно його блоку*/
+   color: rgb(39, 61, 70);		/*Колір елементу*/
+	padding: 28px 0px 0px 0px;		/*Внутрішній відступ*/
 }
 
-
+/*Задання властивостей за селектором класу*/
 .content-image {
-	
-	padding: 77px 0px 0px 0px;
+	padding: 77px 0px 0px 0px;		/*Внутрішній відступ*/
 }
+/*Задання властивостей за селектором класу*/
 .contentimage__image {
-	max-width: 100%;
-	box-shadow: 0px 15px 65px 0 rgba(15, 16, 16, 0.15);
-	border: solid 10px rgb(255, 255, 255);
+	max-width: 100%;		/*Максимальна ширина елементу, відносно його контейнеру*/
+	box-shadow: 0px 15px 65px 0 rgba(15, 16, 16, 0.15);		/*Додання тіні для елементу*/
+	border: solid 10px rgb(255, 255, 255);		/*Додання межі, рамки елементу*/
 }
 
-
+/*Задання властивостей за селектором класу*/
 .content-bottom {
-	padding: 97px 0px 0px 0px;
+	padding: 97px 0px 0px 0px;		/*Внутрішній відступ*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom__text {
-	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-   font-size: 24px;
-   line-height: 1.67;
-   text-align: left;
-   color: rgba(39, 61, 70, 0.8);
-
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;		/*Вибір сімейства шрифту*/
+   font-size: 24px;		/*Розмір шрифту*/
+   line-height: 1.67;		/*Висота рядку*/
+   text-align: left;		/*Позиціювання тексту відносного його контейнера*/
+   color: rgba(39, 61, 70, 0.8);		/*Колір елементу*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom-text__second {
-	padding: 30px 0px 0px 0px;
+	padding: 30px 0px 0px 0px;		/*Внутрішній відступ*/
 }
 
-
+/*Задання властивостей за селектором класу*/
 .content-bottom__list {
-	padding: 62px 0px 0px 0px;
-	font-family: Arial;
-   font-size: 20px;
-   line-height: 1.8;
-   text-align: left;
+	padding: 62px 0px 0px 0px;		/*Внутрішній відступ*/
+	font-family: Arial;		/*Вибір сімейста шрифту*/
+   font-size: 20px;		/*Розмір шрифту*/
+   line-height: 1.8;		/*Висота рядка*/
+   text-align: left;		/*Позиціювання тексту відносно його контейнера*/
 }
-
+/*Задання властивостей за селектором класу*/
 .content-bottom-list__list li{
-	background: url('../image/check-icon.png') left center no-repeat;
-	padding: 0px 0px 0px 28px;
+	background: url('../image/check-icon.png') left center no-repeat;		/*Задання фонового зображення для маркованого списку*/
+	padding: 0px 0px 0px 28px;		/*Внутрішній відступ*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom-list__list li:nth-child(1){
-	color: rgb(39, 61, 70);
-	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.3);
+	color: rgb(39, 61, 70);		/*Колір елементу*/
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.3);		/*Задання тексту тіні*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom-list__list li:nth-child(2){
-	color: #80b7b3;
-	font-style: italic;
+	color: #80b7b3;		/*Задання кольору елементу*/
+	font-style: italic;		/*Вибір стилю написання тексту*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom-list__list li:nth-child(3){
-	font-weight: 700;
+	font-weight: 700;		/*Жирність тексту*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom-list__list li:nth-child(4){
-	color: rgba(39, 61, 70, 0.3);
-	text-decoration: line-through;
+	color: rgba(39, 61, 70, 0.3);		/*Колір елементу*/
+	text-decoration: line-through;		/*Вибір додаткового оформлення тексту*/
 }
 
-
+/*Задання властивостей за селектором класу*/
 .content-bottom__link {
-	display: inline-block;
-	background-color: #80b7b3;
-	border-radius: 50px;
-	width: 199px;
-	height: 44px;
-	margin: 59px 0px 137px 0px;
+	display: inline-block;		/*Задання зміни рядкового тегу на рядково-блочний тег*/
+	background-color: #80b7b3;		/*Задання фонового кольору*/
+	border-radius: 50px;		/*Заокруглення кутів межі елементу*/
+	width: 199px;		/*Ширина елементу*/
+	height: 44px;		/*Висота елементу*/
+	margin: 59px 0px 137px 0px;		/*Зовнішній відступ*/
 }
+/*Задання властивостей за селектором класу*/
 .content-bottom__button {
-	text-transform: uppercase;
-	font-family: Arial;
-   font-size: 14px;
-   line-height: 2.86;
-   letter-spacing: 2.8px;
-   color: rgb(255, 255, 255);
-	background: url('../image/shape-2.png')center right no-repeat;
-	padding: 0px 34px 0px 30px;
+	text-transform: uppercase;		/*Трансформація тексту*/
+	font-family: Arial;		/*Вибір сімейства шрифту*/
+   font-size: 14px;		/*Розмір шрифту*/
+   line-height: 2.86;		/*Висота рядка*/
+   letter-spacing: 2.8px;		/*Відстань між буквами*/
+   color: rgb(255, 255, 255);		/*Колір елементу*/
+	background: url('../image/shape-2.png')center right no-repeat;		/*Задання фонового зображення для кнопки-посилання*/
+	padding: 0px 34px 0px 30px;		/*Внутрішній відступ*/
 }
+/*Задання властивостей за селектором класу та псевдоклассу hover*/
 .content-bottom__link:hover{
-	box-shadow:0px 5px 0 rgba(0, 0, 0, 0.3) ;
-	background-color: rgb(87, 155, 115);
+	box-shadow:0px 5px 0 rgba(0, 0, 0, 0.3) ;		/*Задання тіні для елементу*/
+	background-color: rgb(87, 155, 115);		/*Задання фонового кольору*/
 }
+/*Задання властивостей за селектором класу та псевдоклассу hover*/
 .content-bottom__button:hover{
-	color: #070808;
+	color: #070808;		/*Колір елементу*/
 }
 
+/*Задання властивостей за селектором класу та псевдоклассу hover active*/
 .content-bottom__link:active{
-	position: relative;
-	-webkit-transform: translate3d(tx,ty,tz);
-	-ms-transform: translate3d(tx,ty,tz);
-	-o-transform: translate3d(tx,ty,tz);
-	transform: translate3d(tx,ty,tz);
-	-webkit-transform: translate3d(tx,ty,tz);
-	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+	position: relative;		/*Позиціювання елементу*/
+	-webkit-transform: translate3d(tx,ty,tz);		/*Дозвіл на трансформацію елементу*/
+	-ms-transform: translate3d(tx,ty,tz);		/*Дозвіл на трансформацію елементу*/
+	-o-transform: translate3d(tx,ty,tz);		/*Дозвіл на трансформацію елементу*/
+	transform: translate3d(tx,ty,tz);		/*Дозвіл на трансформацію елементу*/
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);		/*Задання тіні*/
 }
