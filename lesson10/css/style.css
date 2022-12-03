@@ -1,87 +1,99 @@
-
+/*Задання властивостей для всіх елементів тегу body*/
 body{
-	padding: 30px;
+	padding: 30px;		/*Внутрішній відступ*/
 }
-
+/*Задання властивостей за селектором класу block*/
 .block {
-	margin: 0px 0px 30px 0px;
+	margin: 0px 0px 30px 0px;		/*Зовнішній відступ*/
 }
-
+/*Задання властивостей за селектором класу block за допомогою псевдоклассу hover(при наведенні)*/
 .block:hover{
-	color: blue;
+	color: blue;		/*Колір елементу*/
 }
-
+/*Задання властивостей за селектором класу block для всіх елементів типу p*/
 .block p{
-	font-size: 18px;
-	line-height: 24px;
-	margin: 0px 0px 20px 0px;
+	font-size: 18px;		/*Розмір шрифту*/
+	line-height: 24px;		/*Висота рядка*/
+	margin: 0px 0px 20px 0px;		/*Зовнішній відступ*/
 }
-
+/*Задання властивостей за селектором класу block для всіх елементів типу p за допомогою псевдоклассу last-child(для останнього елементу)*/
 .block p:last-child{
-	text-transform: uppercase;
+	text-transform: uppercase;		/*Трансформація відображення тексту*/
 }
-
+/*Задання властивостей за селектором класу link*/
 .link {
-	color: red;
+	color: red;		/*Колір елементу*/
 }
-
+/*Задання властивостей за селектором класу link за допомогою псевдоклассу visited(показує вже раніше задіяні елементи)*/
 .link:visited{
-	color: blue;
+	color: blue;		/*Колір елементу*/
 }
-
+/*Задання властивостей за селектором класу link за допомогою псевдоклассу hover(при наведенні)*/
 .link:hover{
-text-decoration: underline;
-color: green;
+text-decoration: underline;		/*Властивості декорацій тексту*/
+color: green;		/*Колір елементу*/
 }
+/*Задання властивостей за селектором класу link за допомогою псевдоклассу active(при взаємодії)*/
 .link:active{
-	color: yellow;
+	color: yellow;		/*Колір елементу*/
 }
-
+/*Задання властивостей за селектором класу textinput*/
 .textinput {
-	border: 1px solid grey;
-	height: 50px;
-	padding: 0px 15px ;
-	font-size: 18px;
-	width: 300px;
-	margin: 0px 0px 10px 0px;
+	border: 1px solid grey;		/*Межі на кордони елементу*/
+	height: 50px;		/*Висота елементу*/
+	padding: 0px 15px ;		/*Внутрішній відступ*/
+	font-size: 18px;		/*Розмір шрифту*/
+	width: 300px;		/*Ширина елементу*/
+	margin: 0px 0px 10px 0px;		/*Зовнішній відступ*/
 }
-
+/*Задання властивостей за селектором класу textinput за допомогою псевдоклассу focus(при фокосуванні елементу)*/
 .textinput:focus{
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);		/*Додавання тіні елементу*/
 }
-
+/*Задання властивостей за селектором класу textbutton*/
 .textbutton {
-	display: block;
-	width: 300px;
-	height: 50px;
-	background-color: #666;
-	font-size: 18px;
-	color: #fff;
-	text-transform: uppercase;
-	margin: 0px 0px 30px 0px;
+	display: block;		/*Зміна з рядкового стану на блочний*/
+	width: 300px;		/*Ширина елементу*/
+	height: 50px;		/*Висота елементу*/
+	background-color: #666;		/*Задання фонового кольору*/
+	font-size: 18px;		/*Розмір шрифту*/
+	color: #fff;		/*Колір елементу*/
+	text-transform: uppercase;		/*Трансформація відображення тексту*/
+	margin: 0px 0px 30px 0px;		/*Зовнішній відступ*/
 }
-
+/*Задання властивостей за селектором класу textbutton за допомогою псевдоклассу hover(при наведенні)*/
+.textbutton:hover{
+	background-color: #333;
+	color: yellow;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Додавання тіні елементу*/
+}
+.textbutton:active{
+	background-color: #fff;
+	
+}
+/*Задання властивостей за селектором класу list*/
 .list {
 }
-
+/*Задання властивостей за селектором класу list для всіх елементів типу li*/
 .list li{
-	font-size: 18px;
-	margin: 0px 0px 15px 0px;
+	font-size: 18px;		/*Розмір шрифту*/
+	margin: 0px 0px 15px 0px;		/*Зовнішній відступ*/
 }
 
-/*.list li:first-child{
-	color: green;
+/*.list li:first-child{		Задання властивостей за селектором класу list для всіх елементів li за допомогою псевдоклассу first-child(для першого елементу)
+	color: green;		
 }
 
-.list li:last-child{
-	color: yellow;
-	font-weight: 700;
+.list li:last-child{		Задання властивостей за селектором класу list для всіх елементів li за допомогою псевдоклассу last-child(для останнього елементу)
+	color: yellow;		Колір елементу
+	font-weight: 700;		Жирність шрифту
 }*/
-
+/*Задання властивостей за селектором класу list для всіх елементів li за допомогою псевдоклассу nth-child(odd)- елементи не під парним номером порядку*/
 .list li:nth-child(odd){
-   text-transform: uppercase;
+   text-transform: uppercase;		/*Трансформація відображення тексту*/
+}
+/*Задання властивостей за селектором класу list для всіх елементів li за допомогою псевдоклассу nth-child(even)- елементи під парним номером порядку*/
+.list li:nth-child(even){
+   color: red;		/*Колір елементу*/
 }
 
-.list li:nth-child(even){
-   color: red;
-}
