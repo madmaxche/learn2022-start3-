@@ -1,0 +1,30 @@
+
+body{
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 1.8;
+	text-align: left;
+}
+
+.content {
+	max-width: 513px;
+	margin: 0px auto;
+}
+.content__list {
+	margin: 163px 0px 0px 0px;
+}
+.listcontent {
+	
+}
+.listcontent li{
+	padding: 13px 0px 0px 0px;
+	background: url('../img/');
+}
+.content__button {
+}
+.buttonlink {
+}
+.content__button-text {
+}
+.inputtext {
+}
