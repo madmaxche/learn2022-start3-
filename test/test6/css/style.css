@@ -4,10 +4,11 @@ body{
 	font-size: 20px;
 	line-height: 1.8;
 	text-align: left;
+	background-color: #e8e8e8;
 }
 
 .content {
-	max-width: 513px;
+	max-width: 553px;
 	margin: 0px auto;
 }
 .content__list {
@@ -17,14 +18,77 @@ body{
 	
 }
 .listcontent li{
-	padding: 13px 0px 0px 0px;
-	background: url('../img/');
+	padding: 0px 0px 0px 35px;
+	background: url('../img/check-icon.png') left  no-repeat;
+}
+
+.listcontent li:nth-child(1){
+	text-decoration: line-through;
+	color: rgb(39, 61, 70);
+}
+.listcontent li:nth-child(2){
+	font-weight: 700;
+	color: rgb(39, 61, 70);
+}
+.listcontent li:nth-child(3){
+	font-style: italic;
+}
+.listcontent li:nth-child(4){
+	text-transform: uppercase;
+}
+
+.listcontent li:nth-child(1):hover{
+	text-decoration: none;
+	color: rgb(39, 61, 70);
+}
+.listcontent li:nth-child(2):hover{
+	color: red;
+	background: url('../img/check\ iconred.png') left  no-repeat;
+}
+.listcontent li:nth-child(3):hover{
+	font-style: normal;
+}
+.listcontent li:nth-child(4):hover{
+	text-transform: none;
 }
 .content__button {
+	margin: 137px 0px 0px 0px;
 }
 .buttonlink {
+	display: inline-block;
+	background-color:#80b7b3;
+	border-radius: 50px;
+	width: 199px;
+	height: 44px;
 }
+.buttonlink:hover{
+	background-color: #3a5856;
+}
+.buttonlink:active{
+	background-color:#818181;
+}
+
 .content__button-text {
+	text-transform: uppercase;
+	font-family: Arial;
+   font-size: 14px;
+   line-height: 2.86;
+   letter-spacing: 2.8px;
+   text-align: left;
+	color: rgb(255, 255, 255);
+	background: url('../img/shape-2.png') right center no-repeat;
+	padding: 17px 29px 17px 30px;
 }
+
+
 .inputtext {
+	margin: 152px 0px 0px 0px;
+	width: 292px;
+	height: 50px;
+	border: 1px solid #b0b0b0;
+}
+
+.inputtext:focus{
+	box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);
+   border: solid 1px rgb(127, 190, 213);
 }
