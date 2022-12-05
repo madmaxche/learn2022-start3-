@@ -1,94 +1,102 @@
-
+/*Задання властивостей для всіх елементів тегу body*/
 body{
-	font-family: Arial;
-	font-size: 20px;
-	line-height: 1.8;
-	text-align: left;
-	background-color: #e8e8e8;
+	font-family: Arial;		/*Вибір сімейства шрифту*/
+	font-size: 20px;		/*Розмір шрифту*/
+	line-height: 1.8;		/*Висота рядку*/
+	text-align: left;		/*Позиціювання тексту в контейнері*/
+	background-color: #e8e8e8;		/*Вибір фонового окрасу*/
 }
-
+/*Задання властивостей за селектором класу content*/
 .content {
-	max-width: 553px;
-	margin: 0px auto;
+	max-width: 553px;		/*Максимальна ширина контейнеру, за самим широким елементом*/
+	margin: 0px auto;		/*Зовнішній відступ(центрування)*/
 }
+/*Задання властивостей за селектором класу*/
 .content__list {
-	margin: 163px 0px 0px 0px;
+	margin: 163px 0px 0px 0px;		/*Зовнішній відступ*/
 }
-.listcontent {
-	
-}
+/*Задання властивостей за селектором класу listcontent та ім'ям елементу li*/
 .listcontent li{
-	padding: 0px 0px 0px 35px;
-	background: url('../img/check-icon.png') left  no-repeat;
+	padding: 0px 0px 0px 35px;		/*Внутрішній відступ*/
+	background: url('../img/check-icon.png') left  no-repeat;		/*Встановлення фонового зображення(іконки)*/
 }
-
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 1 елемента списку*/
 .listcontent li:nth-child(1){
-	text-decoration: line-through;
-	color: rgb(39, 61, 70);
+	text-decoration: line-through;		/*Додавання лінії декорації тексту*/
+	color: rgb(39, 61, 70);		/*Колір елементу*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 2 елемента списку*/
 .listcontent li:nth-child(2){
-	font-weight: 700;
-	color: rgb(39, 61, 70);
+	font-weight: 700;		/*Жирність тексту*/
+	color: rgb(39, 61, 70);		/*Колір елементу*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 3 елемента списку*/
 .listcontent li:nth-child(3){
-	font-style: italic;
+	font-style: italic;		/*Стиль написання тексту*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 4 елемента списку*/
 .listcontent li:nth-child(4){
-	text-transform: uppercase;
+	text-transform: uppercase;		/*Трансформація тексту*/
 }
-
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 1 елемента списку при наведенні(:hover) на нього*/
 .listcontent li:nth-child(1):hover{
-	text-decoration: none;
-	color: rgb(39, 61, 70);
+	text-decoration: none;		/*Вибір декорації тексту*/
+	color: rgb(39, 61, 70);		/*Колір елементу*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 2 елемента списку при наведенні(:hover) на нього*/
 .listcontent li:nth-child(2):hover{
-	color: red;
-	background: url('../img/check\ iconred.png') left  no-repeat;
+	color: red;		/*Колір елементу*/
+	background: url('../img/check\ iconred.png') left  no-repeat;		/*Додавання фонового зображення*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 3 елемента списку при наведенні(:hover) на нього*/
 .listcontent li:nth-child(3):hover{
-	font-style: normal;
+	font-style: normal;		/*Стиль написання тексту*/
 }
+/*Задання властивостей за селектором класу listcontent для елементу li з псевдокласом nth-child для 4 елемента списку при наведенні(:hover) на нього*/
 .listcontent li:nth-child(4):hover{
-	text-transform: none;
+	text-transform: none;		/*Трансформація тексту*/
 }
+/*Задання властивостей за селектором класу content__button*/
 .content__button {
-	margin: 137px 0px 0px 0px;
+	margin: 137px 0px 0px 0px;		/*Зовнішній відступ*/
 }
+/*Задання властивостей за селектором класу buttonlink*/
 .buttonlink {
-	display: inline-block;
-	background-color:#80b7b3;
-	border-radius: 50px;
-	width: 199px;
-	height: 44px;
+	display: inline-block;		/*Вибір визначення елементу(Блок-рядок)*/
+	background-color:#80b7b3;		/*Вибір фонового окрасу*/
+	border-radius: 50px;		/*Радіус кутів межі,кордонів*/
+	width: 199px;		/*Ширина елементу*/
+	height: 44px;		/*Висота елементу*/
 }
+/*Задання властивостей за селектором класу buttonlink з псевдоклассом hover при наведенні*/
 .buttonlink:hover{
-	background-color: #3a5856;
+	background-color: #3a5856;	/*Вибір фонового окрасу*/
 }
+/*Задання властивостей за селектором класу buttonlink з псевдоклассом active при активних діях*/
 .buttonlink:active{
-	background-color:#818181;
+	background-color:#818181;	/*Вибір фонового окрасу*/
 }
-
+/*Задання властивостей за селектором класу content__button-text */
 .content__button-text {
-	text-transform: uppercase;
-	font-family: Arial;
-   font-size: 14px;
-   line-height: 2.86;
-   letter-spacing: 2.8px;
-   text-align: left;
-	color: rgb(255, 255, 255);
-	background: url('../img/shape-2.png') right center no-repeat;
-	padding: 17px 29px 17px 30px;
+	text-transform: uppercase;		/*Трансформація тексту*/
+	font-family: Arial;		/*Вибір сімейству шрифта*/
+   font-size: 14px;		/*Розмір шрифту*/
+   line-height: 2.86;		/*Висота рядка*/
+   letter-spacing: 2.8px;		/*Відстаннь між літерами*/
+   text-align: left;		/*Позиціювання тексту відносно контейнера*/
+	color: rgb(255, 255, 255);		/*Колір елементу*/
+	background: url('../img/shape-2.png') right center no-repeat;		/*Задання фонового зображення(іконки)*/
+	padding: 17px 29px 17px 30px;		/*Внутрішній відступ*/
 }
-
-
+/*Задання властивостей за селектором класу inputtext*/
 .inputtext {
-	margin: 152px 0px 0px 0px;
-	width: 292px;
-	height: 50px;
-	border: 1px solid #b0b0b0;
+	margin: 152px 0px 0px 0px;		/*Зовнішній відступ*/
+	width: 292px;		/*Ширина елементу*/
+	height: 50px;		/*Висота елементу*/
+	border: 1px solid #b0b0b0;		/*Межі,кордони елементу*/
 }
-
+/*Задання властивостей за селектором класу inputtext з псевдоклассом focus при фокусуванні*/
 .inputtext:focus{
-	box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);
-   border: solid 1px rgb(127, 190, 213);
+	box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);		/*Додавання тіні елементу*/
+   border: solid 1px rgb(127, 190, 213);		/*Межі,кордони елементу*/
 }
