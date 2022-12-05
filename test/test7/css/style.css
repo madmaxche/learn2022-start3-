@@ -1,0 +1,72 @@
+
+body{
+	background-color: #e8e8e8;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.content {
+	max-width: 761px;
+	margin: 0px auto;
+}
+
+
+.content__list {
+	margin: 163px 0px 0px 0px;
+}
+
+.content-list__list li{
+	font-size: 20px;
+	color: rgb(39, 61, 70);
+	padding: 14px 0px 0px 0px;
+}
+
+.content-list__list li:nth-child(1) {
+	text-decoration: line-through;
+}
+.content-list__list li:nth-child(2) {
+	font-weight: 600;
+}
+.content-list__list li:nth-child(3) {
+	font-style: italic;
+}
+.content-list__list li:nth-child(4) {
+	text-transform: uppercase;
+}
+
+.content-list__list li:nth-child(1):hover {
+	text-decoration: none;
+}
+.content-list__list li:nth-child(2):hover  {
+	font-weight: normal;
+	color: red;
+}
+.content-list__list li:nth-child(3):hover {
+	font-style: normal;
+}
+.content-list__list li:nth-child(4):hover  {
+	text-transform: none;
+}
+
+.content-list__list li::before {
+	content: url('../img/check-icon.png');
+}
+.content-list__list li:nth-child(2)::before  {
+
+}
+.content-list__list li:nth-child(3)::before  {
+
+}
+.content-list__list li:nth-child(4)::before  {
+
+}
+
+.content__button {
+}
+.content-button__button {
+}
+.content-button__text {
+}
+.content__text {
+}
+.content-text__text {
+}
