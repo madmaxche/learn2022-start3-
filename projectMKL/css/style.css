@@ -1,0 +1,38 @@
+body{
+	background: url('../image/logo.png')0 0/100% auto no-repeat ;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	position: relative;
+}
+
+.container {
+	position: relative;
+	height: 1500px;
+}
+.headerblock {
+	min-width: 100%;
+	height: 14%;
+	position: fixed;
+	background-color: black;
+	border: 3px solid aliceblue;
+}
+.headerblock__image {
+}
+.headerblock__navlinks {
+	width: 100%;
+	height: 100%;
+   text-align: center;
+}
+.headerblock-navlinks__text {
+	display: inline-block;
+	color: aliceblue;
+	padding: 35px;
+	text-transform: uppercase;
+	border: 3px solid aliceblue;
+	border-top: none;
+	border-bottom: none;
+	text-align: center;
+}
+.mainblock {
+}
+.footerblock {
+}
