@@ -1,0 +1,47 @@
+
+body{
+padding: 30px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.block {
+	border: 5px solid red;
+	max-width: 800px;
+	margin: 0px auto;
+	height: 1500px;
+	position: relative;
+}
+.block div{
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+.block__1 {
+	background-color: aquamarine;
+}
+.block__2 {
+	background-color: yellowgreen;
+	color: #fff;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;*/
+
+	/*position: absolute;
+	bottom: 20px;
+	right:5px ;
+	width: 100%;*/
+
+	/*position: relative;
+	left: 50px;
+	top: 60px;
+	z-index: 1;*/
+}
+.block__3 {
+	background-color:blueviolet;
+}
