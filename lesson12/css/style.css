@@ -1,47 +1,51 @@
-
+/*Задання властивостей для всіх елементів тегу body*/
 body{
-padding: 30px;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+padding: 30px;		/*Внутрішній відступ*/
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;		/*Сімейство шрифтів*/
 }
-
+/*Задання властивостей за селектором класу block*/
 .block {
-	border: 5px solid red;
-	max-width: 800px;
-	margin: 0px auto;
-	height: 1500px;
-	position: relative;
+	border: 5px solid red;		/*Межа, кордони елементу*/
+	max-width: 800px;		/*Максимальна ширина контейнеру*/
+	margin: 0px auto;		/*Зовнішні відступи*/
+	height: 1500px;		/*Висота елементу*/
+	position: relative;		/*Вказує на те, як елемент розміщується в документі(Елемент позиціонується згідно зі звичайним плином документа)*/
 }
+/*Задання властивостей за селектором класу block для всіх елементів типу div*/
 .block div{
-	line-height: 50px;
-	font-size: 18px;
-	font-weight: 700;
-	text-align: center;
+	line-height: 50px;		/*Висота рядка*/
+	font-size: 18px;		/*Розмір шрифту*/
+	font-weight: 700;		/*Жирність шрифту*/
+	text-align: center;		/*Позиціювання тексту*/
 }
+/*Задання властивостей за селектором класу block__1*/
 .block__1 {
-	background-color: aquamarine;
+	background-color: aquamarine;		/*Фоновий окрас*/
 }
+/*Задання властивостей за селектором класу block__2*/
 .block__2 {
-	background-color: yellowgreen;
-	color: #fff;
-	position: sticky;
-	top: 0;
-	left: 0;
-
-	/*position: fixed;
-	top: 0;
+	background-color: yellowgreen;		/*Фоновий окрас*/
+	color: #fff;		/*Колір елементу*/
+	position: sticky;		/*Вказує на те, як елемент розміщується в документі(зміщується відносно до свого найближчого предка з прокручуванням та контейнерного блока)*/
+	top: 0;		/*Відступи елементу від верхньої сторони*/
+	left: 0;		/*Відступи елементу від лівої сторони*/
+/*Вказує на те, як елемент розміщується в документі(Він позиціонується відносно до початкового контейнерного блока, встановленого областю перегляду)*/
+	/*position: fixed;		
+	top: 0;		
 	left: 0;
 	width: 100%;*/
-
+/*Він позиціонується відносно до свого найближчого позиціонованого предка, якщо такий є*/
 	/*position: absolute;
 	bottom: 20px;
 	right:5px ;
 	width: 100%;*/
-
+/*Елемент позиціонується згідно зі звичайним плином документа, а тоді відступає вбік відносно початкового положення*/
 	/*position: relative;
 	left: 50px;
 	top: 60px;
 	z-index: 1;*/
 }
+/*Задання властивостей за селектором класу block__2*/
 .block__3 {
-	background-color:blueviolet;
+	background-color:blueviolet;		/*Фоновий окрас*/
 }
