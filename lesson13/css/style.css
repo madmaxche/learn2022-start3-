@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.link {
+  border-bottom: 5px dashed red;
+}
+
+.block {
+  padding: 30px;
+  font-size: 24px;
+  line-height: 20px;
+  background-color: #666;
+  width: 31.25%;
+}
+.block.block--big {
+  font-size: 100px;
+}
+.block p {
+  color: blue;
+}
+.block .block__text {
+  font-size: 30px;
+}
+.block span {
+  color: green;
+}
+
+/*fff*/
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.block .link {
+  font-size: 100px;
+}
+.link:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+.link-2 {
+  font-size: 50px;
+  color: blue;
+}

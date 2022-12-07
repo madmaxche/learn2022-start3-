@@ -1,0 +1,56 @@
+@import "nullstyle.scss";
+//ffff//
+$fz:100px;
+
+$color_1:red;
+$color_2:blue;
+
+%tplborder{
+	border-bottom: 5px dashed red;
+}
+
+@mixin fontz($f,$c) {
+	font-size: $f;
+	color: $c;
+}
+//ffff 
+.block{
+	padding: 30px;
+	font-size: 24px;
+	line-height: 20px;
+	background-color: #666;
+	width: 300px/960px*100%;
+	&.block--big{
+		font-size: $fz;
+	}
+	p{
+		color: $color_2;
+	}
+	.block__text{
+		font-size: 30px;
+		
+	}
+	span{
+		color: green;
+	}
+	
+}
+/*fff*/
+.link{
+	color: $color_2;
+	text-decoration: underline;
+	font-size: 20px;
+	.block &{
+		font-size: $fz;
+	}
+	&:hover{
+		color: aqua;
+		text-decoration: none;
+	}
+	@extend %tplborder;
+}
+.link-2{
+	@include fontz(50px,blue);
+
+}
+
