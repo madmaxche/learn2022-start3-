@@ -1,56 +1,69 @@
-@import "nullstyle.scss";
-//ffff//
-$fz:100px;
+// Імпортувння файлу обнулення
+@import "nullstyle.scss";		
+//Створення перемінної
+$fz:100px;		//Встановлення значення перменніої 
+//Створення перемінної
+$color_1:red;		//Встановлення значення перменніої
+//Створенняперемінної
+$color_2:blue;		//Встановлення значення перменніої
 
-$color_1:red;
-$color_2:blue;
-
+//Створення шаблону
 %tplborder{
-	border-bottom: 5px dashed red;
+	border-bottom: 5px dashed red;		//Встановлення значення для шаблону
 }
 
+// Створення суміші(міксинів) з декількома перемінними
 @mixin fontz($f,$c) {
-	font-size: $f;
-	color: $c;
+	font-size: $f;		//Встановлення значення для міксину
+	color: $c;		//Встановлення значення для міксину
 }
-//ffff 
+/*Задання властивостей за селектором класу block*/
 .block{
-	padding: 30px;
-	font-size: 24px;
-	line-height: 20px;
-	background-color: #666;
-	width: 300px/960px*100%;
+	padding: 30px;		/*Внутршній відступ*/
+	font-size: 24px;		/*Розмір шрифту*/
+	line-height: 20px;		/*Висота рядка*/
+	background-color: #666;		/*Фоновий окрас*/
+	width: 300px/960px*100%;		/*Ширина елементу, задана з допомогою математичної формули*/
+	//Задання властивостей за селектором класу block block--big де амперсант = класу block
 	&.block--big{
-		font-size: $fz;
+		font-size: $fz;		/*Розмір шрифту=Значення перемінної*/
 	}
+	/*Задання властивостей для всіх елементів p вмістимих в блоці з селектором класу block*/
 	p{
-		color: $color_2;
+		color: $color_2;		/*Колір елементу=Значення перемінної*/
 	}
+	/*Задання властивостей за селектором класу .block__text*/
 	.block__text{
-		font-size: 30px;
+		font-size: 30px;		/*Розмір шрифту*/
 		
 	}
+	/*Задання властивостей для всіх елементів span вмістимих в блоці з селектором класу block*/
 	span{
-		color: green;
+		color: green;		/*Колір елементу*/
 	}
 	
 }
-/*fff*/
+/*Задання властивостей за селектором класу link*/
 .link{
-	color: $color_2;
-	text-decoration: underline;
-	font-size: 20px;
+	color: $color_2;		/*Колір елементу=Значення перемінної*/
+	text-decoration: underline;		/*Декорації тексту*/
+	font-size: 20px;		/*Розмір шрифту*/
+	//Задання властивостей за селектором класу .block .link де амперсант = .link
 	.block &{
-		font-size: $fz;
+		font-size: $fz;		/*Розмір шрифту=Значення перемінної*/
 	}
+	//Задання властивостей за селектором класу .link та з допомогою псевдоклассу hover, де амперсант = .link
 	&:hover{
-		color: aqua;
-		text-decoration: none;
+		color: aqua;		/*Колір елементу*/
+		text-decoration: none;		/*Відключення декорації для тексту*/
 	}
-	@extend %tplborder;
+	// Підключення шаблону до классу link
+	@extend %tplborder;		
 }
+/*Задання властивостей за селектором класу link-2*/
 .link-2{
-	@include fontz(50px,blue);
+	//Підключення міксинів до классу link-2
+	@include fontz(50px,blue);		// Перше і друге значення перемінних вказаних в міксині
 
 }
 

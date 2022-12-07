@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -86,40 +87,45 @@ h6 {
   border-bottom: 5px dashed red;
 }
 
+/*Задання властивостей за селектором класу block*/
 .block {
-  padding: 30px;
-  font-size: 24px;
-  line-height: 20px;
-  background-color: #666;
-  width: 31.25%;
+  padding: 30px; /*Внутршній відступ*/
+  font-size: 24px; /*Розмір шрифту*/
+  line-height: 20px; /*Висота рядка*/
+  background-color: #666; /*Фоновий окрас*/
+  width: 31.25%; /*Ширина елементу, задана з допомогою математичної формули*/
+  /*Задання властивостей для всіх елементів p вмістимих в блоці з селектором класу block*/
+  /*Задання властивостей за селектором класу .block__text*/
+  /*Задання властивостей для всіх елементів span вмістимих в блоці з селектором класу block*/
 }
 .block.block--big {
-  font-size: 100px;
+  font-size: 100px; /*Розмір шрифту=Значення перемінної*/
 }
 .block p {
-  color: blue;
+  color: blue; /*Колір елементу=Значення перемінної*/
 }
 .block .block__text {
-  font-size: 30px;
+  font-size: 30px; /*Розмір шрифту*/
 }
 .block span {
-  color: green;
+  color: green; /*Колір елементу*/
 }
 
-/*fff*/
+/*Задання властивостей за селектором класу link*/
 .link {
-  color: blue;
-  text-decoration: underline;
-  font-size: 20px;
+  color: blue; /*Колір елементу=Значення перемінної*/
+  text-decoration: underline; /*Декорації тексту*/
+  font-size: 20px; /*Розмір шрифту*/
 }
 .block .link {
-  font-size: 100px;
+  font-size: 100px; /*Розмір шрифту=Значення перемінної*/
 }
 .link:hover {
-  color: aqua;
-  text-decoration: none;
+  color: aqua; /*Колір елементу*/
+  text-decoration: none; /*Відключення декорації для тексту*/
 }
 
+/*Задання властивостей за селектором класу link-2*/
 .link-2 {
   font-size: 50px;
   color: blue;
