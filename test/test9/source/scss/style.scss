@@ -1,0 +1,56 @@
+@import "nullstyle.scss";
+
+@mixin fontz($fz) {
+	font-size: 50px;
+}
+
+
+.container {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	position: relative;
+	height: 1500px;
+}
+.headerblock {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	position: fixed;
+	background-color: black;
+		&__items {
+			
+			
+		}
+}
+.headerblock-item {
+	background: url('/projectMKL/image/logo.png') 0 0/ 100% 100% no-repeat;
+		&__image {
+			position: absolute;
+			width: 95px;
+			height: 95px;
+			background: url('/projectMKL/image/logo.png') 0 0/ 100% 100% no-repeat;
+		}
+
+		&__nav {
+			padding: 0px 0px 0px 99px;
+			a{
+				display: inline-block;
+				height: 100px;
+				width: 150px;
+				margin: 0px 0px 0px 30px;
+				padding: 35px 10px 10px 0px;
+				&:hover{
+					color: black;
+					border: 2px solid white;
+					background: url('/test');
+				}
+			}
+			span{
+				color: aliceblue;
+				font-size: 24px;
+				&:hover{
+					color: aliceblue;
+					
+				}
+			}
+		}
+}

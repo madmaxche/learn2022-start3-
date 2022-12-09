@@ -1,56 +1,54 @@
-@import "nullstyle.scss";
-
-@mixin fontz($fz) {
-	font-size: 50px;
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+//Замішування перемінних та їх значень
+@mixin text($fz,$fw,$lh){
+	font-size: $fz;
+	font-weight: $fw;
+	line-height: $lh;
+}
+//Імпортуємо сімейство шрифтів напряму через веб-сторінку
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap');
+//Підключення сімейства шрифтів за допомогою оператора font-face 
+@font-face {
+	font-family: 'Conv_Win_20_db_regular-W';
+	src: url('../fonts/Win_20_db_regular-W.eot');
+	src: local('☺'), url('../fonts/Win_20_db_regular-W.woff') format('woff'), url('../fonts/Win_20_db_regular-W.ttf') format('truetype'), url('../fonts/Win_20_db_regular-W.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-
-.container {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	position: relative;
-	height: 1500px;
+//Задання властивостей для всіх елементів тегу body
+body{
+	padding: 30px;		//Внутрішній відступ
 }
-.headerblock {
-	width: 100%;
-	height: auto;
-	margin: 0px auto;
-	position: fixed;
-	background-color: black;
-		&__items {
-			
-			
-		}
-}
-.headerblock-item {
-	background: url('/projectMKL/image/logo.png') 0 0/ 100% 100% no-repeat;
-		&__image {
-			position: absolute;
-			width: 95px;
-			height: 95px;
-			background: url('/projectMKL/image/logo.png') 0 0/ 100% 100% no-repeat;
-		}
+//Надання властивостей за селектором класу firstblock-text
+.firstblock-text {
+	margin: 0px 0px 50px 0px;		//Зовнішній відступ
 
-		&__nav {
-			padding: 0px 0px 0px 99px;
-			a{
-				display: inline-block;
-				height: 100px;
-				width: 150px;
-				margin: 0px 0px 0px 30px;
-				padding: 35px 10px 10px 0px;
-				&:hover{
-					color: black;
-					border: 2px solid white;
-					background: url('/test');
-				}
-			}
-			span{
-				color: aliceblue;
-				font-size: 24px;
-				&:hover{
-					color: aliceblue;
-					
-				}
-			}
-		}
+	p{
+		font-family: 'Unbounded', cursive;		//Вибір сімейства шрифтів
+		@include text(24px,700,25px );		//Підключення міксинів
+		padding: 0px 0px 10px 0px;		//Внутрішній відступ
+	}
+}
+//Надання властивостей за селектором класу secondblock-text 
+.secondblock-text {
+	margin: 0px 0px 50px 0px;		//Зовнішній відступ
+
+	p{
+		font-family: 'PT Serif', serif;		//Вибір сімейства шрифтів
+		font-style: italic;
+		@include text(24px,700,25px );		//Підключення міксинів
+		padding: 0px 0px 10px 0px;		//Внутрішній відступ
+	}
+}
+//Надання властивостей за селектором класу thirdblock-text
+.thirdblock-text {
+	margin: 0px 0px 50px 0px;		//Зовнішній відступ
+
+	p{
+		font-family: 'Conv_Win_20_db_regular-W';		//Вибір сімейства шрифтів
+		@include text(24px,500,25px );		//Підключення міксинів
+		padding: 0px 0px 10px 0px;		//Внутрішній відступ
+	}
 }

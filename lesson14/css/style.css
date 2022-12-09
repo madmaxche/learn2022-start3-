@@ -84,22 +84,19 @@ h6 {
   font-weight: 400;
 }
 
-/*Імпортування сімейства шрифтів за допомогоб оператора font-face, та завантаження його налаштувань*/
 @font-face {
   font-family: "Conv_helveticaneuecyr-ultralight";
   src: url("../fonts/helveticaneuecyr-ultralight.eot");
   src: local("☺"), url("../fonts/helveticaneuecyr-ultralight.woff") format("woff"), url("../fonts/helveticaneuecyr-ultralight.ttf") format("truetype"), url("../fonts/helveticaneuecyr-ultralight.svg") format("svg");
-  font-weight: normal;		/*Жирність шрифту*/
-  font-style: normal;		/*Стиль шрифту*/
+  font-weight: normal;
+  font-style: normal;
 }
-/*Надання властивостей блоку за селектором класу text*/
 .text {
-  font-family: "PT Sans Narrow";		/*Вибір сімейства шрифтів*/
-  font-size: 30px;		/*Розмір шрифту*/
-  line-height: 35px;		/*Висота рядка*/
-  font-weight: 700;		/*Жирність шрифту*/
+  font-family: "PT Sans Narrow";
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
 }
-/*Надання властивостей параграфам всереденні блоку з селектором класу text*/
 .text p {
-  margin: 0px 0px 30px 0px;		/*Зовнішній відступ*/
+  margin: 0px 0px 30px 0px;
 }
