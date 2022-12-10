@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+@font-face {
+	font-family: 'Conv_MyriadPro-Bold';
+	src: url('fonts/MyriadPro-Bold.eot');
+	src: local('☺'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -22,7 +31,6 @@ body{
 	}
 
 	&__text {
-	max-width: 688px;
    font-size: 14px;
    font-weight: 300;
    line-height: 1.86;
@@ -42,14 +50,14 @@ body{
 		flex: 0 0 33.333%;
 	}
 }
+
 .title {
    font-size: 34px;
    font-weight: 700;
 	text-transform: uppercase;
-   letter-spacing: 8.95px;
-   position: relative;
+   letter-spacing: 5.44px;
+	position: relative;
 	text-align: center;
-	padding: 0px 0px 30px 0px;
 	&::after{
 		content: '';
 		position: absolute;
@@ -61,18 +69,18 @@ body{
 		margin: 0px 0px 0px -25px;
 	}
 }
+
 .item-about {
 
 	&__icon {
-		margin: 0px auto;
+		margin: 0px auto 40px auto;
 		border-radius: 50%;
 		width: 92px;
 		height: 92px;
 		border: 2px solid #f1f1f1;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		margin: 0px 0px 40px 0px;
+		justify-content: center;
 	}
 
 	&__title {
@@ -85,6 +93,11 @@ body{
 	}
 
 	&__text {
-		
+	font-family: 'Conv_MyriadPro-Bold';
+   text-align: center;
+		color: #868585;
+		line-height: 26px;
+		font-weight: 300;
+		font-size: 14px;
 	}
 }
