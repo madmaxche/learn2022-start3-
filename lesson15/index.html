@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Методологія БЕМ</title>
+</head>
+<body>
+	<!--Модифікатор-->
+	<!--Блок 'menu'-->
+	<nav class="menu">
+		<!--Елемент 'item' і модифікатор 'active'-->
+		<a href="" class="menu__item menu__item_active">HOME</a>
+		<!--Елемент 'item'-->
+		<a href="" class="menu__item">ABOUT US</a>
+		<!--Елемент 'item'-->
+		<a href="" class="menu__item">PORTFOLIO</a>
+		<!--Елемент 'item'-->
+		<a href="" class="menu__item">CONTACT</a>
+	</nav>
+<!--В названні  елементів неможна прописувати ієрархію-->
+		<!--Вірний запис-->
+		<!--Блок з селектором класу row-->
+		<div class="row">
+			<!--Елемент 'column'-->
+			<div class="row__column">
+				<!--Елемент 'item'-->
+				<div class="row__item"></div>
+			</div>
+		</div>
+
+		<!--Невірний запис-->
+		<!--Блок з селектором класу row-->
+		<div class="row">
+			<!--Елемент 'column'-->
+			<div class="row__column">
+				<!--Елемент 'item'-->
+				<div class="row__column__item"></div>	<!--Елемент не може бути елементом елементу-->
+			</div>
+		</div>
+<!--Елемент завжди повинен бути частиною блоку-->
+		<!--Вірний запис-->
+		<!--Блок з селектором класу about-->
+		<div class="about">
+			<!--Елемент 'title'-->
+			<div class="about__title">
+				<!--Елемент 'subtitle'-->
+				<div class="about__subtitle"></div>
+			</div>
+		</div>
+
+		<!--Невірний запис-->
+		<!--Блок з селектором класу about-->
+		<div class="about">
+			<!--Елемент 'title'-->
+			<div class="about__title"></div>
+		</div>
+		<!--Елемент 'subtitle'-->
+		<div class="about__subtitle"></div>		<!--Елемент блоку не знаходиться в блоці-->
+
+<!--Елемент це не обов'язковий компонент блоку-->
+	<!--Блок about-->
+	<div class="about">
+		<!--Вкладений блок title-->
+		<div class="title"></div>
+		<!--Вкладений блок subtitle-->
+		<div class="subtitle"></div>
+</div>
+
+<!--МІКС-->
+<!--Блок 'about'-->
+<div class="about">
+	<!--Елемент 'title'-->
+	<div class="about__title title"></div>		<!--Елемент може бути елементом блоку і одночасно окремим блоком-->
+	<!--Елемент 'subtitle'-->
+	<div class="about__subtitle subtitle"></div>
+</div>
+</body>
+</html>

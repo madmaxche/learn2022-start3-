@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*Імпортуємо сімейство шрифтів напряму через веб-сторінку*/
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap");
 * {
   padding: 0;
@@ -84,7 +83,7 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*Підключаємо сімество шрифтів за допомогою оператора font-face*/
+
 @font-face {
   font-family: "Conv_Win_20_db_regular-W";
   src: url("../fonts/Win_20_db_regular-W.eot");
@@ -92,44 +91,40 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-/*Задання властивостей для всіх елементів тегу body*/
 body {
-  padding: 30px;		/*Внутрішній відступ*/
+  padding: 30px;
 }
-/*Задання властивостей за селектором класу*/
+
 .firstblock-text {
-  margin: 0px 0px 50px 0px;		/*Зовнішній відступ*/
+  margin: 0px 0px 50px 0px;
 }
-/*Задання властивостей для всіх елементів p в блоці за селектором класу firstblock-text*/
 .firstblock-text p {
-  font-family: "Unbounded", cursive;		/*Вибір сімейства шрифту*/
-  font-size: 24px;		/*Розмір шрифту*/
-  font-weight: 700;		/*Жирність шрифту*/
-  line-height: 25px;		/*Вислта рядку*/
-  padding: 0px 0px 10px 0px;		/*Внутрішній відступ*/
+  font-family: "Unbounded", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 0px 0px 10px 0px;
 }
-/*Задання властивостей за селектором класу*/
+
 .secondblock-text {
-  margin: 0px 0px 50px 0px;		/*Зовнішній відступ*/
+  margin: 0px 0px 50px 0px;
 }
-/*Задання властивостей для всіх елементів p в блоці за селектором класу secondblock-text*/
 .secondblock-text p {
-  font-family: "PT Serif", serif;		/*Вибір сімейства шрифту*/
-  font-style: italic;		/*Стиль шрифту*/
-  font-size: 24px;		/*Розмір шрифту*/
-  font-weight: 700;		/*Жирність шрифту*/
-  line-height: 25px;		/*Висота рядку*/
-  padding: 0px 0px 10px 0px;		/*Внутрішній відступ*/
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 0px 0px 10px 0px;
 }
-/*Задання властивостей за селектором класу thirdblock-text*/
+
 .thirdblock-text {
-  margin: 0px 0px 50px 0px;		/*Зовнішній відступ*/
+  margin: 0px 0px 50px 0px;
 }
-/*Задання властивостей для всіх елементів p в блоці за селектором класу thirdblock-text*/
 .thirdblock-text p {
-  font-family: "Conv_Win_20_db_regular-W";		/*Вибір сімейства шрифтів*/
-  font-size: 24px;		/*Розмір шрифту*/
-  font-weight: 500;		/*Жирність шрифту*/
-  line-height: 25px;		/*Висота рядку*/
-  padding: 0px 0px 10px 0px;		/*Внутрішній відступ*/
+  font-family: "Conv_Win_20_db_regular-W";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 0px 0px 10px 0px;
 }
