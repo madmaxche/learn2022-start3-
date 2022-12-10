@@ -95,17 +95,54 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.about__body {
+.headerblock {
+  background: url("/./lesson15/img/headerblock/background.png") 100%/cover no-repeat;
+  min-height: 100%;
+  margin: 0px auto;
+}
+.headerblock__items {
+  max-width: 754px;
+  margin: 0px auto;
+}
+.headerblock__title {
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.18;
+  letter-spacing: 5.44px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.headerblock__subtitle {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 4.16px;
+  line-height: 1.18;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.headerblock__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: -25px;
+  height: 1px;
+  left: 50%;
+  background-color: #f1f1f1;
+  margin: 0px 0px 0px -25px;
+}
+.headerblock .about__body {
   max-width: 823px;
   margin: 0px auto;
 }
-.about__header {
+.headerblock .about__header {
   margin: 0px 0px 65px 0px;
 }
-.about__title {
+.headerblock .about__title {
   margin: 0px 0px 30px 0px;
 }
-.about__text {
+.headerblock .about__text {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.86;
@@ -113,17 +150,16 @@ body {
   line-height: 25.89px;
   color: rgb(134, 133, 133);
 }
-.about__row {
+.headerblock .about__row {
   display: flex;
   font-size: 0;
   margin: 0px -15px;
 }
-.about__column {
+.headerblock .about__column {
   padding: 0px 15px;
   flex: 0 0 33.333%;
 }
-
-.title {
+.headerblock .title {
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
@@ -131,7 +167,7 @@ body {
   position: relative;
   text-align: center;
 }
-.title::after {
+.headerblock .title::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -141,8 +177,7 @@ body {
   background-color: #000;
   margin: 0px 0px 0px -25px;
 }
-
-.item-about__icon {
+.headerblock .item-about__icon {
   margin: 0px auto 40px auto;
   border-radius: 50%;
   width: 92px;
@@ -152,7 +187,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.item-about__title {
+.headerblock .item-about__title {
   text-align: center;
   color: #000;
   font-size: 22px;
@@ -160,7 +195,7 @@ body {
   letter-spacing: 3.52px;
   margin: 0px 0px 35px 0px;
 }
-.item-about__text {
+.headerblock .item-about__text {
   font-family: "Conv_MyriadPro-Bold";
   text-align: center;
   color: #868585;

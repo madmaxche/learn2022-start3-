@@ -14,6 +14,65 @@
 body{
 	font-family: 'Lato', sans-serif;
 }
+.content{
+	
+}
+.headerblock {
+	background: url('/./lesson15/img/headerblock/background.png')100%/cover no-repeat;
+	min-height: 100%;
+		margin: 0px auto;
+	&__items {
+		max-width: 754px;
+		margin: 0px auto;
+	}
+
+	&__logo{
+	}
+
+	&__background {
+		
+	}
+
+	&__title {
+		font-family: Lato;
+		font-size: 34px;
+		font-weight: 900;
+		line-height: 1.18;
+		letter-spacing: 5.44px;
+		text-align: center;
+		color: rgb(255, 255, 255);
+	}
+
+	&__subtitle {
+		font-family: Lato;
+		font-size: 26px;
+      font-weight: normal;
+      letter-spacing: 4.16px;
+		line-height: 1.18;
+		text-align: center;
+		color: rgb(255, 255, 255);
+		&::after{
+			content: '';
+			position: absolute;
+			width: 50px;
+			bottom: -25px;
+			height: 1px;
+			left: 50%;
+			background-color: #f1f1f1;
+			margin: 0px 0px 0px -25px;
+	}
+
+	&__button {
+	}
+}
+.headerblock-button {
+}
+.link {
+}
+
+
+
+
 
 .about {
 
@@ -100,4 +159,5 @@ body{
 		font-weight: 300;
 		font-size: 14px;
 	}
+}
 }
