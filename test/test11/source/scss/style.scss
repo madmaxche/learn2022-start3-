@@ -4,6 +4,9 @@
 
 body{
 	font-family: 'Lato', sans-serif;
+
+}
+.container{
 }
 .headerblock {
 	&__content {
@@ -52,7 +55,6 @@ body{
 		&::after{
 			content: url('/test/test11/img/headerblock/Arrow-down.png');
 			position: absolute;
-			
 			margin: 55px 0px -55px -68px;
 
 		}
@@ -99,7 +101,7 @@ body{
 }
 
 .mainblock {
-
+	margin: 130px 0px 0px 0px;
 	&__about {
 		max-width: 823px;
 		margin: 0px auto;
@@ -111,17 +113,29 @@ body{
 		letter-spacing: 5.44px;
 		text-align: center;
 		color: rgb(0, 0, 0);
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 50px;
+			bottom: -25px;
+			height: 1px;
+			left: 50%;
+			background-color: #000;
+			margin: 0px 0px 0px -25px;
+		}
 	}
 
 	&__subtitle {
+		padding: 73px 0px 69px 0px;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 1.86;
 		color: rgb(134, 133, 133);
+		text-align: center;
 	}
 }
 .mainblock-about {
-
 	&__row {
 		display: flex;
 	}
@@ -136,6 +150,7 @@ body{
 		letter-spacing: 3.52px;
 		text-align: center;
 		color: rgb(0, 0, 0);
+		padding: 41px 0px 35px 0px;
 	}
 
 	&__text {
@@ -144,6 +159,7 @@ body{
 		line-height: 1.86;
 		text-align: center;
 		color: rgb(134, 133, 133);
+		
 	}
 
 	&__logo {
@@ -151,7 +167,6 @@ body{
 	}
 }
 .mainblock-about-column {
-
 	&__logo {
 		margin: 0px auto 40px auto;
 		border-radius: 50%;
@@ -163,4 +178,179 @@ body{
 		justify-content: center;
 	}
 }
+
+
+.mainblock {
+
+	&__portfolio {
+		margin: 95px 0px 0px 0px;
+		background-color: #f3f3f3;
+	}
+}
+.mainblock-portfolio {
+	max-width: 1130px;
+	margin: 0px auto;
+	&__title {
+		padding: 107px 0px 0px 0px;
+		font-size: 34px;
+		font-weight: bold;
+		letter-spacing: 5.44px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 50px;
+			bottom: -25px;
+			height: 1px;
+			left: 50%;
+			background-color: #000;
+			margin: 0px 0px 0px -25px;
+		}
+	}
+
+	&__nav {
+		font-size: 15px;
+		text-align: center;
+		color: rgb(60, 60, 60);
+		padding: 91px 0px 0px 0px;
+			&:first-child{
+				font-weight: bold;
+				color: rgb(173, 160, 116);
+			}
+			&:hover{
+				color: rgb(173, 160, 116);
+				font-weight: 700;
+			}
+	}
+
+	&__image {
+		text-align: center;
+		padding: 136px 0px 0px 25px;
+		img{
+			display: inline-block;
+			width: 538px;
+			height: 365px;
+			padding: 0px 27px 16px 0px;
+		}
+	}
+
+	&__button {
+		padding: 64px 0px 62px 0px;
+		font-size: 15.5px;
+		letter-spacing: 0.93px;
+		text-align: center;
+	}
+
+	&__link {
+		border: 1px solid #000;
+		padding: 17px 39px 18px 44px;
+		color: #000;
+	}
+}
+.portfolio-nav {
+	&__link {
+		font-size: 15px;
+		text-align: center;
+		color: rgb(60, 60, 60);
+			&:first-child{
+				font-weight: bold;
+				color: rgb(173, 160, 116);
+			}
+			&:hover{
+				color: rgb(173, 160, 116);
+				font-weight: 700;
+			}
+	}
+
+}
+.mainblock {
+
+	&__partners {
+		background: url('/test/test11/img/partners/back.png') 100% 100% no-repeat;
+	}
+}
+.mainblock-partners {
+
+	&__title {
+	padding: 100px 0px 93px 0px;
+   font-size: 30.5px;
+   font-weight: 300;
+   letter-spacing: 1.83px;
+   text-align: center;
+   color: rgb(255, 255, 255);
+	}
+
+	&__logo {
+		text-align: center;
+		padding: 0px 0px 100px 0px;
+		img{
+			align-items: center;
+			padding: 0px 100px 0px 100px;
+		}
+	}
+}
+
+
+.mainblock {
+
+	&__contacts {
+	}
+	
+}
+.contacts {
+	&__title{
+		padding: 107px 0px 0px 0px;
+		font-size: 34px;
+		font-weight: bold;
+		letter-spacing: 5.44px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 50px;
+			bottom: -25px;
+			height: 1px;
+			left: 50%;
+			background-color: #000;
+			margin: 0px 0px 0px -25px;
+		}
+	}
+	&__form {
+		input{
+
+		}
+		textarea{
+
+		}
+		h2{
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: 0.84px;
+			text-align: center;
+			color: rgb(0, 0, 0);
+		}
+		button{
+			span{
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 0.84px;
+				text-align: center;
+				color: rgb(0, 0, 0);
+				background-color: #fff;
+			}
+		}
+	}
+
+	&__text {
+		p{
+
+		}
+	}
+}
+
+
 
