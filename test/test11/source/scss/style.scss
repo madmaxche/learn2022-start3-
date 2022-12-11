@@ -297,10 +297,10 @@ body{
 
 	&__contacts {
 	}
-	
 }
-.contacts {
-	&__title{
+.mainblock-contacts {
+
+	&__title {
 		padding: 107px 0px 0px 0px;
 		font-size: 34px;
 		font-weight: bold;
@@ -319,38 +319,96 @@ body{
 			margin: 0px 0px 0px -25px;
 		}
 	}
+
+	&__row {
+		padding: 166px 0px 155px 342px;
+		display: flex;
+		text-align: left;
+	}
+
+	&__column {
+		justify-content: right;
+		padding: 0px 83px 0px 0px;
+	}
+
 	&__form {
 		input{
-
+			background-color: rgb(248, 247, 247);
+			border-top: 2px solid #000;
 		}
 		textarea{
+			background-color: rgb(248, 247, 247);
+			border-top: 2px solid #000;
+			width: 383px;
+			height: 118px;
+		}
+		button{
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: 0.84px;
+			text-align: center;
+			color: rgb(0, 0, 0);
+			background-color: #fff;
 
 		}
 		h2{
 			font-size: 14px;
 			font-weight: bold;
 			letter-spacing: 0.84px;
-			text-align: center;
+			text-align: left;
 			color: rgb(0, 0, 0);
-		}
-		button{
-			span{
-				font-size: 14px;
-				font-weight: bold;
-				letter-spacing: 0.84px;
-				text-align: center;
-				color: rgb(0, 0, 0);
-				background-color: #fff;
-			}
 		}
 	}
 
 	&__text {
+		width: 252px;
+		height: 196px;
 		p{
-
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.86;
+			text-align: left;
+			color: rgb(0, 0, 0);
+		}
+		&:nth-child(1){
+			padding: 0px 0px 20px 0px;
+		}
+		&:nth-child(2){
+			padding: 0px 0px 20px 0px;
+		}
+		&:nth-child(3){
+			
 		}
 	}
 }
+
+
+.footerblock {
+	background: rgb(60, 60, 60);
+	text-align: center;
+	&__logo {
+			padding: 48px 0px 41px 0px;
+	}
+
+	&__links {
+		padding: 0px 20px 34px 20px;
+	}
+
+	&__link {
+		font-size: 14px;
+		text-align: left;
+		color: rgb(164, 164, 164);
+		padding: 0px 0px 49px 5px;
+	}
+
+	&__text {
+		font-size: 14px;
+		text-align: center;
+		color: rgb(108, 108, 108);
+		padding: 0px 20px 49px 0px;
+	}
+}
+
 
 
 
