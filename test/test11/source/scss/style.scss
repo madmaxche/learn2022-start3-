@@ -1,0 +1,166 @@
+@import 'nullstyle.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+.headerblock {
+	&__content {
+		background: url('/test/test11/img/headerblock/logo.png')50% 25% no-repeat,url('/test/test11/img/headerblock/background.png') 0 0/cover no-repeat;
+	}
+
+	&__items {
+	}
+
+	&__logo {
+	}
+
+	&__text {
+		padding: 356px 0px 0px 0px;
+		color: rgb(255, 255, 255);
+		text-align: center;
+		position: relative;
+	}
+
+	&__title {
+		font-size: 34px;
+		font-weight: 900;
+		line-height: 1.18;
+		letter-spacing: 5.44px;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 105px;
+			bottom: -25px;
+			height: 2px;
+			left: 48%;
+			background-color: #f1f1f1;
+			margin: 0px 0px 0px -25px;
+		}
+		
+	}
+
+	&__subtitle {
+		font-size: 26px;
+		letter-spacing: 4.16px;
+	}
+
+	&__button {
+		padding: 178px 0px 138px 700px;
+		position: relative;
+		&::after{
+			content: url('/test/test11/img/headerblock/Arrow-down.png');
+			position: absolute;
+			
+			margin: 55px 0px -55px -68px;
+
+		}
+	}
+
+	&__link {
+	padding: 5px 10px;
+	font-size: 15.5px;
+	letter-spacing: 0.93px;
+   text-align: center;
+   color: rgb(255, 255, 255);
+	border: 1px solid #ffffff;
+	}
+}
+
+
+.navblock {
+	background-color: #f1f1f1;
+	height: 58px;
+
+	&__items {
+		max-width: 422px;
+		margin: 0px auto;
+	}
+
+	&__links {
+		padding: 22px 0px 24px 0px;
+	}
+
+	&__link {
+		padding: 0px 30px 0px 0px;
+		font-size: 15px;
+		text-align: left;
+		color: rgb(60, 60, 60);
+			&:first-child{
+				font-weight: bold;
+				color: rgb(173, 160, 116);
+			}
+			&:hover{
+				color: rgb(173, 160, 116);
+				font-weight: 700;
+			}
+	}
+}
+
+.mainblock {
+
+	&__about {
+		max-width: 823px;
+		margin: 0px auto;
+	}
+
+	&__title {
+		font-size: 34px;
+		font-weight: bold;
+		letter-spacing: 5.44px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.86;
+		color: rgb(134, 133, 133);
+	}
+}
+.mainblock-about {
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		padding: 0px  15px;
+		flex: 0 0 33.333%;
+	}
+
+	&__title {
+		font-size: 22px;
+		letter-spacing: 3.52px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+	}
+
+	&__text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.86;
+		text-align: center;
+		color: rgb(134, 133, 133);
+	}
+
+	&__logo {
+		
+	}
+}
+.mainblock-about-column {
+
+	&__logo {
+		margin: 0px auto 40px auto;
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
