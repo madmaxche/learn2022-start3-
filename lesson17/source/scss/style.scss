@@ -1,55 +1,63 @@
+//Імпортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
-
+//Задання властивостей стилю для всіх елементів тегу
 body{
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;		//Вибір сімейства шрифтів
 }
+//Задання властивостей стилю для контейнера сторінки за селектором класу wrapper
 .wrapper {
-	height: 100%;
-	overflow: hidden;
-	min-height: 100%;
-	padding: 50px;
+	height: 100%;		//Висота елементу
+	overflow: hidden;		//
+	min-height: 100%;		//Мінімальна висота
+	padding: 50px;		//Внутрішній відступ
 }
+//Задання властивостей стилю за селектором класу block
 .block {
-		
+		//Задання властивостей за селектором класу block__row
 		&__row {
-			display: flex;
-			justify-content: start;
-			align-items: start;
-			flex: wrap;
-			border: 20px solid #ece89d;
-			margin: 0px 0px 20px 0px;
+			display: flex;		//Встановлення елемента флексом
+			justify-content: start;		//Відповідність елементів по горизонталі
+			align-items: start;		//Відповідність елементів по вертикалі
+			flex: wrap;		//Відповідність елментів при переносі
+			border: 20px solid #ece89d;		//Межі кордони елементу
+			margin: 0px 0px 20px 0px;		//Зовнішній відступ
 		}
-
+		//Задання властивостей за селектором класу block__column
 		&__column {
-			border: 20px solid #5e5373;
+			border: 20px solid #5e5373;		//Межі кордони елементу
 		}
-
-		&__item {
-			background-color: #18b5a4;
-			padding: 30px 50px;
-			font-size: 50px;
-			color: #fff;
-			font-weight: 700;
+		//Задання властивостей за селектором класу block__item 
+		&__item {	
+			background-color: #18b5a4;		//Фоновий окрас елементу
+			padding: 30px 50px;		//Внутріній відступ 
+			font-size: 50px;		//Розмір шрифту
+			color: #fff;		//Колір елементу
+			font-weight: 700;		//Жирність елементу
 		}
-
+		//Задання властивостей за селектором класу block__list 
 		&__list {
-			display: flex;
-			align-items: center;
-			li{margin: 0px 15px 0px 0px;
-				&:last-child{margin: 0px 0px 0px 0px;}}
-			}
-	
+			display: flex;		//Встановлення елемента флексом
+			align-items: center;		//Відповідність елементів по вертикалі
+			//Задання властивостей для всіх елементів li в блоці з селектором класу block__list 
+			li{margin: 0px 15px 0px 0px;		//Зовнішній відступ
+				//Заданяя властивостей для останнього елементу списку
+				&:last-child{margin: 0px 0px 0px 0px;}}		//Зовнішній відступ
+			}	
+		//Задання властивостей за селектором класу block__info
 		&__info {
-			position: relative;
-			padding: 0px 0px 0px 25px;
-			line-height: 15px;
+			position: relative;		//Позиціювання елемента відносно сторінки
+			padding: 0px 0px 0px 25px;		//Внутрішній відступ
+			line-height: 15px;		//Висота рядка
 			}
+			//Задання властивостей за селектором класу block-info__y з псевдоелементом before
 			.block-info__y::before{
 				content: '';
 			}
+			//Задання властивостей за селектором класу block-info__p з псевдоелементом before
 			.block-info__p::before{
 				content: '';
 			}
+			//Задання властивостей за селектором класу block-info__g з псевдоелементом before
 			.block-info__g::before{
 				content: '';
 			}
