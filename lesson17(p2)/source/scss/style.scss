@@ -1,34 +1,38 @@
+//Іммортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
-
+//Задання контейнеру блоків значень для всіх його елементів всередині
 .wrapper {
-	width: 100%;
-	overflow: hidden;
-	min-height: 100%;
-	padding: 50px;
+	width: 100%;		//Ширина елементу
+	overflow: hidden;		//Налаштування відображення вмістимого
+	min-height: 100%;		//Мінімальна висота
+	padding: 50px;		//Внутрішній відступ
 }
+//Задання властивостей для тегу	body
 body{
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;		//Виюір сімейства шрифтів
 }
+//Задання властивостей блоку за селектором класу block
 .block {
-		text-align: center;
+		text-align: center;		//Центрування стрічкового елементу
+		//Задання властивостей блоку за селектором класу block__row
 		&__row {
-			border: 20px solid #ece89d;
-			margin: 0px 0px 20px 0px;
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			flex-wrap: wrap-reverse;
+			border: 20px solid #ece89d;		//Межа кордони елементу
+			margin: 0px 0px 20px 0px;		//Зовнішній відступ
+			display: flex;		//Перетворення елемента в flex-елемент
+			justify-content: flex-end;		//
+			align-items: center;		//
+			flex-wrap: wrap-reverse;		//
 		}
-
+		//Задання властивостей блоку за селектором класу block__column
 		&__column {
-			border: 20px solid #5e5373;
+			border: 20px solid #5e5373;		//Межа кордони елементу
 		}
-
+		//Задання властивостей блоку за селектором класу block__item
 		&__item {
-			background-color: #18b5a4;
-			padding: 50px 50px;
-			font-size: 50px;
-			color: #fff;
-			font-weight: 700;
+			background-color: #18b5a4;		//Фоновий окрас
+			padding: 50px 50px;		//Внутрішні відступи
+			font-size: 50px;		//Розмір шрифту
+			color: #fff;		//Колір елементу
+			font-weight: 700;		//Жирність шрифту
 		}
 }
