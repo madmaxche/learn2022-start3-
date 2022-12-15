@@ -1,48 +1,56 @@
+//Імпортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
-
+//Встановлення загальних значень для всіх елементів контейнеру з селектором класу wrapper
 .wrapper {
-	width: 100%;
-	overflow: hidden;
-	min-height: 100%;
-	padding: 50px;
+	width: 100%;		//Ширина елементу
+	overflow: hidden;		//Відображення змісту блоку за його межами
+	min-height: 100%;		//Мінімальна висота
+	padding: 50px;		//Внутрішній відступ
 }
+//Задання властивостей для всіх елементів тегу body
 body{
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;		//Сімейство шрифтів
 }
+//Задання властивостей за селектором класу block
 .block {
-		text-align: center;
+		text-align: center;		//Позиціювання стрічкових елементів
+		//Задання властивостей блоку за селектором класу block__row
 		&__row {
-			border: 20px solid #ece89d;
-			margin: 0px 0px 20px 0px;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			flex-wrap: wrap-reverse;
+			border: 20px solid #ece89d;		//Межка, кордони елементів
+			margin: 0px 0px 20px 0px;		//Зовнішній відступ
+			display: flex;		//Перетворення елементу в flex-елемент
+			justify-content: flex-start;	//Відповідність елементів по горизонталі
+			align-items: center;		//Відповідність елементів по вертикалі
+			flex-wrap: wrap-reverse;		//Відповідність елементів при переносі
 		}
-
+		//Задання властивостей блоку за селектором класу block__column
 		&__column {
-			border: 20px solid #5e5373;
-			//flex-basis: 400px;
-			//flex-grow: 1;
-			//flex-shrink: 0;
-			flex: 400px 1 0;
+			border: 20px solid #5e5373;		//Межа, кордони елементу
+			//flex-basis: 400px;		//Розмір flex-елементу
+			//flex-grow: 1;		//Виділення вільного простору в flex-елементі
+			//flex-shrink: 0;		//Фактор сжаття flex-елементу
+			flex: 400px 1 0;		//Короткий запис властивостей flex-елементу де порядок такий: flex-basis flex-grow flex-shrink
 		}
+		//Задання властивостей блоку за селектором класу block__column_1
 		.block__column_1{
-			align-self: flex-start;
-			order: 3;
+			align-self: flex-start;		//Вирівнює flex-елемент відносно його рядка
+			order: 3;		//Черга відображення flex-елемента в flex-контейнері
 		}
+		//Задання властивостей блоку за селектором класу block__column_2
 		.block__column_2{
-			order: 2;
+			order: 2;		//Черга відображення flex-елемента в flex-контейнері
 		}
+		//Задання властивостей блоку за селектором класу block__column_3
 		.block__column_3{
-			align-self: flex-end;
-			order: 1;
+			align-self: flex-end;		//Вирівнює flex-елемент відносно його рядка
+			order: 1;		//Черга відображення flex-елемента в flex-контейнері
 		}
+		//Задання властивостей блоку за селектором класу block__item
 		&__item {
-			background-color: #18b5a4;
-			padding: 50px 50px;
-			font-size: 50px;
-			color: #fff;
-			font-weight: 700;
+			background-color: #18b5a4;		//Фоновий окрас
+			padding: 50px 50px;		//Внутрішній відступ
+			font-size: 50px;		//Розмір шрифту
+			color: #fff;		//Колір елементу
+			font-weight: 700;		//Жирність шрифту
 		}
 }

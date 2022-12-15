@@ -19,9 +19,9 @@ body{
 			border: 20px solid #ece89d;		//Межа кордони елементу
 			margin: 0px 0px 20px 0px;		//Зовнішній відступ
 			display: flex;		//Перетворення елемента в flex-елемент
-			justify-content: flex-end;		//
-			align-items: center;		//
-			flex-wrap: wrap-reverse;		//
+			justify-content: flex-end;		//Відповідність елементів по горизонталі
+			align-items: center;		//Відповідність елементів по вертикалі
+			flex-wrap: wrap-reverse;		//Відповідність елментів при переносі
 		}
 		//Задання властивостей блоку за селектором класу block__column
 		&__column {
