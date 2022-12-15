@@ -325,6 +325,51 @@ body {
   padding: 0px 100px 0px 100px;
 }
 
+.mainblock__contacts {
+  max-width: 673px;
+  margin: 0px auto;
+}
+.mainblock__row {
+  display: flex;
+  align-items: stretch;
+}
+.mainblock__column {
+  padding: 166px 20px 155px 0px;
+}
+.mainblock h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mainblock input {
+  background-color: rgb(248, 247, 247);
+  border-top: 4px solid #000;
+}
+.mainblock textarea {
+  background-color: rgb(248, 247, 247);
+  border-top: 4px solid #000;
+  width: 100%;
+}
+.mainblock span {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #fff;
+}
+.mainblock p:nth-child(1) {
+  padding: 0px 0px 80px 0px;
+}
+.mainblock p:nth-child(2) {
+  font-weight: 800;
+  padding: 0px 0px 60px 0px;
+}
+.mainblock p:nth-child(3) {
+  font-weight: 800;
+}
+.mainblock__row {
+  display: flex;
+  justify-self: start;
+}
+
 .mainblock-contacts__title {
   padding: 107px 0px 0px 0px;
   font-size: 34px;
@@ -344,57 +389,7 @@ body {
   background-color: #000;
   margin: 0px 0px 0px -25px;
 }
-.mainblock-contacts__row {
-  padding: 166px 0px 155px 342px;
-  display: flex;
-  text-align: left;
-}
-.mainblock-contacts__column {
-  justify-content: right;
-  padding: 0px 83px 0px 0px;
-}
-.mainblock-contacts__form input {
-  background-color: rgb(248, 247, 247);
-  border-top: 2px solid #000;
-}
-.mainblock-contacts__form textarea {
-  background-color: rgb(248, 247, 247);
-  border-top: 2px solid #000;
-  width: 383px;
-  height: 118px;
-}
-.mainblock-contacts__form button {
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.84px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  background-color: #fff;
-}
-.mainblock-contacts__form h2 {
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.84px;
-  text-align: left;
-  color: rgb(0, 0, 0);
-}
-.mainblock-contacts__text {
-  width: 252px;
-  height: 196px;
-}
-.mainblock-contacts__text p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.86;
-  text-align: left;
-  color: rgb(0, 0, 0);
-}
-.mainblock-contacts__text:nth-child(1) {
-  padding: 0px 0px 20px 0px;
-}
-.mainblock-contacts__text:nth-child(2) {
-  padding: 0px 0px 20px 0px;
-}
+
 .footerblock {
   background: rgb(60, 60, 60);
   text-align: center;

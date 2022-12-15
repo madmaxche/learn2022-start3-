@@ -81,3 +81,43 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+.wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0px auto;
+}
+
+.block {
+  padding: 10px 20px 10px 20px;
+}
+.block__row {
+  display: flex;
+  align-items: stretch;
+}
+.block__column {
+  padding: 0px 20px 0px 0px;
+}
+.block h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.block input {
+  background-color: bisque;
+  border-top: 4px solid #000;
+}
+.block textarea {
+  background-color: bisque;
+  border-top: 4px solid #000;
+  width: 100%;
+}
+.block span {
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.column__row {
+  display: flex;
+  justify-self: start;
+}

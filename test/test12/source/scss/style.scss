@@ -1,1 +1,43 @@
 @import 'nullstyle.scss';
+
+.wrapper {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	max-width: 650px;
+	margin: 0px auto;
+}
+.block {
+		padding: 10px 20px 10px 20px;
+		&__row {
+			display: flex;
+			align-items: stretch;
+		}
+
+		&__column {
+			padding: 0px 20px 0px 0px;
+		}
+		h2{
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		input{
+			background-color: bisque;
+			border-top: 4px solid #000;
+		}
+		textarea{
+			background-color: bisque;
+			border-top: 4px solid #000;
+			width: 100%;
+		}
+		span{
+			text-transform: uppercase;
+			font-weight: 700;
+			background-color: #fff;
+		}
+}
+.column {
+	
+		&__row {
+			display: flex;
+			justify-self: start;
+		}
+}
