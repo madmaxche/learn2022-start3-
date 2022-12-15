@@ -15,29 +15,15 @@ body{
 			border: 20px solid #ece89d;
 			margin: 0px 0px 20px 0px;
 			display: flex;
-			justify-content: flex-start;
+			justify-content: flex-end;
 			align-items: center;
 			flex-wrap: wrap-reverse;
 		}
 
 		&__column {
 			border: 20px solid #5e5373;
-			//flex-basis: 400px;
-			//flex-grow: 1;
-			//flex-shrink: 0;
-			flex: 400px 1 0;
 		}
-		.block__column_1{
-			align-self: flex-start;
-			order: 3;
-		}
-		.block__column_2{
-			order: 2;
-		}
-		.block__column_3{
-			align-self: flex-end;
-			order: 1;
-		}
+
 		&__item {
 			background-color: #18b5a4;
 			padding: 50px 50px;
