@@ -1,0 +1,53 @@
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	margin: 100px 0px;
+}
+.block {
+	display: flex;
+	justify-content: space-around;
+		&__row {
+			border: 20px solid yellow;
+			display: flex;
+			justify-content: space-between;
+			&:nth-child(2){
+				
+			}
+		}
+
+		&__column {
+			border: 20px solid violet;
+			background-color: blue;
+			padding:  30px 50px;
+			
+		}
+
+		&__item {
+			color: aliceblue;
+			font-size: 35px;
+		}
+		&__columnrow{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+}
+.block-column {
+			display: flex;
+			flex-direction: center;
+		&__row {
+			background-color: indianred;
+			border: 1px solid #000;
+		}
+		&__item{
+				color: antiquewhite;
+				padding:  30px 50px;
+				&:nth-child(2){
+					
+				}
+			}
+}
