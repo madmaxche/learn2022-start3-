@@ -145,15 +145,23 @@ body{
 	}
 	&__row {
 		display: flex;
-		justify-content: space-around;
 		padding: 0px 0px 50px 0px;
 	}
 
 	&__column {
+		flex: 0 1 33.3333%;
+		display: flex;
 		width: 300px;
 		height: 499px;
 		text-align: center;
 		background-color: #445162;
+	}
+
+	&__item{
+		border-radius: 5px;
+		border: 1px solid #445162;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__tittle {
@@ -181,42 +189,38 @@ body{
 		text-align: left;
 		color: rgb(255, 255, 255);
 		padding: 19px 30px 0px 20px;
-		display: flex;
-		flex-direction: column;
-		&:nth-child(2){
-			
-				padding: 0px 0px 230px 0px;
-		}
+		flex: 1 1 auto;
+	}
+
+	&__button{
+		display: block;
+		text-align: center;
+		padding: 0px 0px 15px 0px;
 		button{
 			width: 260px;
 			height: 40px;
 			border-radius: 5px;
 			background-color: rgb(255, 255, 255);
-			align-self: end;
-			&:nth-child(1){
-				padding: 215px 20px 20px 20px;
-			}
-			&:nth-child(2){
-				
-			}
-			&:nth-child(3){
-				
-			}
-			span{
-				font-size: 18px;
-				font-weight: bold;
-				line-height: 1;
-				text-align: center;
-				color: rgb(68, 81, 97);
-			}
+		}
+
+		span{
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1;
+			text-align: center;
+			color: rgb(68, 81, 97);
+			background:#fff;
 		}
 	}
 }
 
+
 .footerblock {
-	
+	background-color: #f5f5f5;
 	p{
 		text-align: center;
+		padding: 31px 0px 31px 0px;
+		flex: 1 1 auto;
 	}
 }
 
