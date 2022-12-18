@@ -133,54 +133,58 @@ body{
 		}
 	}
 }
-.verticalblock {
-}
-.verticalblock {
-	h2{
+.vertical {
+
+	&__title {
 		font-size: 30px;
 		line-height: 1.2;
-		text-align: center;
+		text-align: left;
 		color: rgb(68, 81, 97);
-		padding: 49px 0px 29px 0px;
+		text-align: center;
+		margin: 0px 0px 30px 0px;
 	}
+
+	&__body {
+		max-width: 990px;
+		margin: 0px auto;
+	}
+
 	&__row {
 		display: flex;
-		padding: 0px 0px 50px 0px;
+		margin: 0px -22.5px;
 	}
 
 	&__column {
-		flex: 0 1 33.3333%;
+		flex: 0 1 33.333%;
+		padding: 0px 22.5px;
 		display: flex;
-		width: 300px;
-		height: 499px;
-		text-align: center;
-		background-color: #445162;
 	}
 
-	&__item{
-		border-radius: 5px;
-		border: 1px solid #445162;
+	&__item {
 		display: flex;
 		flex-direction: column;
+		background-color: #445162;
+		color: #fff;
+		border-radius: 5px;
+		border: 1px solid #445162;
+		padding: 0px 0px 20px 0px;
 	}
 
-	&__tittle {
-		text-transform: uppercase;
+	&__label {
+		text-align: center;
 		font-size: 24px;
 		line-height: 1.25;
-		text-align: center;
 		color: rgb(255, 255, 255);
-		padding: 18px 0px 12px 0px;
+		padding: 15px 0px;
 	}
 
-	&__subtitle {
-		background-color: #ffffff;
-		border: solid 2px rgb(68, 81, 98);
+	&__sublabel {
 		font-size: 40px;
 		line-height: 0.75;
 		text-align: center;
 		color: rgb(68, 81, 98);
-		padding: 18px 0px 17px 0px;
+		background-color: #fff;
+		padding: 15px 0px;
 	}
 
 	&__text {
@@ -188,31 +192,33 @@ body{
 		line-height: 1.71;
 		text-align: left;
 		color: rgb(255, 255, 255);
-		padding: 19px 30px 0px 20px;
+		padding: 20px;
 		flex: 1 1 auto;
+		p{
+			padding: 0px 0px 15px 0px;
+			&:last-child{
+				margin: 0;
+			}
+		}
 	}
 
-	&__button{
+	&__btn {
 		display: block;
+		height: 40px;
+		background-color: #fff;
+		margin: 0 20px;
+		line-height: 40px;
+		border-radius: 5px;
 		text-align: center;
-		padding: 0px 0px 15px 0px;
-		button{
-			width: 260px;
-			height: 40px;
-			border-radius: 5px;
-			background-color: rgb(255, 255, 255);
-		}
-
-		span{
-			font-size: 18px;
-			font-weight: bold;
-			line-height: 1;
-			text-align: center;
-			color: rgb(68, 81, 97);
-			background:#fff;
-		}
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		color: rgb(68, 81, 97);
 	}
 }
+.container {
+}
+
 
 
 .footerblock {

@@ -186,74 +186,77 @@ body {
   padding: 9px 0px 0px 15px;
 }
 
-.verticalblock h2 {
+.vertical__title {
   font-size: 30px;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   color: rgb(68, 81, 97);
-  padding: 49px 0px 29px 0px;
-}
-.verticalblock__row {
-  display: flex;
-  padding: 0px 0px 50px 0px;
-}
-.verticalblock__column {
-  flex: 0 1 33.3333%;
-  display: flex;
-  width: 300px;
-  height: 499px;
   text-align: center;
-  background-color: #445162;
+  margin: 0px 0px 30px 0px;
 }
-.verticalblock__item {
-  border-radius: 5px;
-  border: 1px solid #445162;
+.vertical__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+.vertical__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+.vertical__column {
+  flex: 0 1 33.333%;
+  padding: 0px 22.5px;
+  display: flex;
+}
+.vertical__item {
   display: flex;
   flex-direction: column;
+  background-color: #445162;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #445162;
+  padding: 0px 0px 20px 0px;
 }
-.verticalblock__tittle {
-  text-transform: uppercase;
+.vertical__label {
+  text-align: center;
   font-size: 24px;
   line-height: 1.25;
-  text-align: center;
   color: rgb(255, 255, 255);
-  padding: 18px 0px 12px 0px;
+  padding: 15px 0px;
 }
-.verticalblock__subtitle {
-  background-color: #ffffff;
-  border: solid 2px rgb(68, 81, 98);
+.vertical__sublabel {
   font-size: 40px;
   line-height: 0.75;
   text-align: center;
   color: rgb(68, 81, 98);
-  padding: 18px 0px 17px 0px;
+  background-color: #fff;
+  padding: 15px 0px;
 }
-.verticalblock__text {
+.vertical__text {
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
   color: rgb(255, 255, 255);
-  padding: 19px 30px 0px 20px;
+  padding: 20px;
   flex: 1 1 auto;
 }
-.verticalblock__button {
-  display: block;
-  text-align: center;
+.vertical__text p {
   padding: 0px 0px 15px 0px;
 }
-.verticalblock__button button {
-  width: 260px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+.vertical__text p:last-child {
+  margin: 0;
 }
-.verticalblock__button span {
+.vertical__btn {
+  display: block;
+  height: 40px;
+  background-color: #fff;
+  margin: 0 20px;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1;
   text-align: center;
   color: rgb(68, 81, 97);
-  background: #fff;
 }
 
 .footerblock {
