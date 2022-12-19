@@ -1,2 +1,49 @@
 //Імпортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+.wrapper {
+	
+
+}
+.headerblock {
+		background: url('/lesson21/img/header/headerbackground.png') no-repeat;
+		background-size: 100%;
+		min-height: 800px;
+		
+		&__nav {
+		}
+
+		&__row {
+			display: flex;
+			justify-content: center;
+			padding: 35px 0px 0px 0px;
+		}
+
+		&__link {
+			font-size: 13px;
+			font-weight: bold;
+			letter-spacing: 2.6px;
+			text-align: center;
+			color: rgb(77, 73, 89);
+			text-transform: uppercase;
+			padding: 33px 64px 0px 64px;
+		}
+
+		&__logo {
+		}
+
+		&__image {
+		}
+
+		&__logotype {
+		}
+}
+.container {
+	max-width: 1101px;
+	margin: 0px auto;
+}
