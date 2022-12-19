@@ -7,13 +7,18 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 .wrapper {
-	
-
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .headerblock {
-		background: url('/lesson21/img/header/headerbackground.png') no-repeat;
-		background-size: 100%;
-		min-height: 800px;
+	position: relative;
+	flex: 1 1 auto;
+	background: url('/lesson21/img/header/headerbackground.png') no-repeat;
+	background-position: center;
+	background-size: cover;
 		
 		&__nav {
 		}
@@ -46,4 +51,33 @@ body{
 .container {
 	max-width: 1101px;
 	margin: 0px auto;
+}
+
+.mainblock {
+	
+	&__rowgen {
+		background-color: #f7f7f7;
+		text-align: center;
+	}
+
+	&__logo {
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: 3.6px;
+		text-align: center;
+		color: rgb(53, 55, 56);
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 1.89;
+		color: rgb(132, 135, 137);
+	}
+}
+.title {
+}
+.text {
 }
