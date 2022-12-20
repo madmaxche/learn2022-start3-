@@ -115,25 +115,63 @@ body {
   color: rgb(77, 73, 89);
   text-transform: uppercase;
   padding: 33px 64px 0px 64px;
+  flex: 1 1 auto;
+}
+.headerblock__logo {
+  padding: 0px 0px 680px 0px;
 }
 .container {
   max-width: 1101px;
   margin: 0px auto;
 }
 
-.mainblock__rowgen {
-  background-color: #f7f7f7;
+.rowgen {
+  background: #f7f7f7;
+}
+.rowgen__logo {
+  padding: 117px 0px 34px 0px;
   text-align: center;
 }
-.mainblock__title {
+.rowgen__text {
+  padding: 35px 0px 142px 0px;
+  text-align: center;
+  max-width: 1079px;
+  margin: 0px auto;
+}
+
+.title {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 3.6px;
   text-align: center;
   color: rgb(53, 55, 56);
+  text-transform: uppercase;
 }
-.mainblock__text {
+
+.text {
   font-size: 18px;
   line-height: 1.89;
+  text-align: center;
   color: rgb(132, 135, 137);
+}
+
+.bikerow {
+  text-align: center;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+}
+.bikerow__image {
+  background: url("/lesson21/img/mainblock/bikeLogo.png") left no-repeat, url("/lesson21/img/mainblock/bike1.png") 50%/cover no-repeat;
+}
+.bikerow__logo {
+  padding: 70px 0px 31px 0px;
+  text-align: center;
+}
+.bikerow__text {
+  max-width: 398px;
+  padding: 0px 68px;
+}
+.bikerow__downimage {
+  background-image: url("/lesson21/img/mainblock/Bike2.png") 0 0 no-repeat;
 }
