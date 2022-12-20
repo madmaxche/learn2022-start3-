@@ -159,10 +159,10 @@ body {
   text-align: center;
   max-height: 600px;
   display: flex;
-  align-items: center;
 }
 .bikerow__image {
-  background: url("/lesson21/img/mainblock/bikeLogo.png") left no-repeat, url("/lesson21/img/mainblock/bike1.png") 50%/cover no-repeat;
+  background: url("/lesson21/img/mainblock/bike1.png");
+  background-attachment: fixed;
 }
 .bikerow__logo {
   padding: 70px 0px 31px 0px;
