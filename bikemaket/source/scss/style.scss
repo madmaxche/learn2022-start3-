@@ -1,0 +1,17 @@
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+
+//Підключаємо сімесйтво шрифтів
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+.container{
+	max-width: 1130px;
+	padding:  0px 15px;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
