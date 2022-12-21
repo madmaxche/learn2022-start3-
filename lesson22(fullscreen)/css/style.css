@@ -96,16 +96,27 @@ body {
   min-height: 100vh;
 }
 
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 .fullscreen {
   display: flex;
   min-height: 100vh;
-  padding: 20px 0px;
-}
-.fullscreen img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .fullscreen__body {
   flex: 1 1 auto;
@@ -121,10 +132,12 @@ body {
 .fullscreen__title {
   font-size: 50px;
   margin: 0px 0px 20px 0px;
+  color: #333;
 }
 .fullscreen__text {
   font-size: 25px;
   margin: 0px 0px 25px 0px;
+  color: #333;
 }
 .fullscreen__link {
   display: inline-block;

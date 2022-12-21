@@ -15,15 +15,26 @@ body{
 	flex-direction: column;
 	min-height: 100vh;
 }
+.ibg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	}
+	
+	.ibg img{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	}
 .fullscreen {
 	display: flex;
 	min-height: 100vh;
-	padding: 20px 0px ;
-	img{
-		object-fit: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
 		&__body {
 			flex: 1 1 auto;
 			max-width: 1000px;
@@ -34,16 +45,19 @@ body{
 			flex-direction: column;
 			justify-content: center;
 			padding: 0px 20px ;
+
 		}
 
 		&__title {
 			font-size: 50px;
 			margin: 0px 0px 20px 0px;
+			color: #333;
 		}
 
 		&__text {
 			font-size: 25px;
 			margin: 0px 0px 25px 0px;
+			color: #333;
 		}
 
 		&__link {
