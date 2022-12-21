@@ -4,8 +4,9 @@
 //Підключаємо сімесйтво шрифтів
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-body{
+html,body{
 	font-family: 'Lato', sans-serif;
+	height: 100%;
 }
 .container{
 	max-width: 1130px;
@@ -15,24 +16,7 @@ body{
 	overflow: hidden;
 	min-height: 100%;
 }
-.ibg{
-
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	}
 	
-	.ibg img{
-	
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-	}
 
 .page {
 	position: absolute;
@@ -59,6 +43,10 @@ body{
 			height: 100%;
 			top: 0;
 			left: 0;
+				img{
+				background-attachment: cover;
+				object-fit: cover;
+				}
 		}
 }
 .content {

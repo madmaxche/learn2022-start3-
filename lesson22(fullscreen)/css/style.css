@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fullscreen {
+  display: flex;
+  min-height: 100vh;
+  padding: 20px 0px;
+}
+.fullscreen img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fullscreen__body {
+  flex: 1 1 auto;
+  max-width: 1000px;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+.fullscreen__title {
+  font-size: 50px;
+  margin: 0px 0px 20px 0px;
+}
+.fullscreen__text {
+  font-size: 25px;
+  margin: 0px 0px 25px 0px;
+}
+.fullscreen__link {
+  display: inline-block;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  background-color: blueviolet;
+  align-self: center;
+  padding: 0px 20px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 30px 20px;
+}
+.content__body p {
+  margin: 0px 0px 20px 0px;
+}
+.footer {
+  background-color: #000;
+  text-align: center;
+}
+.footer__body {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 30px 20px;
+}
