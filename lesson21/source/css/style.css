@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerblock {
+  position: relative;
+  flex: 1 1 auto;
+  background: url("/lesson21/img/header/headerbackground.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.headerblock__row {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px 0px 0px;
+}
+.headerblock__link {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2.6px;
+  text-align: center;
+  color: rgb(77, 73, 89);
+  text-transform: uppercase;
+  padding: 33px 64px 0px 64px;
+  flex: 1 1 auto;
+}
+.headerblock__logo {
+  padding: 0px 0px 680px 0px;
+}
+.container {
+  max-width: 1101px;
+  margin: 0px auto;
+}
+
+.rowgen {
+  background: #f7f7f7;
+}
+.rowgen__logo {
+  padding: 117px 0px 34px 0px;
+  text-align: center;
+}
+.rowgen__text {
+  padding: 35px 0px 142px 0px;
+  text-align: center;
+  max-width: 1079px;
+  margin: 0px auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: rgb(53, 55, 56);
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.89;
+  text-align: center;
+  color: rgb(132, 135, 137);
+}
+
+.bikerow {
+  text-align: center;
+  max-height: 600px;
+  display: flex;
+}
+.bikerow__image {
+  background: url("/lesson21/img/mainblock/bike1.png");
+  background-attachment: fixed;
+}
+.bikerow__logo {
+  padding: 70px 0px 31px 0px;
+  text-align: center;
+}
+.bikerow__text {
+  max-width: 398px;
+  padding: 0px 68px;
+}
+.bikerow__downimage {
+  background-image: url("/lesson21/img/mainblock/Bike2.png") 0 0 no-repeat;
+}

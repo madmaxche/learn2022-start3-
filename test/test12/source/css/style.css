@@ -82,35 +82,42 @@ h6 {
   font-weight: 400;
 }
 
-a {
-  margin: 150px;
+.wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0px auto;
 }
 
-.link-button {
-  text-decoration: none;
-  display: inline-block;
-  line-height: 60px;
-  padding: 0px 30px;
+.block {
+  padding: 10px 20px 10px 20px;
+}
+.block__row {
+  display: flex;
+  align-items: stretch;
+}
+.block__column {
+  padding: 0px 20px 0px 0px;
+}
+.block h2 {
   text-transform: uppercase;
-  letter-spacing: -2px;
-  font-size: 18px;
-  border-radius: 10px;
-  top: 0;
-  position: relative;
-  color: #fff;
-  background-color: #5e5373;
-  box-shadow: 0 5px 0px #3c354a;
+  font-weight: 700;
 }
-.link-button:hover {
-  top: 2px;
-  box-shadow: 0 3px 0px #3c354a;
+.block input {
+  background-color: bisque;
+  border-top: 4px solid #000;
 }
-.link-button span {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.block textarea {
+  background-color: bisque;
+  border-top: 4px solid #000;
+  width: 100%;
+}
+.block span {
   text-transform: uppercase;
-  font-size: 25px;
-  color: #fff;
+  font-weight: 700;
+  background-color: #fff;
 }
-.link-button:hover {
-  background-color: rgb(65, 165, 180);
+
+.column__row {
+  display: flex;
+  justify-self: start;
 }
