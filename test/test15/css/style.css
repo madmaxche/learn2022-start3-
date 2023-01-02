@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  padding: 30px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+}
+.button__button1 {
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.3s ease 0.3s;
+}
+.button__button1 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button1:hover {
+  padding: 50px 60px;
+  background-color: #18b5a4;
+  transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
