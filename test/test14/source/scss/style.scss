@@ -4,9 +4,25 @@
 
 body{
 	height: 100%;
-	background-color: #333;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #333;
+	color: #fff;
 	font-size: 20px;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.wrapper {
+}
+.ibg{
+	}
+	
+	.ibg img{
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+	}
