@@ -82,8 +82,13 @@ h6 {
   font-weight: 400;
 }
 
+body {
+  background-color: #f1f1f1;
+}
+
 .button {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -97,12 +102,13 @@ h6 {
   top: 50px;
 }
 .button__button1 {
+  margin: 50px;
   border-radius: 10px;
   padding: 30px 50px;
   background-color: #5e5373;
   color: #fff;
   box-shadow: 0 5px 0px #3c354a;
-  transition: all 0.3s ease 0.3s;
+  transition: all 0.5s ease 0s;
 }
 .button__button1 span {
   color: #fff;
@@ -111,5 +117,107 @@ h6 {
 .button__button1:hover {
   padding: 50px 60px;
   background-color: #18b5a4;
-  transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+  font-size: 34px;
+}
+.button__button2 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s ease 0s;
+}
+.button__button2 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button2:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
+}
+.button__button3 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s ease-in 0s;
+}
+.button__button3 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button3:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
+}
+.button__button4 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s ease-in-out 0s;
+}
+.button__button4 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button4:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
+}
+.button__button5 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s linear 0s;
+}
+.button__button5 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button5:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
+}
+.button__button6 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: background-color, 0.5s steps(4, start) 0s;
+}
+.button__button6 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button6:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
+}
+.button__button7 {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #5e5373;
+  color: #fff;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s cubic-bezier(0.45, 2.01, 1, 0.94) 0s;
+}
+.button__button7 span {
+  color: #fff;
+  text-transform: uppercase;
+}
+.button__button7:hover {
+  padding: 30px 80px;
+  background-color: #18b5a4;
 }

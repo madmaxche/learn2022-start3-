@@ -1,8 +1,12 @@
 //Імпортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
 
+body{
+	background-color: #f1f1f1;
+}
 .button {
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	justify-content:center;
 	align-items: center;
@@ -15,12 +19,13 @@
 	position: relative;
 	top: 50px;
 		&__button1 {
+			margin: 50px;
 			border-radius: 10px;
 			padding: 30px 50px;
 			background-color: #5e5373;
 			color: #fff;
 			box-shadow: 0 5px 0px #3c354a;
-			transition: all 0.3s ease 0.3s;
+			transition: all 0.5s ease 0s;
 			span{
 				color: #fff;
 				text-transform: uppercase;
@@ -28,7 +33,109 @@
 			&:hover{
 				padding: 50px 60px;
 				background-color: #18b5a4;
-				transition: all 0.9s cubic-bezier(0.68,-0.55,0.265,1.55) 0s;
+				font-size: 34px;
+			}
+		}
+		&__button2 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: all 0.5s ease 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
+			}
+		}
+		&__button3 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: all 0.5s ease-in 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
+			}
+		}
+		&__button4 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: all 0.5s ease-in-out 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
+			}
+		}
+		&__button5 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: all 0.5s linear 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
+			}
+		}
+		&__button6 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: background-color, 0.5s steps(4,start) 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
+			}
+		}
+		&__button7 {
+			margin: 50px;
+			border-radius: 10px;
+			padding: 30px 50px;
+			background-color: #5e5373;
+			color: #fff;
+			box-shadow: 0 5px 0px #3c354a;
+			transition: all 0.5s cubic-bezier(.45,2.01,1,.94) 0s;
+			span{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover{
+				padding: 30px 80px;
+				background-color: #18b5a4;
 			}
 		}
 }
