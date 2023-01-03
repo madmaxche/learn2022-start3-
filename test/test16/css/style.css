@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgb(34, 31, 31);
+}
+
+.content {
+  padding: 150px;
+}
+.content__circle {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  -webkit-animation: white-circle 1s infinite alternate linear;
+          animation: white-circle 1s infinite alternate linear;
+}
+.content__circle:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.content__circle:active {
+  background: url("/test/test16/img/logo white png.png") 50%/cover no-repeat;
+  box-shadow: 0 0 150px rgb(255, 255, 255);
+}
+
+@-webkit-keyframes white-circle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  25% {
+    top: 100px;
+  }
+  50% {
+    top: 150px;
+    background-color: red;
+    border-radius: 0;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    left: 100%;
+    top: 250px;
+  }
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  25% {
+    top: 100px;
+  }
+  50% {
+    top: 150px;
+    background-color: red;
+    border-radius: 0;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    left: 100%;
+    top: 250px;
+  }
+}
