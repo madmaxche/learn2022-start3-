@@ -106,6 +106,7 @@ body {
 .content__circle:active {
   background: url("/test/test16/img/logo white png.png") 50%/cover no-repeat;
   box-shadow: 0 0 150px rgb(255, 255, 255);
+  transition: all 1s cubic-bezier(0.45, 2.01, 1, 0.01) 0s;
 }
 
 @-webkit-keyframes white-circle {
