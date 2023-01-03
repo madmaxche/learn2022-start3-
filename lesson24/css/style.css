@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.content {
+  padding: 50px;
+  background-color: rgb(21, 6, 6);
+}
+
+.content__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  /*
+  	animation-name: white-circle;
+  	animation-duration: 2s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: 1s;
+  	animation-direction: alternate;
+  	animation-delay: 2s;
+  	animation-fill-mode: forwards;*/
+  -webkit-animation: white-circle 2s linear infinite 1s alternate forwards, red-circle 5s ease infinite 1s alternate forwards;
+          animation: white-circle 2s linear infinite 1s alternate forwards, red-circle 5s ease infinite 1s alternate forwards;
+}
+
+.content:hover .content__circle {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes white-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+@-webkit-keyframes red-circle {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@keyframes red-circle {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #fff;
+  }
+}

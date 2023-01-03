@@ -1,0 +1,51 @@
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+.content{
+	padding: 50px;
+	background-color: rgb(21, 6, 6);
+}
+.content__circle{
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+/*
+	animation-name: white-circle;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1s;
+	animation-direction: alternate;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;*/
+	animation: white-circle 2s linear infinite 1s alternate forwards, red-circle 5s ease infinite 1s alternate forwards;
+}
+
+.content:hover .content__circle{
+	animation-play-state: paused;
+}
+
+@keyframes white-circle {
+	0%{
+		left: 0;
+	}
+	50%{
+		border-radius: 0%;
+	}
+	100%{
+		left: 90%;
+	}
+}
+
+@keyframes red-circle {
+	0%{
+		background-color: #fff;
+	}
+	50%{
+		background-color: red;
+	}
+	100%{
+		background-color: #fff;
+	}
+}
