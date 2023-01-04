@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Підключаємо файл стилю каскадних таблиць-->
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Адаптив зображень</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="content">
+		<section class="text">
+			<h2 class="text__title title">В тексті</h2>
+			<div class="text__image">
+				<img src="./img/1300x400.jpg" alt="">
+			</div>
+			<div class="text__value">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+			</div>
+			<div class="text__image">
+				<img src="./img/1300x200.jpg" alt="">
+			</div>
+			<div class="text__value">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+			</div>
+			<div class="text__image">
+				<img src="./img/800x400.jpg" alt="">
+			</div>
+			<div class="text__value">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque dolore delectus doloremque voluptas labore.</p>
+			</div>
+		</section>
+		<section class="cards">
+			<h2 class="cards__title title">В карточках(три колонки)</h2>
+			<div class="cards__row">
+				<div class="cards__column">
+					<div class="cards__item">
+						<div class="cards__image">
+							<img src="img/800x400.jpg" alt="">
+						</div>
+						<div class="cards__body">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, necessitatibus dicta quis nesciunt sapiente asperiores.
+						</div>
+					</div>
+				</div>
+				<div class="cards__column">
+					<div class="cards__item">
+						<div class="cards__image">
+							<img src="img/400x600.jpg" alt="">
+						</div>
+						<div class="cards__body">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, necessitatibus dicta quis nesciunt sapiente asperiores.
+						</div>
+					</div>
+				</div>
+				<div class="cards__column">
+					<div class="cards__item">
+						<div class="cards__image">
+							<img src="img/1300x200.jpg" alt="">
+						</div>
+						<div class="cards__body">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, necessitatibus dicta quis nesciunt sapiente asperiores.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="items">
+			<h2 class="items__title title">В карточках(в ряд)</h2>
+			<div class="items__item">
+				<div class="items__image">
+					<img src="./img/1300x400.jpg" alt="">
+				</div>
+				<div class="items__body">
+					<div class="items__label">Заголовок</div>
+					<div class="items__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam temporibus optio necessitatibus facilis distinctio esse.</div>
+				</div>
+			</div>
+			<div class="items__item">
+				<div class="items__image">
+					<img src="./img/400x600.jpg" alt="">
+				</div>
+				<div class="items__body">
+					<div class="items__label">Заголовок</div>
+					<div class="items__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam temporibus optio necessitatibus facilis distinctio esse.</div>
+				</div>
+			</div>
+			<div class="items__item">
+				<div class="items__image">
+					<img src="./img/800x400.jpg" alt="">
+				</div>
+				<div class="items__body">
+					<div class="items__label">Заголовок</div>
+					<div class="items__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam temporibus optio necessitatibus facilis distinctio esse.</div>
+				</div>
+			</div>
+		</section>
+		<picture>
+			<source srcset="./img/1300x400.jpg" type="image/jpeg" media="(min-width:1330px)">
+			<source srcset="./img/800x400.jpg" type="image/jpeg" media="(min-width:992px)">
+			<source srcset="./img/400x600.jpg" type="image/jpeg" media="(max-width:992px)">
+			<img src="./img/1300x400.jpg" alt="">
+		</picture>
+	</div>
+</div>
+</body>
+
+</html>
