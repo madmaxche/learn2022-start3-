@@ -1,2 +1,220 @@
 //Імпортуємо файл обнуляючого стилю
 @import 'nullstyle.scss';
+
+html,
+body {
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+a {
+	color: #794f45;
+}
+h1 {
+	font-size: 40px;
+	margin: 0px 0px 50px 0px;
+}
+h2 {
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+p {
+	margin: 20px 0;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	padding: 30px 3%;
+}
+.content__block {
+	margin: 0px 0px 50px 0px;
+}
+.content__2D .content__block div {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+}
+
+
+.content__translate{
+	background-color: #794f45;
+	transform: translate(0px,0px);
+	&:hover{
+		transform: translate(50px,50px);
+	}
+}
+
+.content__scale{
+	transform: scale(1,1);
+	background-color: #77608d;
+	&:hover{
+		transform: scale(-1,1);
+	}
+}
+
+.content__rotate{
+	transform: rotate(0deg);
+	background-color: #7a956b;
+	&:hover{
+		transform: rotate(180deg);
+	}
+}
+
+.content__skew{
+	transform: skew(10deg,0deg);
+	background-color: #794f45;
+	&:hover{
+		transform: skew(10deg,10deg);
+	}
+}
+
+.content__matrix{
+	transform: matrix(2,1,1,2,20,20);
+	background-color: #77608d;
+}
+
+.content__multi{
+	background-color: #7a956b;
+	transform: translate(50px,50px) scale(0.5)rotate(45deg);
+}
+
+.content__transform-origin{
+	background-color: #794f45;
+	transform-origin: top left;
+	transform: rotate(0deg);
+	&:hover{
+		transform: rotate(-30deg)
+	}
+}
+
+.content__3D .content__wrapper3d {
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	perspective-origin: center;
+	perspective: 400px;
+}
+.content__3D .content__wrapper3d div {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	width: 150px;
+	height: 150px;
+}
+.content__perspective{
+	background-color: #7a956b;
+	&:hover{
+		transform: rotateX(30deg);
+	}
+}
+
+.content__translate3D{
+	transform: translate3d(0px,0px,0px);
+	background-color: #794f45;
+	&:hover{
+		transform: translate3d(20px,20px,50px);
+	}
+}
+
+.content__scale3D{
+	transform: scale3d(1,1,1);
+	background-color: #77608d;
+	&:hover{
+		transform: scale3d(2,2,5)
+	}
+}
+
+.content__rotate3d{
+	transform: rotate3d(1,1,1, 0deg);
+	background-color: #7a956b;
+	&:hover{
+		transform: rotate3d(1,1,0, 45deg);
+	}
+}
+
+.content__matrix3d{
+
+}
+
+.content__multi3d{
+	background-color: #794f45;
+	transform: translate3d(20px,20px,100px) rotate3d(1,1,1, 45deg);
+}
+
+.content__transform-style-wrapper{
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.1);
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+.content__transform-style{
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	width: 150px;
+	height: 150px;
+	transform: rotateX(0deg);
+	background-color: #7a956b;
+}
+.content__transform-style:hover {
+	transform: rotateX(50deg);
+}
+
+
+.flip {
+}
+.flip__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
