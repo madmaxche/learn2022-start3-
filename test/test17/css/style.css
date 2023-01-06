@@ -85,23 +85,35 @@ h6 {
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
-  background-color: #7a965f;
+  background-color: #1b1e18;
 }
 
 .wrapper {
   text-align: center;
 }
 
+.content {
+  transition: all 0.3s ease 0s;
+}
 .content__block {
-  width: 150px;
-  height: 150px;
-  background-color: grey;
-  text-align: center;
+  padding: 50px 30px;
 }
 .content__section {
+  padding: 65px 0px;
   background: rgba(119, 85, 102, 0.6666666667);
   width: 150px;
   height: 150px;
   text-align: center;
-  transform: translate(50px);
+  transform: translate(50px) rotate(45deg);
+}
+.content__section:hover {
+  transform: translate(30px) rotate(25deg);
+}
+.content__transform3d {
+  padding: 60px 0px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(207, 47, 127, 0.667);
+  perspective: 400px;
+  transform: translate3d(50px, 50px, 100px);
 }
