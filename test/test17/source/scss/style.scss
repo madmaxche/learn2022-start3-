@@ -1,0 +1,28 @@
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	background-color: #7a965f;
+}
+.wrapper {
+	text-align: center;
+}
+.content {
+
+		&__block {
+			width: 150px;
+			height: 150px;
+			background-color: grey;
+			text-align: center;
+		}
+
+		&__section {
+			background: #756a;
+			width: 150px;
+			height: 150px;
+			text-align: center;
+			transform: translate(50px);
+		}
+}
