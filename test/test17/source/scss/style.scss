@@ -33,10 +33,9 @@ body{
 			height: 150px;
 			background-color: rgba(207, 47, 127, 0.667);
 			perspective: 400px;
-			perspective-origin: right;
-			transform: translate3d(0px,0px,0px);
+			perspective-origin: center;
 			&:hover{
-				transform: rotate3d(2,2,3,45deg);
+				transform: perspective(400px) rotateX(50deg);
 			}
 		}
 }
