@@ -118,5 +118,5 @@ body {
   perspective-origin: center;
 }
 .content__transform3d:hover {
-  transform: perspective(400px) rotateX(50deg);
+  transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0.01, 0, 0, 1, 0, 1, 1, 25, 1);
 }
