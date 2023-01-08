@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Підключаємо файл стилю каскадних таблиць-->
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Оболочка для демонстрации -->
+	<div class="wrapper">
+		<!-- Контент -->
+		<div class="content">
+			<h1>Отступы Padding и Margin</h1>
+			<!-- Общая информация -->
+			<section class="section">
+				<h2>Общая информация</h2>
+				<p>Padding - внутренний отступ в объекте, от границ до содержимого. <br> Margin - внешний отступ от объекта, от границ до окружающих объектов. <br> Применяются к блочным и блочно-строчным объектам</p>
+				<div class="section__block">
+					<h3>Блочные объекты</h3>
+					<div class="section__item section__item_color-1 section__item_info">
+						Объект №1 (div) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+					<div class="section__item section__item_color-2 section__item_info">
+						Объект №2 (div) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+					<div class="section__item section__item_color-3 section__item_info">
+						Объект №3 (div) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Строчные объекты</h3>
+					<span class="section__item section__item_color-1 section__item_info">
+						Объект №1 (span) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</span>
+					<span class="section__item section__item_color-2 section__item_info">
+						Объект №2 (span) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</span>
+					<span class="section__item section__item_color-3 section__item_info">
+						Объект №3 (span) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</span>
+				</div>
+				<div class="section__block">
+					<h3>Изображения</h3>
+					<img class="section__image" src="img/avatar.jpg" alt="Картинка">
+				</div>
+			</section>
+			<!-- Отступы и размеры блока -->
+			<section class="section">
+				<h2>Отступы и размеры блока. Свойство box-sizing</h2>
+				<p>Отступы по разному могут влиять на общий размер блока в зависимости от значения свойства box-sizing:</p>
+				<div class="section__item section__item_color-3 section__item_size">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, quo eveniet? Soluta laudantium temporibus quod accusamus atque enim. Iure hic inventore distinctio aspernatur dolorum eaque possimus odit aliquid ex quam?
+				</div>
+			</section>
+			<!-- Отступы и фон -->
+			<section class="section">
+				<h2>Отступы и фон</h2>
+				<p>Если для объекта применяется фоновое изображение(я) и/или заливка цветом либо градиентом, то стоит выбирать метод применения отступов в зависимости от ситуации:</p>
+				<div class="section__block">
+					<h3>Заливка цветом</h3>
+					<div class="section__item section__item_color-2 section__item_background-color">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut similique earum consectetur quasi totam beatae distinctio dolor nulla, eveniet harum. Debitis rerum facere ea iste nam qui doloribus placeat.
+					</div>
+					<div class="section__item section__item_color-3 section__item_background-color">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut similique earum consectetur quasi totam beatae distinctio dolor nulla, eveniet harum. Debitis rerum facere ea iste nam qui doloribus placeat.
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Фоновое изображение</h3>
+					<div class="section__item section__item_background-image">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, et. Explicabo aliquid reiciendis atque, iste officiis distinctio dolores omnis vitae mollitia temporibus, perferendis nihil dolorem maxime, fugit tenetur a cumque?
+					</div>
+				</div>
+			</section>
+			<!-- Отступы и позиционирование -->
+			<section class="section">
+				<h2>Отступы и позиционирование</h2>
+				<p>Если относительно объекта применяется абсолютное позиционирование, то стоит выбирать метод применения отступов в зависимости от ситуации:</p>
+				<div class="section__item section__item_position">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam nulla repellat sapiente modi maxime iure magnam deleniti quo ipsum tempora officiis, vel alias blanditiis consectetur aperiam labore sunt. Nulla.
+				</div>
+			</section>
+			<!-- Отступы и overflow: hidden; -->
+			<section class="section">
+				<h2>Отступы и overflow: hidden</h2>
+				<p>С помощью внутреннего отступа Padding можно отобразить скрытую часть объекта</p>
+				<div class="section__block section__block_hidden">
+					<div class="section__item section__item_color-3 section__item_hidden"></div>
+				</div>
+			</section>
+			<!-- Центровка блока -->
+			<section class="section">
+				<h2>Центровка блока.</h2>
+				<p>С помощью внешнего отступа Margin можно отцентровать блочный объект с заданным ограничением ширины</p>
+				<div class="section__item section__item_color-1 section__item_center"></div>
+			</section>
+			<!-- Отрицательные значения Margin -->
+			<section class="section">
+				<h2>Отрицательные значения Margin</h2>
+				<p>Margin может иметь отрицательные значения. Тем самым сдвигая сам элемент и все последующие элементы.</p>
+				<div class="section__block">
+					<h3>Сдвиг вверх</h3>
+					<div class="section__item section__item_color-1 section__item_minus">
+						Объект №1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+					<div class="section__item section__item_color-2 section__item_minus section__item_minus-top">
+						Объект №2 (отрицательный отступ вверх) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+					<div class="section__item section__item_color-3 section__item_minus">
+						Объект №3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Отступы FLEX-конструкции</h3>
+					<div class="section__row">
+						<div class="section__column">
+							<div class="section__item section__item_color-2 section__item_flex">
+								Контент внутри flex-конструкции. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+							</div>
+						</div>
+						<div class="section__column">
+							<div class="section__item section__item_color-2 section__item_flex">
+								Контент внутри flex-конструкции. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+							</div>
+						</div>
+						<div class="section__column">
+							<div class="section__item section__item_color-2 section__item_flex">
+								Контент внутри flex-конструкции. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Комбинация с padding</h3>
+					<div class="section__slider slider">
+						<div class="slider__item">
+							<div class="slider__image"></div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__image"></div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__image"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Схлопывание Margin -->
+			<section class="section">
+				<h2>Схлопывание Margin</h2>
+				<p>При состыковке вертикальных внешних отступов они схлопываются.</p>
+				<div class="section__item section__item_color-1 section__item_collapse">
+					Объект №1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+				</div>
+				<div class="section__item section__item_color-2 section__item_collapse section__item_collapse-top">
+					Объект №2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+				</div>
+				<div class="section__item section__item_color-3 section__item_collapse">
+					Объект №3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima culpa soluta nam dolores sequi.
+				</div>
+				<p>
+					<ul class="section__list">
+						<li>Когда оба значения margin положительные, итоговый размер поля будет равен бóльшему значению.</li>
+						<li>Если одно из значений является отрицательным, то для вычисления размера поля нужно получить сумму значений.</li>
+						<li>Если оба значения отрицательные, сравниваются модули этих чисел и выбирается число, бóльшее по модулю </li>
+						<li>В случае, когда значения указаны в разных единицах CSS, они приводятся к одной, после чего сравниваются и выбирается бóльшее значение.</li>
+						<li>Если у потомка поле margin больше, чем у родителя, то приоритет отдается ему. В этом случае размеры верхнего и нижнего полей родителя станут такими, как задано у потомка. При этом расстояния между родителем и потомком не будет.</li>
+					</ul>
+				</p>
+			</section>
+			<!--  Принципы применения отступов -->
+			<section class="section">
+				<h2>Принципы применения отступов</h2>
+				<p>Если мы хотим что бы наша верстка была надежной и гибкой, стоит придерживаться следующих принципов применения отступов:</p>
+				<div class="section__block">
+					<h3>Отступы следует задавать от предыдущего элемента к следующему</h3>
+					<h4>Сверху вниз</h4>
+					<div class="section__item section__item_color-1 section__item_bottom">
+						Объект №1
+					</div>
+					<div class="section__item section__item_color-2 section__item_bottom">
+						Объект №2
+					</div>
+					<div class="section__item section__item_color-3 section__item_bottom">
+						Объект №3
+					</div>
+					<br>
+					<h4>Слева направо</h4>
+					<div class="section__items">
+						<div class="section__item section__item_color-1 section__item_right">
+							Объект №1
+						</div>
+						<div class="section__item section__item_color-2 section__item_right">
+							Объект №2
+						</div>
+						<div class="section__item section__item_color-3 section__item_right">
+							Объект №3
+						</div>
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>У последнего элемента группы, отступ следует обнулять</h3>
+					<div class="section__body section__body_last">
+						<ul class="section__list">
+							<li>Пункт №1</li>
+							<li>Пункт №2</li>
+							<li>Пункт №3</li>
+							<li>Пункт №4</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Отступы задаются самому верхнему родителю в конструкции (доме)</h3>
+					<div class="section__body section__body_parent">
+						<div class="section__item section__item_parent">
+							<ul class="section__list">
+								<li>Пункт №1</li>
+								<li>Пункт №2</li>
+								<li>Пункт №3</li>
+								<li>Пункт №4</li>
+							</ul>
+						</div>
+						<div class="section__item section__item_parent">
+							<ul class="section__list">
+								<li>Пункт №1</li>
+								<li>Пункт №2</li>
+								<li>Пункт №3</li>
+								<li>Пункт №4</li>
+							</ul>
+						</div>
+						<div class="section__item section__item_parent">
+							<ul class="section__list">
+								<li>Пункт №1</li>
+								<li>Пункт №2</li>
+								<li>Пункт №3</li>
+								<li>Пункт №4</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Внешние отступы не следует задавать для независимых объектов (БЭМ блок)</h3>
+					<div class="portfolio">
+						<div class="portfolio__header header">
+							<div class="header__title">Заголовок</div>
+							<div class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+						</div>
+						<div class="portfolio__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem totam consectetur ratione modi debitis facilis officia quisquam, explicabo cum ad optio perferendis, enim at laboriosam molestiae a aut neque?
+						</div>
+					</div>
+					<div class="contacts">
+						<div class="contacts__header header">
+							<div class="header__title">Заголовок</div>
+							<div class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+						</div>
+						<div class="contacts__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem totam consectetur ratione modi debitis facilis officia quisquam, explicabo cum ad optio perferendis, enim at laboriosam molestiae a aut neque?
+						</div>
+					</div>
+				</div>
+				<div class="section__block">
+					<h3>Отступы должны улучшать удобство пользования и восприятие</h3>
+					<div class="section__compare compare">
+						<h4>Лишние отступы</h4>
+						<div class="compare__row">
+							<div class="compare__column">
+								<h5>Плохо</h5>
+								<div class="compare__item compare__item_bad compare__item_color-1">
+									<div class="compare__title">Заголовок</div>
+									<div class="compare__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse dicta optio? Facilis corporis rem similique vitae hic quo? Quidem laudantium labore illo, quis aut veniam sit maxime doloribus. Error!
+									</div>
+								</div>
+							</div>
+							<div class="compare__column">
+								<h5>Хорошо</h5>
+								<div class="compare__item compare__item_color-2">
+									<div class="compare__title">Заголовок</div>
+									<div class="compare__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse dicta optio? Facilis corporis rem similique vitae hic quo? Quidem laudantium labore illo, quis aut veniam sit maxime doloribus. Error!
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4>Разрыв объектов</h4>
+						<div class="compare__row">
+							<div class="compare__column">
+								<h5>Плохо</h5>
+								<div class="compare__item compare__item_color-1">
+									<div class="compare__title compare__title_bad">Заголовок</div>
+									<div class="compare__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse dicta optio? Facilis corporis rem similique vitae hic quo? Quidem laudantium labore illo, quis aut veniam sit maxime doloribus. Error!
+									</div>
+								</div>
+							</div>
+							<div class="compare__column">
+								<h5>Хорошо</h5>
+								<div class="compare__item compare__item_color-2">
+									<div class="compare__title">Заголовок</div>
+									<div class="compare__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse dicta optio? Facilis corporis rem similique vitae hic quo? Quidem laudantium labore illo, quis aut veniam sit maxime doloribus. Error!
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4>Площадь нажатия</h4>
+						<div class="compare__row">
+							<div class="compare__column">
+								<h5>Плохо</h5>
+								<a class="compare__link compare__link_bad" href="#">+</a>
+							</div>
+							<div class="compare__column">
+								<h5>Хорошо</h5>
+								<a class="compare__link" href="#">+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+
+</html>
