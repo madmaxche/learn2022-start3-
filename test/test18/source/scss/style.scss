@@ -11,7 +11,7 @@ body{
 }
 .content {
 	padding: 10px;
-	transition: all 1s ease 0s;
+	transition: all 0.1s ease-in-out 0s;
 	color: #fff;
 	h1{
 		font-size: 34px;
@@ -32,18 +32,22 @@ body{
 		}
 
 		&__image {
-			margin: 20px 0px 0px 0px;
+			margin: 50px 0px 0px 0px;
 			width: 150px;
 			height: 150px;
-			animation: logo-circle 5s infinite alternate-reverse;
+			animation: logo-circle 3s infinite alternate;
 			border-radius: 50%;
 			position: relative;
+			border: 5px solid #fff;
 			left: 0;
+			perspective-origin: center;
+			transform: perspective(800px);
 			&:hover{
 				box-shadow: 0 0 25px rgb(255, 255, 255);
+				animation-play-state: paused;
 			}
 			&:active{
-				box-shadow: 0 0 25px rgb(215, 72, 72);
+				box-shadow: 0 0 125px rgb(215, 72, 72);
 				animation-play-state: paused;
 			}
 		}
@@ -58,13 +62,20 @@ body{
 
 @keyframes logo-circle {
 	0%{
-		left: -10%;
+		left: 0%;
+		transform:scale3d(1.5,1.5,1) rotate3d(1,-10,1, 60deg);
+		box-shadow: 0 0 35px rgb(207, 62, 62);
 	}
 	50%{
-		left:50%;
+		
+		transform: rotate3d(0,0,0, 0deg);
+		box-shadow: 0 0 55px rgb(238, 233, 233);
+		border-radius: 0%;
 	}
 	100%{
-		left:89%;
+		left:100%;
+		transform:scale3d(1.5,1.5,1) rotate3d(1,10,1, 60deg);
+		box-shadow: 0 0 35px rgb(147, 67, 67);
 	}
 	
 }
