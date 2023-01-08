@@ -238,3 +238,134 @@ img.section__image {
   z-index: 2;
   margin: -50px 0px 0px 0px;
 }
+.section__item_flex {
+  padding: 15px;
+}
+.section__item_collapse {
+  padding: 15px;
+  margin: 0px 0px 20px 0px;
+}
+.section__item_collapse-top {
+  margin: -10px 0px 20px 0px;
+}
+.section__item_bottom {
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
+}
+.section__item_right {
+  padding: 15px;
+  margin: 0px 20px 0px 0px;
+}
+.section__row {
+  display: flex;
+  margin: 0px -15px;
+}
+.section__column {
+  padding: 0px 15px;
+  flex: 0 1 33.333%;
+}
+.section__list {
+  margin: 0px 0px 20px 0px;
+}
+.section__list li {
+  margin: 0px 0px 10px 0px;
+}
+.section__list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.section__items {
+  display: flex;
+}
+.section__item_item {
+  padding: 15px;
+}
+.section__body_last {
+  background-color: #77608d;
+  padding: 20px 50px;
+}
+.section__body_parent {
+  background-color: #7a956b;
+  padding: 50px 50px;
+}
+.section__body_parent:last-child {
+  margin: 0;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+  padding: 25px 0px;
+  margin: -25px 0px;
+}
+.slider__item {
+  text-align: center;
+  flex: 0 1 33.333%;
+}
+.slider__image {
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: #7a956b;
+  box-shadow: 0 0 20px #d9f5c8;
+}
+
+.portfolio {
+  background-color: #794f45;
+  padding: 30px 15px;
+}
+.portfolio__header {
+  margin: 0px 0px 20px 0px;
+}
+.header {
+  text-align: center;
+}
+.header__title {
+  font-size: 30px;
+  margin: 0px 0px 5px 0px;
+}
+.header__text {
+  font-size: 20px;
+}
+
+.contacts {
+  background-color: #77608d;
+  padding: 30px 15px;
+}
+.contacts__header {
+  margin: 0px 0px 40px 0px;
+}
+.compare__row {
+  display: flex;
+  margin: 0px -15px 30px;
+}
+.compare__column {
+  padding: 0px 15px;
+  flex: 0 1 50%;
+}
+.compare__item {
+  padding: 20px 15px;
+}
+.compare__item_bad {
+  padding: 80px 15px;
+}
+.compare__item_color-1 {
+  background-color: #794f45;
+}
+.compare__item_color-2 {
+  background-color: #7a956b;
+}
+.compare__title {
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+.compare__title_bad {
+  margin: 0px 0px 40px 0px;
+}
+.compare__link {
+  display: inline-block;
+  padding: 5px;
+  line-height: 10px;
+}
+.compare__link_bad {
+  padding: 0;
+}

@@ -168,18 +168,26 @@ img.section__image{
 			}
 
 			&_flex {
+				padding: 15px;
 			}
 
 			&_collapse {
+				padding: 15px;
+				margin: 0px 0px 20px 0px;
 			}
 
 			&_collapse-top {
+				margin: -10px 0px 20px 0px;
 			}
 
 			&_bottom {
+				padding: 10px;
+				margin: 0px 0px 20px 0px;
 			}
 
 			&_right {
+				padding: 15px;
+				margin: 0px 20px 0px 0px;
 			}
 
 			&_parent {
@@ -190,26 +198,48 @@ img.section__image{
 		}
 
 		&__row {
+			display: flex;
+			margin: 0px -15px;
 		}
 
 		&__column {
+			padding: 0px 15px;
+			flex: 0 1 33.333%;
 		}
 
 		&__slider {
+
 		}
 
 		&__list {
+			margin: 0px 0px 20px 0px;
+			li{
+				margin: 0px 0px 10px 0px;
+				&:last-child{
+					margin: 0px 0px 0px 0px;
+				}
+			}
 		}
 
 		&__items {
+			display: flex;
 		}
-
+		&__item_item{
+			padding: 15px;
+		}
 		&__body {
 
 			&_last {
+				background-color: #77608d;
+				padding: 20px 50px;
 			}
 
 			&_parent {
+				background-color: #7a956b;
+				padding: 50px 50px;
+				&:last-child{
+					margin: 0;
+				}
 			}
 		}
 
@@ -217,32 +247,50 @@ img.section__image{
 		}
 }
 .slider {
-
+	display: flex;
+	overflow: hidden;
+	padding: 25px 0px;
+	margin: -25px 0px;
 		&__item {
+			text-align: center;
+			flex: 0 1 33.333%;
 		}
 
 		&__image {
+			width: 150px;
+			height: 150px;
+			margin: 0px auto;
+			border-radius: 50%;
+			background-color: #7a956b;
+			box-shadow: 0 0 20px #d9f5c8;
 		}
 }
 .portfolio {
-
+	background-color: #794f45;
+	padding: 30px 15px;
 		&__header {
+			margin: 0px 0px 20px 0px;
 		}
 
 		&__text {
 		}
 }
 .header {
-
+	text-align: center;
 		&__title {
+			font-size: 30px;
+			margin: 0px 0px 5px 0px;
 		}
 
 		&__text {
+			font-size: 20px;
 		}
 }
 .contacts {
-
+		background-color: #77608d;
+		padding: 30px 15px;
 		&__header {
+			margin: 0px 0px 40px 0px;
 		}
 
 		&__text {
@@ -251,26 +299,35 @@ img.section__image{
 .compare {
 
 		&__row {
+			display: flex;
+			margin: 0px -15px 30px;
 		}
 
 		&__column {
+			padding: 0px 15px;
+			flex: 0 1 50%;
 		}
 
 		&__item {
-
+			padding: 20px 15px;
 			&_bad {
+				padding: 80px 15px;
 			}
 
 			&_color-1 {
+				background-color: #794f45;
 			}
 
 			&_color-2 {
+				background-color: #7a956b;
 			}
 		}
 
 		&__title {
-
+			font-size: 30px;
+			margin: 0px 0px 10px 0px;
 			&_bad {
+				margin: 0px 0px 40px 0px;
 			}
 		}
 
@@ -278,8 +335,11 @@ img.section__image{
 		}
 
 		&__link {
-
+			display: inline-block;
+			padding: 5px;
+			line-height: 10px;
 			&_bad {
+				padding: 0;
 			}
 		}
 }
