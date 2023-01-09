@@ -1,0 +1,107 @@
+//Імпортуємо файл обнуляючого стилю
+@import 'nullstyle.scss';
+
+body{
+	background-color: rgb(34, 34, 34);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+}
+.wrapper {
+	padding: 30px;
+}
+.content {
+	h1{
+		font-size: 38px;
+	}
+	h2{
+		font-size: 30px;
+	}
+}
+.grid {
+	margin: 20px 0px 20px 0px;
+	position: relative;
+		&__body {
+			display: grid;
+
+			grid-template: repeat(2,1fr)/ repeat(3,1fr)  ;
+			/*
+			grid-template-columns: repeat(3,1fr);
+			grid-template-rows: repeat(2,1fr)
+			*/
+		}
+
+		&__item {
+			text-align: center;
+			border: 2px dashed rgba(255,255,255,0.2);
+			padding: 30px;
+		}
+}
+
+
+.grid-wrapper {
+	display: grid;
+
+
+	grid-template: [start] "header header" 100px [row2]
+						[row2]  "side content" 1fr[row-end]/150px 1fr;
+
+	/*
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: 100px 1fr;
+	grid-template-areas: "header header"
+								"side content";
+								*/
+}
+.grid-header,
+.grid-side,
+.grid-content {
+	padding: 30px;
+	border: 2px dashed rgba(255,255,255,0.2);
+	margin: 15px 0px 15px 0px;
+}
+.grid-header{
+	grid-area: header;
+}
+.grid-side{
+	grid-area: side;
+}
+.grid-content {
+	grid-area: content;
+}
+
+
+.grid-auto {
+	margin: 20px 0px 0px 0px;
+		display: grid;
+		grid-template: 1fr 1fr/repeat(3,1fr);
+		grid-auto-rows: 200px;
+		grid-auto-columns: 300px;
+
+		
+		&__item {
+			text-align: center;
+			border: 2px dashed rgba(255,255,255,0.2);
+			padding: 30px;
+			font-size: 30px;
+		}
+}
+
+.grid-masonry {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: 200px;
+
+	grid-auto-flow: dense;
+
+	counter-reset: item;
+	&__item {
+		&::before{
+			content:'';
+			
+		}
+		img{
+			
+		}
+	}
+}
+
