@@ -1,2 +1,146 @@
-//Імпортуємо файл обнуляючого стилю
-@import 'nullstyle.scss';
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+a {
+	color: #794f45;
+}
+h1 {
+	font-size: 40px;
+	line-height: 1;
+	margin: 0px 0px 50px 0px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0px 0px 20px 0px;
+}
+ul {
+	list-style: none;
+}
+.wrapper {
+	
+	min-height: 100vh;
+	display: grid;
+	grid-template: minmax(100px,auto) 1fr minmax(70px,auto)/ 1fr;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+}
+.header {
+	grid-area: header;
+	padding: 15px;
+	background-color: #794f45;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto,300px) minmax(auto,1000px) 1fr;
+	align-items: center;
+		&__logo {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background-color: #fff;
+			grid-column: 2/3;
+		}
+
+		&__menu {
+			grid-column: 3/4;
+		}
+
+		&__list {
+			display: grid;
+			grid-auto-flow: column;
+			justify-items: end;
+			li{
+
+			}
+		}
+
+		&__link {
+			color: #fff;
+			font-size: 18px;
+		}
+
+		&__burger {
+		}
+}
+.main {
+	grid-area: main;
+}
+.sidebar {
+
+		&__menu {
+		}
+
+		&__list {
+		}
+
+		&__link {
+		}
+}
+.content {
+
+		&__title {
+		}
+
+		&__gallery {
+		}
+
+		&__products {
+		}
+}
+.gallery {
+
+		&__title {
+		}
+
+		&__items {
+		}
+
+		&__item {
+
+			&_big {
+			}
+		}
+}
+.products {
+
+		&__title {
+		}
+
+		&__items {
+		}
+
+		&__item {
+		}
+
+		&__image {
+		}
+
+		&__name {
+		}
+
+		&__button {
+		}
+}
+.footer {
+	background-color: #77608d;
+		&__copy {
+		}
+
+		&__text {
+		}
+}
