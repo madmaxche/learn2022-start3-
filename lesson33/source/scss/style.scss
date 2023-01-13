@@ -16,16 +16,62 @@ body{
 }
 
 .wrapper {
+	min-height: 100%;
+	overflow: hidden;
 }
 .example {
-
+	padding: 80px 0px;
 		&__container {
+			padding: 0px 15px;
+			margin: 0px auto;
+			//Переводимо в REM
+			//Ділимо ширину по макету (1020px+30px(pad-15+15))
+			//На 16(розмыр шрифту по замовчуванню)
+			max-width: 62.625rem;
+			position: relative;
+			&::before{
+				content:'';
+				background: url('/lesson33/img/president_ukraine_leader_zelenskyy_zelensky_icon_232974.svg') 0 0 no-repeat;
+				position: absolute;
+				right: 0;
+				//Ширину картинка по макету ділимо на ширину &__container
+				//(Батька з position: relative;) та множимо на 100
+				//153 / 1050 * 100 = 14.57
+				width: 14.57%;
+				//Висоту картинки по макету ділимо на ширину &__container
+				//(Батька з position: relative;) та множимо на 100
+				//241 / 1050 * 100 = 22.95
+				padding-top: 22.95%;
+				//Половина висоти &__container
+				//(Батька з position: relative;)
+				top: 50%;
+				//Зрушення вправо та вверх на половину
+				//Ширини/Висоти картинки(змінюється)
+				transform: translate(50%,-50%);
+			}
 		}
 
 		&__header {
+			margin: 0px 0px 25px 0px;
+			//Переводимо в REM
+			//Ділимо ширину по макету(750px)
+			//На 16(Ширина шрифту за замовчуванням)
+			max-width: rem(46.875);
 		}
 
 		&__sub-title {
+			color: #a989c7;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			//Переводимо в REM
+			//Ділимо на розмір по макету (14px)
+			//На 16(розмір шрифта по замовчуванню)
+			font-size: rem(0.875);
+			//Переводимо в % або частини
+			//Ділимо розмір по макету(24px)
+			//На розмір шрифту(14px)
+			line-height: 1.7;
 		}
 
 		&__title {
