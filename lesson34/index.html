@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>CSS-Селектори</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="lesson">
+				<div class="lesson__header header-lesson">
+					<h1 class="header-lesson__title">Загальне визначення</h1>
+					<div class="header-lesson__text">
+						<p>За допомогою CSS-селекторів ми звертаємось (шукаємо, робимо запит) до певної групи HTML-тегів, для того щоб описати (застосовувати) стилі для самих тегів та/або їх контенту.</p>
+						<p>В залежності від типу або комбінації CSS-селекторів ми можемо створювати певні умови цих запитів та застосовувати стилі саме до потрібної групи HTML-тегів</p>
+					</div>
+				</div>
+				<div class="lesson__body">
+					<!-- Типи CSS-селекторів -->
+					<!-- <div class="lesson__title">Типи CSS-селекторів</div> -->
+					<!-- <p class="lesson__text">Існують типи CSS-селекторів:</p> -->
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор "зірочка" (*)</h3>
+						<p class="section-lesson__text">
+							Запит до усіх тегів на сторінці. <br> Може використовуватись коли нам треба описати стилі для усіх елементів на сторінці
+						</p>
+						<div class="section-lesson__example">
+							<div>Я DIV</div>
+							<div>
+								І я DIV
+								<div>Я DIV в DIV</div>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p>І я параграф P</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор тегу</h3>
+						<p class="section-lesson__text">
+							Запит до усіх вказаних тегів на сторінці. <br> Може використовуватись коли нам треба описати стилі для певних тегів на сторінці
+						</p>
+						<div class="section-lesson__example">
+							<div>Я DIV</div>
+							<div>
+								І я DIV
+								<div>Я DIV в DIV</div>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p>І я параграф P</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор класу</h3>
+						<p class="section-lesson__text">
+							Запит до усіх тегів з вказаним класом на сторінці. <br> Може використовуватись коли нам треба описати стилі для будь-якого тега але з певним класом.
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text">А я параграф P з класом "text"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор ID</h3>
+						<p class="section-lesson__text">
+							Запит до тега з вказаним ID. <br> Може використовуватись коли нам треба описати стилі для конкретного елемента на сторінці
+						</p>
+						<div class="section-lesson__example">
+							<div id="element">Я DIV з ID "element"</div>
+							<div>
+								І я DIV
+								<div>Я DIV в DIV</div>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p>І я параграф P</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектори атрибутів</h3>
+						<p class="section-lesson__text">
+							Запит до тегів з певним атрибутом, його значенням та умовами. <br> Може використовуватись коли нам треба описати стилі для будь-якого елемента але з певними умовами та параметрами.
+						</p>
+						 -->
+						<!-- Селектор імені атрибуту - [attr] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="section-lesson__list">
+								<li class="section-lesson__item">
+									<a href="https://facebook.com" class="section-lesson__link">Facebook</a>
+								</li>
+								<li class="section-lesson__item">
+									<a title="Я якась підказка для зручності" href="https://youtube.com" class="section-lesson__link">YouTube</a>
+								</li>
+								<li class="section-lesson__item">
+									<a href="https://instagram.com" class="section-lesson__link">Instagram</a>
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення - [attr=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="section-lesson__list">
+								<li class="section-lesson__item">
+									<a href="https://facebook.com" class="section-lesson__link">Facebook</a>
+								</li>
+								<li class="section-lesson__item">
+									<a title="Я якась підказка для зручності" href="https://youtube.com" class="section-lesson__link">YouTube</a>
+								</li>
+								<li class="section-lesson__item">
+									<a href="https://instagram.com" class="section-lesson__link">Instagram</a>
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення за умови - [attr~=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="section-lesson__list">
+								<li class="section-lesson__item">
+									<a href="https://facebook.com" class="section-lesson__link">Facebook</a>
+								</li>
+								<li class="section-lesson__item">
+									<a title="Я якась підказка для зручності" href="https://youtube.com" class="section-lesson__link">YouTube</a>
+								</li>
+								<li class="section-lesson__item">
+									<a href="https://instagram.com" class="section-lesson__link">Instagram</a>
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення за умови - [attr|=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="section-lesson__list">
+								<li class="section-lesson__item">
+									<a href="https://facebook.com" class="section-lesson__link">Facebook</a>
+								</li>
+								<li class="section-lesson__item">
+									<a title="Підказка-текст" href="https://youtube.com" class="section-lesson__link">YouTube</a>
+								</li>
+								<li class="section-lesson__item">
+									<a href="https://instagram.com" class="section-lesson__link">Instagram</a>
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення за умови - [attr^=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="list">
+								<li class="list__item">
+									Пункт №1
+								</li>
+								<li class="list__item">
+									Пункт №2
+								</li>
+								<li class="list__item">
+									Пункт №3
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення за умови - [attr$=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="list">
+								<li class="list__item">
+									Пункт №1
+								</li>
+								<li class="list__item">
+									Пункт №2
+								</li>
+								<li class="list__item">
+									Пункт №3
+								</li>
+							</ul>
+						</div>
+						 -->
+						<!-- Селектор імені атрибуту та його значення за умови - [attr*=value] {} -->
+						<!-- 
+						<div class="section-lesson__example">
+							<ul class="list">
+								<li class="list__item element">
+									Пункт №1
+								</li>
+								<li class="list__item element">
+									Пункт №2
+								</li>
+								<li class="list__item element">
+									Пункт №3
+								</li>
+							</ul>
+							<header class="header">
+								<div class="header__container">
+									Я шапка
+								</div>
+							</header>
+							<main class="page">
+								<div class="main-block">
+									<div class="main-block__container body-main">
+										Я якийсь блок
+									</div>
+								</div>
+								<div class="about">
+									<div class="about__container body-about">
+										І я якийсь блок
+									</div>
+								</div>
+							</main>
+							<footer class="footer">
+								<div class="footer__container">
+									Я підвал
+								</div>
+							</footer>
+						</div>
+						 -->
+					</section>
+					<!-- Комбінації CSS-селекторів -->
+					<!-- 
+					<div class="lesson__title">Комбінації CSS-селекторів</div>
+					<p class="lesson__text">Для більш конкретного запиту, ми можемо комбінувати CSS-селектори:</p>
+					 -->
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор тегу та селектор класу</h3>
+						<p class="section-lesson__text">
+							Запит до усіх вказаних тегів з вказаним класом на сторінці. <br> Може використовуватись коли нам треба описати стилі для конкретних тегів та з певним класом.
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text">А я параграф P з класом "text"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор класу та селектор класу</h3>
+						<p class="section-lesson__text">
+							Запит до усіх тегів з вказаними класами на сторінці. Усі класи мають бути у елемента одночасно. <br> Може використовуватись коли нам треба конкретезувати запит - описати стилі елементів з певними класами.
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Перелік. Селектор класу або селектор класу ...</h3>
+						<p class="section-lesson__text">
+							Запит до усіх тегів з вказаними класами на сторінці. <br> Може використовуватись коли нам треба конкретезувати запит - описати стилі елементів з певними класами.
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Комбінації попередніх комбінацій</h3>
+						<p class="section-lesson__text">
+							Комбінуємо селектори та їх комбінації для більш конкретного запиту:
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<!-- Каскадність (вкладеність) CSS-селекторів -->
+					<!-- 
+					<div class="lesson__title">Каскадність (вкладеність) CSS-селекторів </div>
+					<p class="lesson__text">Запит можна робити до елементів які знаходяться всередені, або відносно інших елементів. <br> Каскадність (вкладеність) можна вказувати будь-якого рівня та обов'язково використовувати один з спец. символів</p>
+					 -->
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор в селекторі будь-якого рівня (пробіл)</h3>
+						<p class="section-lesson__text">Каскадність (вкладеність) будь-якого рівня</p>
+						<div class="section-lesson__example">
+							<div class="text">
+								Я DIV з класом "text"
+								<div>
+									Я DIV в DIV класом "text"
+								</div>
+							</div>
+							<div class="block">
+								Я DIV з класом "block"
+								<div class="text">
+									Я DIV з класом "text" в DIV класом "block"
+								</div>
+							</div>
+							<div class="text">
+								Я DIV класом "text" в DIV
+								<div>
+									Я DIV в DIV з класом "text"
+									<div>
+										Я DIV в DIV з класом "text" а потім ще в DIV
+									</div>
+								</div>
+							</div>
+							<div class="text block">
+								Я DIV з класом "text" та з класом "block"
+								<p>А я параграф P в DIV з класом "text" та з класом "block"</p>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор в селекторі першого рівня (>)</h3>
+						<p class="section-lesson__text">Каскадність (вкладеність) першого рівня (беспосередньо)</p>
+						<div class="section-lesson__example">
+							<div class="text">
+								Я DIV з класом "text"
+								<div>
+									Я DIV в DIV класом "text"
+								</div>
+							</div>
+							<div class="block">
+								Я DIV з класом "block"
+								<div class="text">
+									Я DIV з класом "text" в DIV класом "block"
+								</div>
+							</div>
+							<div class="text">
+								Я DIV класом "text" в DIV
+								<div>
+									Я DIV в DIV з класом "text"
+									<div>
+										Я DIV в DIV з класом "text" а потім ще в DIV
+									</div>
+								</div>
+							</div>
+							<div class="text block">
+								Я DIV з класом "text" та з класом "block"
+								<p>А я параграф P в DIV з класом "text" та з класом "block"</p>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Селектор після селектора того ж рівня (~)</h3>
+						<p class="section-lesson__text">Запит до усіх вказаних об'єктів того ж рівня вкладеності далі по коду</p>
+						 -->
+						<!-- 
+						<div class="section-lesson__example">
+							
+							<div class="text">
+								Я DIV з класом "text"
+								<div>
+									Я DIV в DIV класом "text"
+								</div>
+							</div>
+							<div class="block">
+								Я DIV з класом "block"
+								<div class="text">
+									Я DIV з класом "text" в DIV класом "block"
+								</div>
+							</div>
+							<div class="text">
+								Я DIV класом "text" в DIV
+								<div>
+									Я DIV в DIV з класом "text"
+									<div>
+										Я DIV в DIV з класом "text" а потім ще в DIV
+									</div>
+								</div>
+							</div>
+							<div class="text block">
+								Я DIV з класом "text" та з класом "block"
+								<p>А я параграф P в DIV з класом "text" та з класом "block"</p>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<div>Я DIV</div>
+						</div>
+						 -->
+						<!-- Цікавий приклад -->
+						<!-- 
+						<div class="items">
+							<button type="button" class="item">5</button>
+							<button type="button" class="item">4</button>
+							<button type="button" class="item">3</button>
+							<button type="button" class="item">2</button>
+							<button type="button" class="item">1</button>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Перший селектор після селектора того ж рівня (+)</h3>
+						<p class="section-lesson__text">Запит до першого наступного вказаного об'єкта того ж рівня вкладеності далі по коду</p>
+						<div class="section-lesson__example">
+							<div class="text">
+								Я DIV з класом "text"
+								<div>
+									Я DIV в DIV класом "text"
+								</div>
+							</div>
+							<p>А я параграф P</p>
+							<div class="block">
+								Я DIV з класом "block"
+								<div class="text">
+									Я DIV з класом "text" в DIV класом "block"
+								</div>
+							</div>
+							<div class="text">
+								Я DIV класом "text" в DIV
+								<div>
+									Я DIV в DIV з класом "text"
+									<div>
+										Я DIV в DIV з класом "text" а потім ще в DIV
+									</div>
+								</div>
+							</div>
+							<div class="text block">
+								Я DIV з класом "text" та з класом "block"
+								<p>А я параграф P в DIV з класом "text" та з класом "block"</p>
+							</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<div>Я DIV</div>
+						</div>
+						 -->
+					</section>
+					<!-- Пріоритетність CSS-селекторів -->
+					<!-- 
+					<div class="lesson__title">Пріоритетність CSS-селекторів</div>
+					<p class="lesson__text">Тип, комбінація та порядок запису CSS-селекторів впливає на пріоритет застосування CSS-параметрів які для нього описані</p>
+					<ol class="lesson__list">
+						<li>У випадку рівнозначних селекторів більший пріоритет буде у останього по коду.</li>
+						<li>Більший пріоритет завжди буде у селектора, який звужує (уточює, конкретизує) пошук (запит)</li>
+						<li>Пріоритет у рядкових (inline) стилів (атрибут style="") вищий ніж у стилів з окремого файлу (наприклад style.css)</li>
+						<li>Правило !important перезаписує пріоритет (не рекомендується)</li>
+					</ol>
+					 -->
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет рівнозначних селекторів</h3>
+						<p class="section-lesson__text">
+							Більший пріоритет буде у останього по коду (CSS)
+						</p>
+						<div class="section-lesson__example">
+							<div class="text">Я DIV з класом "text"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет різних селекторів</h3>
+						<p class="section-lesson__text">
+							Більший пріоритет буде у селектора, який звужує (уточює, конкретизує) пошук (запит)
+						</p>
+						<div class="section-lesson__example">
+							<div id="element" class="text">Я DIV з класом "text" та з ID "element"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div title="Підказка" class="text">Я DIV класом "text" та з атрибутом title в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет різних комбінацій селекторів</h3>
+						<p class="section-lesson__text">
+							Більший пріоритет буде у комбінацій селекторів, які більш звужують (уточють, конкретизуть) пошук (запит)
+						</p>
+						<div class="section-lesson__example">
+							<div id="element" class="text">Я DIV з класом "text" та з ID "element"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет каскадності (вкладеності) селекторів</h3>
+						<p class="section-lesson__text">
+							Більший пріоритет буде у каскадності (вкладеності) селекторів, які більш звужують (уточють, конкретизуть) пошук (запит)
+						</p>
+						<div class="section-lesson__example">
+							<div id="element" class="text">Я DIV з класом "text" та з ID "element"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет рядкових (inline) стилів (атрибут style="") </h3>
+						<p class="section-lesson__text">
+							Пріоритет у рядкових (inline) стилів (атрибут style="") вищий ніж у стилів з окремого файлу (наприклад style.css)
+						</p>
+						<div class="section-lesson__example">
+							<div id="element" style="border: 5px solid #77608d;" class="text">Я DIV з класом "text" та з ID "element"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+					<section class="lesson__section section-lesson">
+						<!-- 
+						<h3 class="section-lesson__title">Пріоритет правила !important</h3>
+						<p class="section-lesson__text">
+							Правило !important перезаписує пріоритет (не рекомендується)
+						</p>
+						<div class="section-lesson__example">
+							<div id="element" class="text">Я DIV з класом "text" та з ID "element"</div>
+							<div class="block">Я DIV з класом "block"</div>
+							<div>
+								І я DIV
+								<div class="text">Я DIV класом "text" в DIV</div>
+							</div>
+							<div class="text block">Я DIV з класом "text" та з класом "block"</div>
+							<p>А я параграф P</p>
+							<p>І я параграф P</p>
+							<p class="text block">А я параграф P з класом "text" та з класом "block"</p>
+						</div>
+						 -->
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
