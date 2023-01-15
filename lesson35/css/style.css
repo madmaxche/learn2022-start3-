@@ -81,3 +81,33 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+html,
+body {
+  background-color: #333;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+  color: #fff;
+  padding: 30px;
+}
+
+.text {
+  /*column-width: 200px;*/
+  /*column-count: 3;
+  column-width: 200px;*/
+  /*columns: 3 200px;*/
+  padding: 15px;
+  text-align: justify;
+  -moz-columns: 2 200px;
+       columns: 2 200px;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  -moz-column-rule: 5px dashed green;
+       column-rule: 5px dashed green;
+  background: rgb(66, 66, 66);
+  height: 700px;
+  -moz-column-fill: auto;
+       column-fill: auto;
+}
