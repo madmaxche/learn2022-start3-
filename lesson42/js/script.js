@@ -49,6 +49,20 @@ for (Начало; Умова; Крок){
 */
 
 //Приклад
+//let num
+//Вбудована об'ява перемінної
+//Можна прибрати любу частину циклу
+/*
 for(let num = 0; num < 5; num++){
 	console.log(num);
 }
+console.log('Вивід поза циклом: ${num}');
+*/
+//Дериктива break
+
+let num = 0;
+for (num < 5; num++) {
+	console.log(num);
+	if(num == 2) break;
+}
+console.log('Робота закінчена, num = ${num}');
