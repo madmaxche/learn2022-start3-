@@ -161,3 +161,121 @@ userInfo.address = {
 };
 console.log(userInfo);
 */
+
+//Видалення властивості
+/*
+let userInfo = {
+	name: "Юля",
+	age: 22,
+	"likes javascript": true
+}
+
+console.log(userInfo);
+
+delete userInfo.age;
+
+console.log(userInfo);
+
+delete userInfo["likes javascript"];
+
+console.log(userInfo);
+*/
+
+//Зміна властивості
+/*
+let userInfo = {
+	name: "Юля",
+	age: 22,
+}
+console.log(userInfo);
+
+userInfo.age = 18;
+
+console.log(userInfo);
+*/
+//Зміна властивостей в константі
+/*
+const userInfo = {
+	name: "Юля",
+	age: 22,
+}
+console.log(userInfo);
+
+userInfo.age = 18;
+
+console.log(userInfo);
+*/
+//При копіюванні об'єкту в іншу змінну сам об'єкт не дублюється
+//а копіюється тільки посилання на нього
+
+//Дублювання об'єктів (Object.assign)
+/*
+let userInfo = {
+	name:"Юля",
+	age: 22,
+}
+
+let user = Object.assign({}, userInfo);
+
+user.age = 18;
+
+console.log(userInfo);
+console.log(user);
+*/
+
+//Ще про Object.assign
+/*
+let userInfo = {
+	name:"Юля",
+	age: 22,
+}
+
+Object.assign(userInfo, {['likes javascript']: true, city:"Chernivtsi"});
+console.log(userInfo);
+*/
+
+//Перевірка існування властивості
+/*
+let userInfo = {
+	name:"Юля",
+	age: 22,
+}
+
+//console.log(userInfo.age);
+
+if(userInfo.age){ //true чи false
+	console.log(userInfo.age);
+}
+*/
+
+//Опціональний ланцюг
+/*
+let userInfo = {
+	name:"Юля",
+	age: 22,
+	address:{
+		city:"Chernivtsi",
+		street:"Freedom",
+	}
+}
+console.log(userInfo.address.street);
+*/
+//console.log(userInfo?.address?.street);
+
+// Оператор "in"
+
+/*
+let userInfo = {
+	name:"Юля",
+	age: 22,
+	address:{
+		city:"Chernivtsi",
+		street:"Freedom",
+	}
+}
+if ("name" in userInfo){
+	console.log(userInfo.name);
+}
+*/
+
+//Цикл "for_in"
