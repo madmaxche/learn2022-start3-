@@ -1,3 +1,5 @@
+"use strict";
+
 //Синтаксис
 //Створення об'єкта
 
@@ -272,4 +274,86 @@ if ("name" in userInfo){
 }
 */
 //Цикл "for_in"
-"use strict";
+//Для перебору всіх властивостей об'єкту використовується цикл for..in.
+//Цей цикл відрізняється від вивченого раніше цикла for (;;).
+
+/*
+for (let key in object){
+	//Тіло цикла виконується для кожної властивості об'єкта
+}
+*/
+//Цикл "for_in"
+
+/*
+let userInfo = {
+	name:"Вася",
+	age:30,
+	address:{
+		city:"Chernivtsi",
+		street:"Freedom",
+	}
+}
+
+for(let key in userInfo){
+	//Ключі
+	console.log(key);		//name, age , address
+	//Значення ключів
+	console.log(userInfo[key]);	// Вася,30,object{}
+}
+
+for(let key in userInfo.address){
+	//Ключі
+	console.log(key);		//city.street
+	//Значення ключів
+	console.log(userInfo.address[key]);	// Chernivtsi, Freedom
+}
+*/
+//Методи об'єкта
+
+/*
+let userInfo = {
+	name: "Вася",
+	age: 30,
+	address: {
+		city: "Chernivtsi",
+		street: "Freedom",
+	},
+	/*
+	showInfo : function () {
+		console.log(`${userInfo.name} ,${userInfo.age} років. Адреса : м.${userInfo.address.city} ,вул.${userInfo.address.street}.`);
+	}
+	*/
+
+/*
+showInfo(){
+	console.log(`${userInfo.name} ,${userInfo.age} років. Адреса : м.${userInfo.address.city} ,вул.${userInfo.address.street}.`);
+}
+*/
+// Використання "this"
+
+/*
+showInfo(){
+	console.log(`${this.name} ,${this.age} років. Адреса : м.${this.address.city} ,вул.${this.address.street}.`);
+}
+*/
+// У стрілкових функцій немає свого "this" 
+// використовується значеня із зовнішнього методу userInfo.showInfo()
+
+/*
+showInfo(){
+let show = () => console.log(`${this.name} ,${this.age} років. Адреса : м.${this.address.city} ,вул.${this.address.street}.`);
+
+show();
+}
+}
+userInfo.showInfo();
+*/
+//Функція конструктор
+function UserInfo(name) {
+  // this = {};	 Створює пустий об'єкт
+  this.name = name;
+  this.age = 30; // return rhis; Вертається об'єкт
+}
+
+console.log(new UserInfo('Макс'));
+console.log(new UserInfo('Юля'));
