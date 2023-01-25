@@ -351,7 +351,7 @@ userInfo.showInfo();
 */
 
 	//Функція конструктор
-
+/*
 	function UserInfo(name) {
 
 		// this = {};	 Створює пустий об'єкт
@@ -365,3 +365,95 @@ userInfo.showInfo();
 
 console.log(new UserInfo('Макс'));
 console.log(new UserInfo('Юля'));
+*/
+//№1 - Ні
+/*
+const userInfo = {
+	name : "Вася",
+	age: 30 
+}
+*/
+//№2 -"58"
+/*
+let userInfo = {
+	name : "Вася",
+	age: 30 ,
+	"58": 'Значення властивості'
+}
+console.log(userInfo[58]);
+*/
+//№3 - 45
+/*
+let userInfo = {
+	name : "Вася",
+	age: 30 
+}
+let user = userInfo;
+user.age = 45;
+
+console.log(userInfo.age);
+*/
+//№4 - Вася
+/*
+let userInfo = {
+	name : "Вася",
+	age: 30 ,
+	showInfo(){
+		console.log(`${this.name}`);
+	}
+}
+let user = userInfo;
+userInfo = null;
+user.showInfo();
+*/
+//№5 - name+age
+/*
+let userInfo = {
+	name : "Вася",
+	age: 30, 
+}
+for (const key in userInfo){
+	const value = userInfo[key];
+	console.log(value);
+}
+*/
+//№6 - city
+/*
+let userInfo = {
+	name : "Вася",
+	age: 30,
+	address:{
+		city:"Chernivtsi"
+	}
+}
+for (const key in userInfo.address){
+	console.log(userInfo.address[key]);
+}
+*/
+//№7 - true
+/*
+const userInfo = {
+	name:"Вася",
+	age:30,
+	"likes js": true
+}
+console.log(userInfo["likes js"]);
+*/
+
+//№8
+/*
+let userInfo = {
+	name:"Vasya",
+	age:30,
+}
+
+console.log(userInfo);
+
+userInfo.name = "Лена";
+
+console.log(userInfo);
+
+delete userInfo.name;
+
+console.log(userInfo);
+*/
