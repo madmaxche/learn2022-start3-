@@ -81,8 +81,12 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
 *{
 	color: wheat;
+}
+span{
+	color: blueviolet;
 }
 .firstpinkcolortitle + p {
 	color: yellow;
@@ -92,9 +96,6 @@ h6 {
 }
 .firstcolorblock > h2 {
 	color: pink;
-}
-.firstcolorblock + p{
-	color: blue;
 }
 #bluetext{
 	color: blue;
