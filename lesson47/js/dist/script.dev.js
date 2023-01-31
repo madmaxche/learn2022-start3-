@@ -1,3 +1,5 @@
+"use strict";
+
 // Створення массиву
 
 /*
@@ -365,4 +367,12 @@ let result = arr.map(function (item, index,array) {
 console.log(arr);
 console.log(result);
 */
-"use strict";
+// Преобразування массивів
+// Методи split та join
+var str = 'Максим, Юля, Сіма';
+var arr = str.split(',');
+console.log(arr); // Можна обмежити кількість об'єктів
+// які попадуть в массив
+
+var arrTwo = str.split(',', 2);
+console.log(arrTwo);

@@ -372,3 +372,19 @@ let result = arr.map(function (item, index,array) {
 console.log(arr);
 console.log(result);
 */
+
+// Преобразування массивів
+
+// Методи split та join
+
+let str = 'Максим, Юля, Сіма';
+
+let arr = str.split(',');
+console.log(arr);
+
+
+// Можна обмежити кількість об'єктів
+// які попадуть в массив
+
+let arrTwo = str.split(',',2);
+console.log(arrTwo);
