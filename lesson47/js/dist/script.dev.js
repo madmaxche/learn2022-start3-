@@ -369,10 +369,163 @@ console.log(result);
 */
 // Преобразування массивів
 // Методи split та join
-var str = 'Максим, Юля, Сіма';
-var arr = str.split(',');
-console.log(arr); // Можна обмежити кількість об'єктів
+
+/*
+let str = 'Максим, Юля, Сіма';
+
+let arr = str.split(',');
+console.log(arr);
+
+
+// Можна обмежити кількість об'єктів
 // які попадуть в массив
 
-var arrTwo = str.split(',', 2);
+let arrTwo = str.split(',',2);
 console.log(arrTwo);
+*/
+
+/*
+let arr = ['Максим', 'Юля', 'Сіма',];
+let srt = arr.join(',');
+console.log(srt);
+
+//Отримання рядка з массиву
+let arrTwo = ['Максим', 'Юля', 'Сіма',];
+console.log(String(arrTwo));
+*/
+// Провірка Array.isArray()
+
+/*
+let obj = {};
+let arr = [];
+
+console.log(typeof obj);
+console.log(typeof arr);
+
+
+if(Array.isArray(obj)){
+	console.log('Це массив!');
+} else {
+	console.log('Це не массив!');
+}
+*/
+// Перебір елементів
+
+/*
+let arr = ['Максим', 'Юля', 'Сіма',];
+console.log(arr.length);
+
+// Цикл FOR
+for (let i = 0; i < arr.length; i++){
+	console.log(arr[i]);
+}
+*/
+// Цикл FOR...OF
+// Можна використовувати для виводу значення
+
+/*
+let arr = ['Максим', 'Юля', 'Сіма',];
+
+for (let arrItem of arr) {
+	console.log(arrItem);
+}
+*/
+// Метод перебору forEach
+// Виконує функцію для кожного елементу массиву
+
+/*
+arr.forEach(function (item,index,array) {
+	// робити щось з item
+});
+*/
+
+/*
+let arr = ['Макс','Юля','Сіма',];
+
+arr.forEach(function(item,index,array) {
+	console.log(`${item} знаходиться на ${index} позиції в ${array}`);
+});
+*/
+// Стрілкова функція
+
+/*
+arr.forEach((item,index,array)) =>{
+	console.log(`${item} знаходиться на ${index} позиції в ${array}`);
+}
+*/
+// Метод reduce/reduceRight
+// Синтаксис
+
+/*
+let value = arr.reduce(function(previousValue,item,index,array){
+	//....
+},[initial]);
+*/
+
+/*
+let arrOne = [1,2,3,4];
+let reduceValueOne = arrOne.reduce(function(previousValue,item,index,array){
+	return item + previousValue;
+},0);
+console.log(reduceValueOne);
+*/
+
+/*
+let arrTwo = ['Макс','Юля','Сіма',];
+
+let reduceValueTwo = arrTwo.reduce(function(previousValue,item,index,array){
+	console.log(previousValue);
+	console.log(item);
+	return `${item}, ${previousValue}`;
+});
+console.log(`Користувачі: ${reduceValueTwo}`);
+*/
+// Массив використовується як массив
+
+/*
+let arr = ['Макс','Юля','Сіма',];
+console.log(typeof arr);
+// НЕВІРНЕ використання массиву, додавання нечислової властивості
+arr.name = "Анжела";
+console.log(arr);
+*/
+// ДОМАШКА
+//№1		4
+
+/*
+let arr = ['Макс','Юля','Сіма',];
+let newArr = arr;
+newArr.push('Віталік');
+console.log(arr.length);
+*/
+//№2	
+
+/*
+let users = ['Ваня','Іштван',];
+let newUser = users;
+newUser.push('Ольга');
+console.log(users);
+console.log(users.indexOf('Іштван'));
+users.splice(0,1);
+users.splice(1,0,'Маша','Паша');
+console.log(users);
+*/
+// №3
+
+/*
+??????????
+let arr = ['Ваня', 'Іштван' ,'Ольга',];
+arr.slice(0,1);
+console.log(arr);
+*/
+//№ 4
+
+/*
+let str = 'Ваня,Іштван,Ольга';
+console.log(Array(str));
+*/
+//№ 5
+var arr = [9, 2, 8];
+var reduceValue = arr.reduce(function (previousValue, item, index, array) {
+  console.log(previousValue);
+});
