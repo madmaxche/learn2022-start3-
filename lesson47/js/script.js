@@ -530,8 +530,10 @@ console.log(Array(str));
 */
 
 //№ 5
+/*
 let arr = [9,2,8,];
 let reduceValue = arr.reduce(function(previousValue,item,index,array)
 {
 	console.log(previousValue);
 });
+*/

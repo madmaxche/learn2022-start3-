@@ -1,5 +1,3 @@
-"use strict";
-
 // Створення массиву
 
 /*
@@ -525,7 +523,12 @@ let str = 'Ваня,Іштван,Ольга';
 console.log(Array(str));
 */
 //№ 5
-var arr = [9, 2, 8];
-var reduceValue = arr.reduce(function (previousValue, item, index, array) {
-  console.log(previousValue);
+
+/*
+let arr = [9,2,8,];
+let reduceValue = arr.reduce(function(previousValue,item,index,array)
+{
+	console.log(previousValue);
 });
+*/
+"use strict";
