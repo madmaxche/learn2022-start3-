@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk"> <!--parentElement-->
 
 <head>
 	<meta charset="UTF-8">
@@ -8,11 +8,35 @@
 	<!--Підключаємо файл стилю каскадних таблиць-->
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Document</title>
-</head>
+</head> <!--previousElementSibling-->
 
 <body>
-	
-<script src="js/script.js"></script>
+	<h1> <!---->
+		<span class="yellow">JavaScript.</span>
+		Браузерне оточення.
+		Робота з <span class="yellow">DOM.</span>
+	</h1>
+	<h3>Урок №13</h3>
+	<div class="lesson">
+		<div class="lesson__text">
+			<!-- Коментар -->
+			Текст
+		</div>
+		<!--
+		<ul name="list" class="lesson__list">
+			<li class="lesson__item-list lesson__item-list_red">Пункт №1</li>
+			<li id="listItem" class="lesson__item-list">Пункт №2</li>
+			<li class="lesson__item-list lesson__text"> Пункт №3
+				<ul class="lesson__sub-list">
+					<li class="lesson__item-sub-list">ПідПункт №1</li>
+					<li data-item="85" class="lesson__item-sub-list">ПідПункт №2</li>
+					<li class="lesson__item-sub-list">ПідПункт №3</li>
+				</ul>
+			</li>
+			<li class="lesson__item-list lesson__item-list_blue">Пункт №4</li>
+		</ul>-->
+	</div>
+<script src="js/script.js"></script> <!--lastElementChild-->
 </body>
-
+<!--nextElementSibling(null)-->
 </html>
