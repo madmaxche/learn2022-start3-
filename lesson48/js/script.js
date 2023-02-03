@@ -70,7 +70,7 @@ for (let node of childNodes){
 */
 
 // Отримуємо об'єкт body
-const bodyElement = document.body;
+//const bodyElement = document.body;
 
 // Сусідні і батьківські вузли
 /*
@@ -274,6 +274,7 @@ console.log(list);
 // Вмістимість елементу innerHTML
 
 //Отримуємо об'єкт
+/*
 const textElement = document.querySelector('.lesson__text');
 
 // Отримуємо вмістимість об'єкта "як є" разом з HTML
@@ -285,5 +286,5 @@ textElement.innerHTML =
 	`<p>${textElementContent}</p> <p>Живи а працюй в <span class="yellow">вільний</span> час!</p>`;
 
 	console.log(textElement.innerHTML);
-
+*/
 	//37
