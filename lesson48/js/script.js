@@ -287,4 +287,75 @@ textElement.innerHTML =
 
 	console.log(textElement.innerHTML);
 */
-	//37
+
+//Отримуємо об'єкт
+/*
+const textElement = document.querySelector('.lesson__text');
+
+// Отримуємо вмістимість об'єкта "як є" разом з HTML
+const textElementContent = textElement.outerHTML;
+console.log(textElementContent);
+
+textElement.outerHTML = `<p> Живи, а працюй в <span class="yellow">вільний</span> час</p>`;
+
+console.log(textElement.outerHTML);
+*/
+
+// Зміна документа
+
+// Просто текст елементу textContent
+
+// Отримуємо об'єкт
+/*
+const textElement = document.querySelector('.lesson__text');
+const textElementContent = textElement.textContent;
+console.log(textElementContent);
+
+// Корисна можливість textContent - записувати текст "безпечним шляхом"
+
+textElement.textContent = `<p>Живи, а працюй в <span class="yellow">вільний</span> час</p>`;
+
+console.log(textElement.textContent);
+*/
+
+//data.
+// Вмістиме текстового вузла/коментаря
+/*
+//Отримуємо об'єкт
+const textElement = document.querySelector('.lesson__text');
+const getComment = textElement.nextSibling;
+
+console.log(getComment);
+console.log(getComment.data);
+
+// Зміна текстового вузла/коментаря
+getComment.data = 'Привіт';
+console.log(getComment.data);
+*/
+// Отримуєм об'єкт
+/*
+const textElement = document.querySelector('.lesson__text')
+// Створення елементів і вузлів
+
+// Створення новго елементу (тегу)
+const newElement = document.createElement('div');
+
+// Наповнимо новий елемент
+newElement.innerHTML = `Живи, а працюй в <span class="yellow">вільний</span> час`;
+console.log(newElement);
+
+// Створення нового текстового вузла
+const newText = document.createTextNode('Привіт!');
+console.log(newText);
+
+// Вставлення нового елементу
+
+// перед об'єктом
+textElement.before(newElement);
+// після об'єкту
+textElement.after(newElement);
+// всередину і в початок об'єкту
+textElement.prepend(newElement);
+// всередину і в кінець об'єкту
+textElement.append(newElement);
+*/

@@ -1,5 +1,3 @@
-"use strict";
-
 //BOM
 //ALERT
 //	alert	("Привіт!");
@@ -64,7 +62,8 @@ for (let node of childNodes){
 // Тільки для прочитання
 */
 // Отримуємо об'єкт body
-var bodyElement = document.body; // Сусідні і батьківські вузли
+//const bodyElement = document.body;
+// Сусідні і батьківські вузли
 
 /*
 const previousSiblingNode = bodyElement.previousSibling;
@@ -265,10 +264,88 @@ console.log(list);
 // Вмістимість елементу innerHTML
 //Отримуємо об'єкт
 
-var textElement = document.querySelector('.lesson__text'); // Отримуємо вмістимість об'єкта "як є" разом з HTML
+/*
+const textElement = document.querySelector('.lesson__text');
 
-var textElementContent = textElement.innerHTML;
-console.log(textElementContent); // Перезаписуєм вмістиме об'єкта
+// Отримуємо вмістимість об'єкта "як є" разом з HTML
+const textElementContent = textElement.innerHTML;
+console.log(textElementContent);
 
-textElement.innerHTML = "<p>".concat(textElementContent, "</p> <p>\u0416\u0438\u0432\u0438 \u0430 \u043F\u0440\u0430\u0446\u044E\u0439 \u0432 <span class=\"yellow\">\u0432\u0456\u043B\u044C\u043D\u0438\u0439</span> \u0447\u0430\u0441!</p>");
-console.log(textElement.innerHTML); //37
+// Перезаписуєм вмістиме об'єкта
+textElement.innerHTML = 
+	`<p>${textElementContent}</p> <p>Живи а працюй в <span class="yellow">вільний</span> час!</p>`;
+
+	console.log(textElement.innerHTML);
+*/
+//Отримуємо об'єкт
+
+/*
+const textElement = document.querySelector('.lesson__text');
+
+// Отримуємо вмістимість об'єкта "як є" разом з HTML
+const textElementContent = textElement.outerHTML;
+console.log(textElementContent);
+
+textElement.outerHTML = `<p> Живи, а працюй в <span class="yellow">вільний</span> час</p>`;
+
+console.log(textElement.outerHTML);
+*/
+// Зміна документа
+// Просто текст елементу textContent
+// Отримуємо об'єкт
+
+/*
+const textElement = document.querySelector('.lesson__text');
+const textElementContent = textElement.textContent;
+console.log(textElementContent);
+
+// Корисна можливість textContent - записувати текст "безпечним шляхом"
+
+textElement.textContent = `<p>Живи, а працюй в <span class="yellow">вільний</span> час</p>`;
+
+console.log(textElement.textContent);
+*/
+//data.
+// Вмістиме текстового вузла/коментаря
+
+/*
+//Отримуємо об'єкт
+const textElement = document.querySelector('.lesson__text');
+const getComment = textElement.nextSibling;
+
+console.log(getComment);
+console.log(getComment.data);
+
+// Зміна текстового вузла/коментаря
+getComment.data = 'Привіт';
+console.log(getComment.data);
+*/
+// Отримуєм об'єкт
+
+/*
+const textElement = document.querySelector('.lesson__text')
+// Створення елементів і вузлів
+
+// Створення новго елементу (тегу)
+const newElement = document.createElement('div');
+
+// Наповнимо новий елемент
+newElement.innerHTML = `Живи, а працюй в <span class="yellow">вільний</span> час`;
+console.log(newElement);
+
+// Створення нового текстового вузла
+const newText = document.createTextNode('Привіт!');
+console.log(newText);
+
+// Вставлення нового елементу
+
+// перед об'єктом
+textElement.before(newElement);
+// після об'єкту
+textElement.after(newElement);
+// всередину і в початок об'єкту
+textElement.prepend(newElement);
+// всередину і в кінець об'єкту
+textElement.append(newElement);
+*/
+"use strict";
