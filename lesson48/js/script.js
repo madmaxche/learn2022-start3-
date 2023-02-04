@@ -359,3 +359,32 @@ textElement.prepend(newElement);
 // всередину і в кінець об'єкту
 textElement.append(newElement);
 */
+
+/*
+// Отримуємо об'єкт
+const textElement = document.querySelector('.lesson__text');
+
+// Створення нового елементу (тегу)
+const newElement = document.createElement('div');
+// Наповнимо новий елемент
+newElement.innerHTML = `Живи, а працюй в <span class="yellow">вільний</span> час`;
+console.log(newElement);
+
+// Вставка декількох фрагментів одразу
+textElement.append(newElement, "Привіт!");
+
+// Можна вставити рядок
+//textElement.append(`Живи, а працюй в <span class="yellow">вільний</span> час`);
+*/
+
+// Перенос елементуd
+
+// Отримуємо об'єкт
+const lessonBlock = document.querySelector('.lesson');
+// Отримуємо об'єкт
+const title = document.querySelector('h3');
+
+// Переносимо title в кінець блоку lessonBlock
+lessonBlock.append(title);
+
+a
