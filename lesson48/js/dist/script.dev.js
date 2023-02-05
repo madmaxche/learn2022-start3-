@@ -367,11 +367,345 @@ textElement.append(newElement, "Привіт!");
 // Можна вставити рядок
 //textElement.append(`Живи, а працюй в <span class="yellow">вільний</span> час`);
 */
-// Перенос елементуd
+// Перенос елементу
+
+/*
 // Отримуємо об'єкт
-var lessonBlock = document.querySelector('.lesson'); // Отримуємо об'єкт
+const lessonBlock = document.querySelector('.lesson');
+// Отримуємо об'єкт
+const title = document.querySelector('h3');
 
-var title = document.querySelector('h3'); // Переносимо title в кінець блоку lessonBlock
-
+// Переносимо title в кінець блоку lessonBlock
 lessonBlock.append(title);
-a;
+
+*/
+// Метод вставки
+// insertAdjacentHTML/Text/Element
+
+/*
+// Отримуєм об'єкт
+const textElement = document.querySelector('.lesson__text');
+
+// Вставляємо текст, HTML, елемент
+textElement.insertAdjacentHTML(
+	'afterend',
+	`<p>Живи, а працюй в <span class="yellow">вільний</span> час</p>`
+);
+*/
+
+/*
+"beforebeign" - вставити html прямо перед textElement
+"afterbegin" - вставити html в початок textElement
+"beforeend" - вставити html в кінець textElement
+"afterend" - вставити html прямо після textElement
+*/
+// Додатково існують insertAdjacentText та insertAdjacentElement
+
+/*
+// Отримуєм дані
+const textElement = document.querySelector('.lesson__text');
+// Вставляємо текст
+textElement.insertAdjacentText(
+	'beforeend',
+	`Живи, а працюй в <span class="yellow">вільний</span> час`
+)
+// Створення нового елементу(тегу)
+const newElement = document.createElement('div');
+// Наповнюєм новий елемент
+newElement.innerHTML ='Живи, а працюй в <span class="yellow">вільний</span> час!';
+// Вставляємо елемент
+textElement.insertAdjacentElement(
+	'beforeend',
+	newElement
+)
+*/
+// Перенос елементу
+
+/*
+// Отримуєм об'єкт
+const lessonBlock = document.querySelector('.lesson');
+// Отримуєм об'єкт
+const title = document.querySelector('h3');
+
+// Переносимо title в кінець блоку lessonBlock
+lessonBlock.append(title);
+*/
+// Клонування вузлів cloneNode
+
+/*
+// Якщо потрібен не перенос, а саме копія елементу
+
+// Отримуєм об'єкт
+const textElement = document.querySelector('.lesson__text');
+// Клонуєм без дочірніх елементів
+//const cloneTextElement = textElement.cloneNode();
+// Глубоке клонування разом зі вмістимим
+const cloneTextElement = textElement.cloneNode(true);
+
+const lessonBlock = document.querySelector('.lesson');
+lessonBlock.append(cloneTextElement);
+*/
+// Видалення вузлів
+
+/*
+// Отримуємо об'єкт
+const textElement = document.querySelector('.lesson__text');
+// Видалення об'єкта
+textElement.remove();
+*/
+// Стилі і класси
+// Управління классами
+// Властивості className та classList
+
+/*
+Зміни в классах є одним з найбільш часто використовуваних дій в JavaScript
+*/
+// Властивості className
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Отримуємо імя классу
+const elementClassNames = element.className;
+console.log(elementClassNames);
+
+// Перезаписуємо імя классу
+//element.className = "red";
+*/
+// Властивість classList
+
+/*
+	Спеціальний об'єкт з методами для додавання/видалення одного классу
+*/
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Додати класс
+element.classList.add('active');
+// Видалення класу
+element.classList.remove('active');
+// Додати класс, якщо його немає, а якщо є видалити
+element.classList.toggle('active');
+// Перевірка наявності классу, повератає true/false
+element.classList.contains('active');
+*/
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Додаваємо класс
+element.classList.add('active');
+// Перевіряємо наявність классів
+if (element.classList.contains('active')){
+	console.log('У element є класс active!');
+}
+*/
+
+/*
+// Отримуємо елемент
+
+const element = document.querySelector('.lesson__item-list_red');
+
+element.classList.add('active');
+// classList є перевибираним, тому можна перечисляти всі класси за допомогою for...of
+for(let className of element.classList){
+	console.log(className);
+}
+*/
+// Управління стилями
+// element.style
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Задаєм стиль за допомогою CSS властивостей
+element.style.color = "red";
+*/
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+// Задаєм стиль за допомогою CSS властивостей
+element.style.color = "red";
+// Для властивості з декількох слів використовується cameLCase:
+// margin-bottom
+element.style.marginBottom = "30px";
+// z-index
+element.style.zIndex = "10";
+// і тому подібне
+
+// Кожна властивысть пишеться окремо
+*/
+// Отримати значення властивості
+// Можна тільки якщо воно записано в атрибуті  style
+//console.log(element.style.marginBottom);
+// Повний перезапис стилей
+//style.cssText
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+element.style.cssText = `
+	margin-bottom: 30px;
+	color: red;
+`;
+*/
+// Стилі та класси
+// Вичисленні стилі. gerComputedStyle(element,[pseudo])
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Отримання значення властивостей
+// Тільки якщо воно записано в атрибуті style
+console.log(element.style.fontSize);
+
+
+// Стиль елемента
+const elementStyle = getComputedStyle(element);
+console.log(elementStyle.fontSize);
+
+// Стиль псевдоелемента
+const elementBeforeStyle = getComputedStyle(element, "::before");
+console.log(elementBeforeStyle.backgroundColor);
+*/
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+// Стиль елемента
+const elementStyle = getComputedStyle(element);
+
+
+// Щоб отримати конкретне значення
+// Слід писати точну (повну) властивість
+
+// Отримуємо точне значення
+console.log(elementStyle.paddingLeft);
+// Отримуємо не очікуванний запис
+console.log(elementStyle.padding); // В FF <empty string>
+*/
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Стиль елемента
+const elementStyle = getComputedStyle(element);
+
+// Тільки для читання
+elementStyle.paddingLeft = "50px";
+*/
+// Стилі та класси
+// Лайфхаки
+
+/*
+// Отримуємо елемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Стиль елемента
+const elementStyle = getComputedStyle(element);
+console.log(elementStyle.paddingLeft);
+
+// Отримуємо число
+const paddingLeft = parseInt(elementStyle.paddingLeft);
+console.log(paddingLeft);
+
+// Пам'ятаємо про одиниці вимірювання
+element.style.marginLeft = 20;
+*/
+// Атрибути та властивотсі
+
+/*
+const link = document.querySelector('.lesson__link');
+const input = document.querySelector('.lesson__input');
+
+console.log(link.href);
+console.log(input.href);
+*/
+//console.log(link.value);
+//console.log(input.value);
+// Отримати список доступних властивостей
+//console.dir(link);
+// Довільні атрибути
+
+/*
+// Отримуємо елемент
+const lessonText = document.querySelector('.lesson__text');
+
+// Провіряємо наявність атрибута
+lessonText.hasAttribute('name');
+// Провіряємо значення атрибута
+lessonText.getAttribute('name');
+// Встановлюємо значення атрибута
+lessonText.setAttribute('name', 'value');
+// Видаляємо атрибут
+lessonText.removeAttribute('name');
+*/
+// Приклад
+
+/*
+// Встановлюємо значення атрибута
+lessonText.setAttribute ('some-attribute', 'some-value');
+// Перевіряємо наявність атрибуту
+if (lessonText.hasAttribute('some-attribute')){
+	console.log('some-attribute існує!');
+}
+*/
+// Синхронызація між атрибутами і властивостями
+
+/*
+// Отримуємоо елемент
+const input = document.querySelector('.lesson__input');
+
+input.setAttribute('id','123');
+console.log(input.id);
+
+input.id = "321";
+console.log(input.getAttribute('id'));
+*/
+// АЛЕ
+
+/*
+input.setAttribute('value','Привіт!');
+console.log(input.value);
+
+input.value = "Як справи?";
+console.log(input.getAttribute('value'));
+*/
+// Не типові атрибути, dataset
+
+/*
+// Отримуємо елемент
+const lessonText = document.querySelector('.lesson__text');
+
+// Отримуємо data-атрибут
+console.log(lessonText.dataset.size);
+
+// Перезаписуємо data-атрибут
+lessonText.dataset.size = "5810";
+console.log(lessonText.dataset.size);
+
+//data-size-value
+console.log(lessonText.dataset.sizeValue);
+*/
+// Корисні властивості
+
+/*
+const link = document.querySelector('.lesson__link');
+
+// Отримуємо тег елементу
+console.log(link.tagName);
+
+// Сховати/показати елемент
+//link.hidden = true;
+//console.log(link.hidden);
+*/
+var div = document.querySelector('');
