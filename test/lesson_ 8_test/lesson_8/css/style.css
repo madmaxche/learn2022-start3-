@@ -1,0 +1,39 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+
+body{
+	font-family: "Inter";
+}
+
+.headerblock {
+	font-family: "Poppins";
+	line-height: 1.6;
+	background: url('../img/headerback.png') center/ cover no-repeat;
+	border: 1px solid #000000;
+	border-radius: 0px 5px 5px 0px;
+}
+.headerblock__container {
+	max-width: 1270px;
+	margin: 0px auto;
+	padding: 330px 15px 100px 15px;
+}
+.headerblock__text-block {
+	max-width: 605px;
+}
+.headerblock__text-block *:last-child{
+	margin-bottom: 15px;
+}
+.headerblock__info {
+	font-weight: 300;
+	font-size: 12px;
+	color: #E5E5E5;
+	margin-bottom: 15px;
+}
+.headerblock__title {
+	font-weight: 700;
+	font-size: 25px;
+	color: #F8F9FA;
+	margin-bottom: 15px;
+}
