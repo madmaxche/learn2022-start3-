@@ -6,3 +6,138 @@ body{
 	font-family: "Poppins";
 	background-color: #e5e5e5;
 }
+
+[class*=""]{
+
+}
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.headerblock {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+}
+.headerblock *{
+}
+.headerblock__container {
+	padding: 37px 0px 38px 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+}
+.headerblock__logo {
+}
+.headerblock__logo-item {
+}
+.headerblock__nav {
+	color: #495057;
+}
+.headerblock__nav-item:last-child{
+	margin-right: 0px;
+}
+.headerblock__nav-item:hover{
+border-bottom: 2px solid #DDBEA9;
+}
+.headerblock__social-links {
+	color: rgba(73, 80, 87, 0.5);
+	margin-right: 0px;
+}
+.headerblock__social-link:last-child{
+	margin-right: 0px;
+}
+.headerblock__social-link:last-child::after{
+	content: '';
+	border: 1px solid rgba(73, 80, 87, 0.5);
+	margin-left: 20px;
+}
+.headerblock__social-link {
+}
+.headerblock__search {
+}
+.headerblock__search-icon {
+}
+
+
+
+.mainblock {
+}
+.mainblock__container {
+}
+.mainblock__slider {
+	background: url('../img/mainblock/slider.jpg') 0 0 no-repeat;
+}
+.mainblock__slider-textblock {
+	padding: 192px 0px 193px 0px;
+	text-align: center;
+}
+.mainblock__name {
+}
+.mainblock__text {
+}
+.mainblock__design {
+}
+.mainblock__design_content {
+}
+.mainblock__title {
+}
+.mainblock__nav {
+}
+.mainblock__nav-item {
+}
+.mainblock__design_gallery {
+}
+.mainblock__design_gallery-item {
+}
+.mainblock__gallery-image {
+}
+.mainblock__gallery-date {
+}
+.mainblock__gallery-text {
+}
+.mainblock__trending {
+}
+.mainblock__trending_content {
+}
+.mainblock__trending_gallery {
+}
+.mainblock__trending_gallery-item {
+}
+.mainblock__trending-textblock {
+}
+.mainblock__trending-date {
+}
+.mainblock__trending-text {
+}
+
+
+
+.footerblock {
+}
+.footerblock__container {
+}
+.footerblock__top {
+}
+.footerblock__logo {
+}
+.footerblock__logo-item {
+}
+.footerblock__nav {
+}
+.footerblock__nav-item {
+}
+.footerblock__social-links {
+}
+.footerblock__social-link {
+}
+.footerblock__bottom {
+}
+.footerblock__textblock {
+}
+.footerblock__address {
+}
+.footerblock__copyright {
+}
