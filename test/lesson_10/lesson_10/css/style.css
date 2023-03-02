@@ -69,20 +69,36 @@ border-bottom: 2px solid #DDBEA9;
 }
 .mainblock__slider {
 	background: url('../img/mainblock/slider.jpg') 0 0 no-repeat;
+	margin-bottom: 100px;
 }
 .mainblock__slider-textblock {
 	padding: 192px 0px 193px 0px;
 	text-align: center;
+	max-width: 605px;
+	margin: 0px auto;
 }
 .mainblock__name {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	color: #E5E5E5;
 }
 .mainblock__text {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #F8F9FA;
 }
 .mainblock__design {
 }
 .mainblock__design_content {
 }
 .mainblock__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+	max-width: 393px;
 }
 .mainblock__nav {
 }
