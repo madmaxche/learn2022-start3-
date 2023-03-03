@@ -44,7 +44,7 @@ border-bottom: 2px solid #DDBEA9;
 }
 .headerblock__social-links {
 	color: rgba(73, 80, 87, 0.5);
-	margin-right: 0px;
+	margin-right: 25px;
 }
 .headerblock__social-link:last-child{
 	margin-right: 0px;
