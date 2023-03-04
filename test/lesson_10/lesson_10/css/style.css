@@ -42,9 +42,9 @@ body{
 .headerblock__nav-item:hover{
 border-bottom: 2px solid #DDBEA9;
 }
-.headerblock__social-links a{
+.headerblock__social-links {
 	color: rgba(73, 80, 87, 0.5);
-	margin-right: 25px;
+	margin-right: 0px;
 }
 .headerblock__social-link:last-child{
 	margin-right: 0px;
